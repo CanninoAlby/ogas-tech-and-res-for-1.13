@@ -67,6 +67,21 @@
                 }
                 b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_reporting_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction_weighted
             }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_reporting_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction_weighted
+            }
         }
         order_by = b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_reporting_primary_sector_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -143,6 +158,21 @@
                     }
                 }
                 b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction_weighted
             }
         }
         order_by = b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_optimization_primary_sector_profit_prediction
@@ -221,6 +251,21 @@
                 }
                 b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction_weighted
             }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction_weighted
+            }
         }
         order_by = b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_optimization_primary_sector_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -297,6 +342,21 @@
                     }
                 }
                 b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_on_premises_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_on_premises_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction_weighted
             }
         }
         order_by = b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_on_premises_primary_sector_profit_prediction
@@ -375,6 +435,21 @@
                 }
                 b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_on_premises_primary_sector_profit_prediction_weighted
             }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction_weighted
+            }
         }
         order_by = b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -382,6 +457,98 @@
         activate_production_method = {
             building_type = building_advancedores_mine
             production_method = pm_internet_data_reporting_primary_sector
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_advancedores_mine
+            b:building_advancedores_mine.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_advancedores_mine
+                production_method = pm_internet_data_optimization_primary_sector
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_manual_data_reporting_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_manual_data_reporting_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_reporting_primary_sector_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_manual_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_manual_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_manual_data_optimization_primary_sector_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_digital_data_optimization_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_digital_data_optimization_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_optimization_primary_sector_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_digital_data_on_premises_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_digital_data_on_premises_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_digital_data_on_premises_primary_sector_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_reporting_primary_sector
+                        }
+                        is_production_method_active = {
+                            building_type = building_advancedores_mine
+                            production_method = pm_internet_data_reporting_primary_sector
+                        }
+                    }
+                }
+                b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction > b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_reporting_primary_sector_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_advancedores_mine.pmg_data_optimization_primary_sector_pm_internet_data_optimization_primary_sector_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_advancedores_mine
+            production_method = pm_internet_data_optimization_primary_sector
         }
     }
     ordered_scope_state = {
@@ -4493,6 +4660,21 @@
                 }
                 b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_reporting_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction_weighted
             }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_reporting_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction_weighted
+            }
         }
         order_by = b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_reporting_heavy_industry_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -4569,6 +4751,21 @@
                     }
                 }
                 b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_optimization_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_optimization_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction_weighted
             }
         }
         order_by = b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_optimization_heavy_industry_profit_prediction
@@ -4647,6 +4844,21 @@
                 }
                 b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_digital_data_optimization_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction_weighted
             }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_digital_data_optimization_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction_weighted
+            }
         }
         order_by = b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_digital_data_optimization_heavy_industry_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -4723,6 +4935,21 @@
                     }
                 }
                 b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_reporting_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_reporting_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction_weighted
             }
         }
         order_by = b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_reporting_heavy_industry_profit_prediction
@@ -4801,6 +5028,21 @@
                 }
                 b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_reporting_heavy_industry_profit_prediction_weighted
             }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_optimization_heavy_industry_software
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction_weighted
+            }
         }
         order_by = b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -4808,6 +5050,98 @@
         activate_production_method = {
             building_type = building_ecommerce_logistics
             production_method = pm_internet_data_algorithmic_dispatch_heavy_industry
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_ecommerce_logistics
+            b:building_ecommerce_logistics.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_ecommerce_logistics
+                production_method = pm_internet_data_optimization_heavy_industry_software
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_manual_data_reporting_heavy_industry
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_manual_data_reporting_heavy_industry
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_reporting_heavy_industry_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_manual_data_optimization_heavy_industry
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_manual_data_optimization_heavy_industry
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_manual_data_optimization_heavy_industry_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_digital_data_optimization_heavy_industry
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_digital_data_optimization_heavy_industry
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_digital_data_optimization_heavy_industry_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_reporting_heavy_industry
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_reporting_heavy_industry
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_reporting_heavy_industry_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_algorithmic_dispatch_heavy_industry
+                        }
+                        is_production_method_active = {
+                            building_type = building_ecommerce_logistics
+                            production_method = pm_internet_data_algorithmic_dispatch_heavy_industry
+                        }
+                    }
+                }
+                b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction > b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_algorithmic_dispatch_heavy_industry_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_ecommerce_logistics.pmg_data_optimization_building_ecommerce_logistics_pm_internet_data_optimization_heavy_industry_software_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_ecommerce_logistics
+            production_method = pm_internet_data_optimization_heavy_industry_software
         }
     }
     ordered_scope_state = {
@@ -8944,6 +9278,36 @@
                     or = {
                         can_activate_production_method = {
                             building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejew_isoprene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejew_isoprene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
                             production_method = pm_polyethylene_synthesis
                         }
                         is_production_method_active = {
@@ -8953,21 +9317,6 @@
                     }
                 }
                 b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction_weighted
-            }
-            trigger_if = {
-                limit = {
-                    or = {
-                        can_activate_production_method = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = natta_catalysts
-                        }
-                        is_production_method_active = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = natta_catalysts
-                        }
-                    }
-                }
-                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction_weighted
             }
         }
         order_by = b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction
@@ -9006,6 +9355,36 @@
                     or = {
                         can_activate_production_method = {
                             building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejew_isoprene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejew_isoprene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
                             production_method = pm_polyethylene_synthesis
                         }
                         is_production_method_active = {
@@ -9016,21 +9395,6 @@
                 }
                 b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction_weighted
             }
-            trigger_if = {
-                limit = {
-                    or = {
-                        can_activate_production_method = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = natta_catalysts
-                        }
-                        is_production_method_active = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = natta_catalysts
-                        }
-                    }
-                }
-                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction_weighted
-            }
         }
         order_by = b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction
         max = owner.var:cnm_pm_manage_amount
@@ -9038,6 +9402,160 @@
         activate_production_method = {
             building_type = building_mendelejew_synthetic_rubber_factory
             production_method = pm_celluloid_processing
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_mendelejew_synthetic_rubber_factory
+            b:building_mendelejew_synthetic_rubber_factory.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_mendelejew_synthetic_rubber_factory
+                production_method = pm_mendelejew_isoprene
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_bakelite_molding
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_bakelite_molding
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_celluloid_processing
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_celluloid_processing
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_polyethylene_synthesis
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_polyethylene_synthesis
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_mendelejew_synthetic_rubber_factory
+            production_method = pm_mendelejew_isoprene
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_mendelejew_synthetic_rubber_factory
+            b:building_mendelejew_synthetic_rubber_factory.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_mendelejew_synthetic_rubber_factory
+                production_method = pm_mendelejev_butadiene
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_bakelite_molding
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_bakelite_molding
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_celluloid_processing
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_celluloid_processing
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejew_isoprene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejew_isoprene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_polyethylene_synthesis
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_polyethylene_synthesis
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_mendelejew_synthetic_rubber_factory
+            production_method = pm_mendelejev_butadiene
         }
     }
     ordered_scope_state = {
@@ -9083,15 +9601,30 @@
                     or = {
                         can_activate_production_method = {
                             building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = natta_catalysts
+                            production_method = pm_mendelejew_isoprene
                         }
                         is_production_method_active = {
                             building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = natta_catalysts
+                            production_method = pm_mendelejew_isoprene
                         }
                     }
                 }
-                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction_weighted
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejew_isoprene_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                        is_production_method_active = {
+                            building_type = building_mendelejew_synthetic_rubber_factory
+                            production_method = pm_mendelejev_butadiene
+                        }
+                    }
+                }
+                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_mendelejev_butadiene_profit_prediction_weighted
             }
         }
         order_by = b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction
@@ -9100,68 +9633,6 @@
         activate_production_method = {
             building_type = building_mendelejew_synthetic_rubber_factory
             production_method = pm_polyethylene_synthesis
-        }
-    }
-    ordered_scope_state = {
-        limit = {
-            has_active_building = building_mendelejew_synthetic_rubber_factory
-            b:building_mendelejew_synthetic_rubber_factory.occupancy > 0.01
-            can_activate_production_method = {
-                building_type = building_mendelejew_synthetic_rubber_factory
-                production_method = natta_catalysts
-            }
-            trigger_if = {
-                limit = {
-                    or = {
-                        can_activate_production_method = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = pm_bakelite_molding
-                        }
-                        is_production_method_active = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = pm_bakelite_molding
-                        }
-                    }
-                }
-                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_bakelite_molding_profit_prediction_weighted
-            }
-            trigger_if = {
-                limit = {
-                    or = {
-                        can_activate_production_method = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = pm_celluloid_processing
-                        }
-                        is_production_method_active = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = pm_celluloid_processing
-                        }
-                    }
-                }
-                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_celluloid_processing_profit_prediction_weighted
-            }
-            trigger_if = {
-                limit = {
-                    or = {
-                        can_activate_production_method = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = pm_polyethylene_synthesis
-                        }
-                        is_production_method_active = {
-                            building_type = building_mendelejew_synthetic_rubber_factory
-                            production_method = pm_polyethylene_synthesis
-                        }
-                    }
-                }
-                b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction > b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_pm_polyethylene_synthesis_profit_prediction_weighted
-            }
-        }
-        order_by = b:building_mendelejew_synthetic_rubber_factory.pmg_plastics_production_natta_catalysts_profit_prediction
-        max = owner.var:cnm_pm_manage_amount
-        check_range_bounds = no
-        activate_production_method = {
-            building_type = building_mendelejew_synthetic_rubber_factory
-            production_method = natta_catalysts
         }
     }
     ordered_scope_state = {
@@ -9303,6 +9774,391 @@
         activate_production_method = {
             building_type = building_mendelejew_synthetic_rubber_factory
             production_method = pm_mendelejev_butadiene
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_military_shipyard
+            b:building_military_shipyard.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_military_shipyard
+                production_method = pm_military_shipbuilding_wooden
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_military_shipyard
+            production_method = pm_military_shipbuilding_wooden
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_military_shipyard
+            b:building_military_shipyard.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_military_shipyard
+                production_method = pm_military_shipbuilding_wooden_2
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_military_shipyard
+            production_method = pm_military_shipbuilding_wooden_2
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_military_shipyard
+            b:building_military_shipyard.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_military_shipyard
+                production_method = pm_military_shipbuilding_steam
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_military_shipyard
+            production_method = pm_military_shipbuilding_steam
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_military_shipyard
+            b:building_military_shipyard.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_military_shipyard
+                production_method = pm_military_shipbuilding_steam_2
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_modular_military_shipbuilding
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_military_shipyard
+            production_method = pm_military_shipbuilding_steam_2
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_military_shipyard
+            b:building_military_shipyard.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_military_shipyard
+                production_method = pm_modular_military_shipbuilding
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_wooden_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_wooden_2_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                        is_production_method_active = {
+                            building_type = building_military_shipyard
+                            production_method = pm_military_shipbuilding_steam_2
+                        }
+                    }
+                }
+                b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction > b:building_military_shipyard.pmg_military_base_pm_military_shipbuilding_steam_2_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_military_shipyard.pmg_military_base_pm_modular_military_shipbuilding_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_military_shipyard
+            production_method = pm_modular_military_shipbuilding
         }
     }
     ordered_scope_state = {
@@ -15329,6 +16185,147 @@
         activate_production_method = {
             building_type = building_wheat_farm
             production_method = pm_continuous_diffusion_sugar_beet_refining
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_livestock_ranch
+            b:building_livestock_ranch.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_livestock_ranch
+                production_method = pm_simple_ranch
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_sheep_farms
+                        }
+                        is_production_method_active = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_sheep_farms
+                        }
+                    }
+                }
+                b:building_livestock_ranch.pmg_sheep_ranch_pm_simple_ranch_profit_prediction > b:building_livestock_ranch.pmg_sheep_ranch_pm_sheep_farms_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_intensive_grazing_ranch
+                        }
+                        is_production_method_active = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_intensive_grazing_ranch
+                        }
+                    }
+                }
+                b:building_livestock_ranch.pmg_sheep_ranch_pm_simple_ranch_profit_prediction > b:building_livestock_ranch.pmg_sheep_ranch_pm_intensive_grazing_ranch_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_livestock_ranch.pmg_sheep_ranch_pm_simple_ranch_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_livestock_ranch
+            production_method = pm_simple_ranch
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_livestock_ranch
+            b:building_livestock_ranch.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_livestock_ranch
+                production_method = pm_sheep_farms
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_simple_ranch
+                        }
+                        is_production_method_active = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_simple_ranch
+                        }
+                    }
+                }
+                b:building_livestock_ranch.pmg_sheep_ranch_pm_sheep_farms_profit_prediction > b:building_livestock_ranch.pmg_sheep_ranch_pm_simple_ranch_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_intensive_grazing_ranch
+                        }
+                        is_production_method_active = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_intensive_grazing_ranch
+                        }
+                    }
+                }
+                b:building_livestock_ranch.pmg_sheep_ranch_pm_sheep_farms_profit_prediction > b:building_livestock_ranch.pmg_sheep_ranch_pm_intensive_grazing_ranch_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_livestock_ranch.pmg_sheep_ranch_pm_sheep_farms_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_livestock_ranch
+            production_method = pm_sheep_farms
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_livestock_ranch
+            b:building_livestock_ranch.occupancy > 0.01
+            can_activate_production_method = {
+                building_type = building_livestock_ranch
+                production_method = pm_intensive_grazing_ranch
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_simple_ranch
+                        }
+                        is_production_method_active = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_simple_ranch
+                        }
+                    }
+                }
+                b:building_livestock_ranch.pmg_sheep_ranch_pm_intensive_grazing_ranch_profit_prediction > b:building_livestock_ranch.pmg_sheep_ranch_pm_simple_ranch_profit_prediction_weighted
+            }
+            trigger_if = {
+                limit = {
+                    or = {
+                        can_activate_production_method = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_sheep_farms
+                        }
+                        is_production_method_active = {
+                            building_type = building_livestock_ranch
+                            production_method = pm_sheep_farms
+                        }
+                    }
+                }
+                b:building_livestock_ranch.pmg_sheep_ranch_pm_intensive_grazing_ranch_profit_prediction > b:building_livestock_ranch.pmg_sheep_ranch_pm_sheep_farms_profit_prediction_weighted
+            }
+        }
+        order_by = b:building_livestock_ranch.pmg_sheep_ranch_pm_intensive_grazing_ranch_profit_prediction
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_livestock_ranch
+            production_method = pm_intensive_grazing_ranch
         }
     }
 }

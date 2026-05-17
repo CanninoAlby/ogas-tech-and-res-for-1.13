@@ -13,21 +13,9 @@
     }
     if = {
         limit = {
-            is_building_type = building_airport
-        }
-        value = construction_cost_very_high
-    }
-    if = {
-        limit = {
             is_building_type = building_alloys_plant
         }
         value = construction_cost_very_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_angkor_wat
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -61,12 +49,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_barrack
-        }
-        value = construction_cost_very_low
-    }
-    if = {
-        limit = {
             is_building_type = building_battery_plant
         }
         value = construction_cost_very_high
@@ -76,12 +58,6 @@
             is_building_type = building_bauxite_mine
         }
         value = construction_cost_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_big_ben
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -109,18 +85,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_computer_assembly_plant
-        }
-        value = construction_cost_modern
-    }
-    if = {
-        limit = {
-            is_building_type = building_construction_sector
-        }
-        value = construction_cost_construction_sector
-    }
-    if = {
-        limit = {
             is_building_type = building_consumer_electronics_industry
         }
         value = construction_cost_modern
@@ -136,12 +100,6 @@
             is_building_type = building_cotton_plantation
         }
         value = construction_cost_low
-    }
-    if = {
-        limit = {
-            is_building_type = building_cristo_redentor
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -163,12 +121,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_eiffel_tower
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
             is_building_type = building_electrics_industry
         }
         value = construction_cost_very_high
@@ -184,12 +136,6 @@
             is_building_type = building_elgar_opera
         }
         value = construction_cost_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_estacion_de_madrid_atocha
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -211,21 +157,9 @@
     }
     if = {
         limit = {
-            is_building_type = building_forbidden_city
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
             is_building_type = building_furniture_manufactory
         }
         value = construction_cost_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_fusion_power_plant
-        }
-        value = construction_cost_monument_modern
     }
     if = {
         limit = {
@@ -244,24 +178,6 @@
             is_building_type = building_gold_mine
         }
         value = construction_cost_medium
-    }
-    if = {
-        limit = {
-            is_building_type = building_government_administration
-        }
-        value = construction_cost_very_low
-    }
-    if = {
-        limit = {
-            is_building_type = building_gran_teatro_de_la_habana
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
-            is_building_type = building_hagia_sophia
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -295,24 +211,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_kaiserforum_2
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
-            is_building_type = building_kaiserforum_3
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
-            is_building_type = building_kaiserforum_4
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
             is_building_type = building_lead_mine
         }
         value = construction_cost_medium
@@ -321,7 +219,7 @@
         limit = {
             is_building_type = building_livestock_ranch
         }
-        value = construction_cost_high
+        value = construction_cost_low
     }
     if = {
         limit = {
@@ -334,12 +232,6 @@
             is_building_type = building_maize_farm
         }
         value = construction_cost_low
-    }
-    if = {
-        limit = {
-            is_building_type = building_manila_cathedral_monument
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -361,15 +253,15 @@
     }
     if = {
         limit = {
-            is_building_type = building_millet_farm
+            is_building_type = building_military_shipyard
         }
-        value = construction_cost_low
+        value = construction_cost_very_high
     }
     if = {
         limit = {
-            is_building_type = building_mosque_of_djenne
+            is_building_type = building_millet_farm
         }
-        value = construction_cost_monument
+        value = construction_cost_low
     }
     if = {
         limit = {
@@ -388,12 +280,6 @@
             is_building_type = building_natural_gas_rig
         }
         value = construction_cost_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_nuclear_weapons_silo
-        }
-        value = construction_cost_modern
     }
     if = {
         limit = {
@@ -427,31 +313,7 @@
     }
     if = {
         limit = {
-            is_building_type = building_pena_palace
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
             is_building_type = building_pharmaceuticals_industry
-        }
-        value = construction_cost_very_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_port
-        }
-        value = construction_cost_medium
-    }
-    if = {
-        limit = {
-            is_building_type = building_power_bloc_statue
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
-            is_building_type = building_power_grid_station
         }
         value = construction_cost_very_high
     }
@@ -469,12 +331,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_railway
-        }
-        value = construction_cost_very_high
-    }
-    if = {
-        limit = {
             is_building_type = building_rare_earths_mine
         }
         value = construction_cost_very_high
@@ -482,12 +338,6 @@
     if = {
         limit = {
             is_building_type = building_renewable_energy_power_plant
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
-            is_building_type = building_research_center
         }
         value = construction_cost_monument
     }
@@ -517,30 +367,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_sagrada_familia_cathedral_1
-        }
-        value = construction_cost_sagrada_familia
-    }
-    if = {
-        limit = {
-            is_building_type = building_sagrada_familia_cathedral_2
-        }
-        value = construction_cost_sagrada_familia
-    }
-    if = {
-        limit = {
-            is_building_type = building_sagrada_familia_cathedral_3
-        }
-        value = construction_cost_sagrada_familia
-    }
-    if = {
-        limit = {
-            is_building_type = building_saint_basils_cathedral
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
             is_building_type = building_shipyard
         }
         value = construction_cost_high
@@ -553,21 +379,9 @@
     }
     if = {
         limit = {
-            is_building_type = building_skyscraper
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
             is_building_type = building_software_industry
         }
         value = construction_cost_modern
-    }
-    if = {
-        limit = {
-            is_building_type = building_statue_of_liberty
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -592,18 +406,6 @@
             is_building_type = building_sulfur_mine
         }
         value = construction_cost_medium
-    }
-    if = {
-        limit = {
-            is_building_type = building_synthetics_plant
-        }
-        value = construction_cost_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_taj_mahal
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -637,33 +439,9 @@
     }
     if = {
         limit = {
-            is_building_type = building_trade_center
-        }
-        value = construction_cost_very_low
-    }
-    if = {
-        limit = {
-            is_building_type = building_university
-        }
-        value = construction_cost_medium
-    }
-    if = {
-        limit = {
             is_building_type = building_uranium_mine
         }
         value = construction_cost_high
-    }
-    if = {
-        limit = {
-            is_building_type = building_vatican_city
-        }
-        value = construction_cost_monument
-    }
-    if = {
-        limit = {
-            is_building_type = building_victoria_terminus
-        }
-        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -688,11 +466,5 @@
             is_building_type = building_wheat_farm
         }
         value = construction_cost_low
-    }
-    if = {
-        limit = {
-            is_building_type = building_white_house
-        }
-        value = construction_cost_monument
     }
 }

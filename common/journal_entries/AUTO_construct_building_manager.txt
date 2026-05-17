@@ -30,8 +30,6 @@
     scripted_button = decrease_building_coffee_plantation
     scripted_button = increase_building_commonores_mine
     scripted_button = decrease_building_commonores_mine
-    scripted_button = increase_building_computer_assembly_plant
-    scripted_button = decrease_building_computer_assembly_plant
     scripted_button = increase_building_consumer_electronics_industry
     scripted_button = decrease_building_consumer_electronics_industry
     scripted_button = increase_building_copper_mine
@@ -58,8 +56,6 @@
     scripted_button = decrease_building_food_industry
     scripted_button = increase_building_furniture_manufactory
     scripted_button = decrease_building_furniture_manufactory
-    scripted_button = increase_building_fusion_power_plant
-    scripted_button = decrease_building_fusion_power_plant
     scripted_button = increase_building_geothermal_power_plant
     scripted_button = decrease_building_geothermal_power_plant
     scripted_button = increase_building_glassworks
@@ -78,14 +74,8 @@
     scripted_button = decrease_building_interactive_media_industry
     scripted_button = increase_building_iron_mine
     scripted_button = decrease_building_iron_mine
-    scripted_button = increase_building_kaiserforum_1
-    scripted_button = decrease_building_kaiserforum_1
-    scripted_button = increase_building_land_logistics_center
-    scripted_button = decrease_building_land_logistics_center
     scripted_button = increase_building_lead_mine
     scripted_button = decrease_building_lead_mine
-    scripted_button = increase_building_livestock_ranch
-    scripted_button = decrease_building_livestock_ranch
     scripted_button = increase_building_logging_camp
     scripted_button = decrease_building_logging_camp
     scripted_button = increase_building_maize_farm
@@ -96,6 +86,8 @@
     scripted_button = decrease_building_mendelejew_hydrogenation_plants
     scripted_button = increase_building_mendelejew_synthetic_rubber_factory
     scripted_button = decrease_building_mendelejew_synthetic_rubber_factory
+    scripted_button = increase_building_military_shipyard
+    scripted_button = decrease_building_military_shipyard
     scripted_button = increase_building_millet_farm
     scripted_button = decrease_building_millet_farm
     scripted_button = increase_building_modern_state_baseline
@@ -106,12 +98,6 @@
     scripted_button = decrease_building_munition_plant
     scripted_button = increase_building_natural_gas_rig
     scripted_button = decrease_building_natural_gas_rig
-    scripted_button = increase_building_naval_administration
-    scripted_button = decrease_building_naval_administration
-    scripted_button = increase_building_naval_fortification
-    scripted_button = decrease_building_naval_fortification
-    scripted_button = increase_building_naval_logistics_center
-    scripted_button = decrease_building_naval_logistics_center
     scripted_button = increase_building_office
     scripted_button = decrease_building_office
     scripted_button = increase_building_oil_rig
@@ -124,8 +110,6 @@
     scripted_button = decrease_building_paper_mill
     scripted_button = increase_building_pharmaceuticals_industry
     scripted_button = decrease_building_pharmaceuticals_industry
-    scripted_button = increase_building_power_grid_station
-    scripted_button = decrease_building_power_grid_station
     scripted_button = increase_building_power_plant
     scripted_button = decrease_building_power_plant
     scripted_button = increase_building_processors_foundry
@@ -156,8 +140,6 @@
     scripted_button = decrease_building_sugar_plantation
     scripted_button = increase_building_sulfur_mine
     scripted_button = decrease_building_sulfur_mine
-    scripted_button = increase_building_synthetics_plant
-    scripted_button = decrease_building_synthetics_plant
     scripted_button = increase_building_tea_plantation
     scripted_button = decrease_building_tea_plantation
     scripted_button = increase_building_telecommunications_industry
@@ -178,6 +160,8 @@
     scripted_button = decrease_building_whaling_station
     scripted_button = increase_building_wheat_farm
     scripted_button = decrease_building_wheat_farm
+    scripted_button = increase_building_livestock_ranch
+    scripted_button = decrease_building_livestock_ranch
 	scripted_button = default_all_construct_building
 	should_be_pinned_by_default = yes
 }
