@@ -1,0 +1,7329 @@
+{
+  "building_airport": {
+    "groups": [
+      {
+        "name": "pmg_base_building_airport",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_private_charters",
+            "inputs": {
+              "civil_planes": 4,
+              "electricity": 3,
+              "telephones": 2
+            },
+            "outputs": {
+              "transportation": 50
+            }
+          },
+          {
+            "name": "pm_regional_routes",
+            "inputs": {
+              "civil_planes": 7,
+              "telephones": 2,
+              "telecommunications": 4,
+              "electricity": 3
+            },
+            "outputs": {
+              "transportation": 75
+            }
+          },
+          {
+            "name": "pm_domestic_routes",
+            "inputs": {
+              "civil_planes": 10,
+              "telephones": 3,
+              "telecommunications": 7,
+              "electricity": 3
+            },
+            "outputs": {
+              "transportation": 100
+            }
+          },
+          {
+            "name": "pm_international_routes",
+            "inputs": {
+              "civil_planes": 15,
+              "telephones": 3,
+              "telecommunications": 10,
+              "electricity": 3
+            },
+            "outputs": {
+              "transportation": 125
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_cargo_airport",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_air_passenger_only",
+            "inputs": {},
+            "outputs": {
+              "transportation": 5
+            }
+          },
+          {
+            "name": "pm_air_mail",
+            "inputs": {
+              "paper": 10
+            },
+            "outputs": {
+              "services": 20
+            }
+          },
+          {
+            "name": "pm_air_freight",
+            "inputs": {
+              "paper": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "services": 10,
+              "transportation": 20
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_fuel_airport",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_airport_oil",
+            "inputs": {
+              "oil": 7
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_airport_kerosene",
+            "inputs": {
+              "light_fuel": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_light_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_light_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_light_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_light_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_light_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_light_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_light_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_alloys_plant": {
+    "groups": [
+      {
+        "name": "pmg_alloys_process",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_basic_smelting_process",
+            "inputs": {
+              "commonores": 35,
+              "copper": 15,
+              "iron": 5,
+              "coal": 5
+            },
+            "outputs": {
+              "alloys": 60
+            }
+          },
+          {
+            "name": "pm_electric_arc_process_alloying",
+            "inputs": {
+              "electricity": 5,
+              "commonores": 50,
+              "copper": 25,
+              "iron": 5,
+              "coal": 5
+            },
+            "outputs": {
+              "alloys": 90
+            }
+          },
+          {
+            "name": "pm_advanced_alloying_techniques",
+            "inputs": {
+              "electricity": 10,
+              "advancedores": 10,
+              "commonores": 55,
+              "oil": 10,
+              "copper": 25
+            },
+            "outputs": {
+              "alloys": 130
+            }
+          },
+          {
+            "name": "pm_vacuum_arc_remelting",
+            "inputs": {
+              "electricity": 10,
+              "electroniccomponents": 10,
+              "advancedores": 15,
+              "commonores": 55,
+              "gas": 15,
+              "copper": 20
+            },
+            "outputs": {
+              "alloys": 175
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_aluminiummaking_process",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_aluminium_production",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_wohler_deville_process",
+            "inputs": {
+              "bauxite": 50,
+              "explosives": 3,
+              "sulfur": 3
+            },
+            "outputs": {
+              "alloys": 10,
+              "aluminium": 55
+            }
+          },
+          {
+            "name": "pm_hall_heroult_process",
+            "inputs": {
+              "bauxite": 40,
+              "electricity": 20,
+              "water": 5,
+              "advancedores": 2,
+              "electroniccomponents": 2
+            },
+            "outputs": {
+              "alloys": 15,
+              "aluminium": 80
+            }
+          },
+          {
+            "name": "refining_process",
+            "inputs": {
+              "bauxite": 40,
+              "electricity": 20,
+              "gas": 5,
+              "advancedores": 5,
+              "electroniccomponents": 5
+            },
+            "outputs": {
+              "alloys": 30,
+              "aluminium": 110
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_commonalloys_plant",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_commonalloys_plant",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_commonalloys_plant",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_commonalloys_plant",
+            "inputs": {
+              "tools": 3,
+              "lubricant": 3,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_commonalloys_plant",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_commonalloys_plant",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_arms_industry": {
+    "groups": [
+      {
+        "name": "pmg_firearms_manufacturing",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_muskets",
+            "inputs": {
+              "iron": 10,
+              "hardwood": 10
+            },
+            "outputs": {
+              "small_arms": 30
+            }
+          },
+          {
+            "name": "pm_rifles",
+            "inputs": {
+              "steel": 10,
+              "hardwood": 10,
+              "commonores": 5,
+              "tools": 5
+            },
+            "outputs": {
+              "small_arms": 55
+            }
+          },
+          {
+            "name": "pm_repeaters",
+            "inputs": {
+              "steel": 20,
+              "hardwood": 10,
+              "tools": 5,
+              "alloys": 5
+            },
+            "outputs": {
+              "small_arms": 70
+            }
+          },
+          {
+            "name": "pm_bolt_action_rifles",
+            "inputs": {
+              "steel": 20,
+              "tools": 15,
+              "lubricant": 2,
+              "alloys": 10
+            },
+            "outputs": {
+              "small_arms": 100
+            }
+          },
+          {
+            "name": "pm_selective_automatic_rifles",
+            "inputs": {
+              "steel": 20,
+              "tools": 15,
+              "aluminium": 10,
+              "lubricant": 5,
+              "alloys": 10
+            },
+            "outputs": {
+              "small_arms": 120
+            }
+          },
+          {
+            "name": "pm_assault_rifles",
+            "inputs": {
+              "steel": 20,
+              "tools": 10,
+              "aluminium": 10,
+              "electroniccomponents": 2,
+              "lubricant": 10,
+              "alloys": 10
+            },
+            "outputs": {
+              "small_arms": 140
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_arms_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_arms_industry",
+            "inputs": {
+              "coal": 15
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_arms_industry",
+            "inputs": {
+              "lubricant": 6,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_arms_industry",
+            "inputs": {
+              "tools": 3,
+              "lubricant": 3,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_art_academy": {
+    "groups": [
+      {
+        "name": "pmg_base_building_art_academy",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_traditional_art",
+            "inputs": {
+              "paper": 10
+            },
+            "outputs": {
+              "fine_art": 5
+            }
+          },
+          {
+            "name": "pm_realist_art",
+            "inputs": {
+              "paper": 15
+            },
+            "outputs": {
+              "fine_art": 6
+            }
+          },
+          {
+            "name": "pm_photographic_art",
+            "inputs": {
+              "paper": 15,
+              "tools": 8
+            },
+            "outputs": {
+              "fine_art": 8
+            }
+          },
+          {
+            "name": "pm_film_art",
+            "inputs": {
+              "tools": 10,
+              "paper": 15,
+              "electricity": 5
+            },
+            "outputs": {
+              "fine_art": 10
+            }
+          },
+          {
+            "name": "pm_pop_art",
+            "inputs": {
+              "tools": 10,
+              "manzoni_prints": 8,
+              "paper": 8,
+              "electricity": 5
+            },
+            "outputs": {
+              "fine_art": 12
+            }
+          },
+          {
+            "name": "pm_digital_art",
+            "inputs": {
+              "manzoni_prints": 8,
+              "computer": 1,
+              "softwares": 5,
+              "electricity": 5
+            },
+            "outputs": {
+              "fine_art": 12
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_ownership_building_art_academy",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_traditional_patronage",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_bourgeoisie_patronage",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_independent_artists",
+            "inputs": {},
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_principle_freedom_of_movement_3",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_principle_freedom_of_movement_3",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_freedom_of_movement_no_effect",
+            "inputs": {},
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_light_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_light_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_light_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_light_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_light_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_light_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_light_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_artillery_foundry": {
+    "groups": [
+      {
+        "name": "pmg_foundries",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_cannons",
+            "inputs": {
+              "iron": 10,
+              "hardwood": 10,
+              "commonores": 5
+            },
+            "outputs": {
+              "artillery": 25
+            }
+          },
+          {
+            "name": "pm_smoothbores",
+            "inputs": {
+              "iron": 20,
+              "hardwood": 15,
+              "alloys": 5
+            },
+            "outputs": {
+              "artillery": 45
+            }
+          },
+          {
+            "name": "pm_breech_loaders",
+            "inputs": {
+              "steel": 20,
+              "hardwood": 10,
+              "tools": 10,
+              "alloys": 5
+            },
+            "outputs": {
+              "artillery": 65
+            }
+          },
+          {
+            "name": "pm_recoiled_barrels",
+            "inputs": {
+              "steel": 30,
+              "tools": 20,
+              "plastics": 10,
+              "alloys": 10
+            },
+            "outputs": {
+              "artillery": 90
+            }
+          },
+          {
+            "name": "pm_mobile_artillery",
+            "inputs": {
+              "steel": 35,
+              "tools": 20,
+              "plastics": 10,
+              "alloys": 12,
+              "lubricant": 5
+            },
+            "outputs": {
+              "artillery": 110
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_arms_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_arms_industry",
+            "inputs": {
+              "coal": 15
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_arms_industry",
+            "inputs": {
+              "lubricant": 6,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_arms_industry",
+            "inputs": {
+              "tools": 3,
+              "lubricant": 3,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_battery_plant": {
+    "groups": [
+      {
+        "name": "pmg_base_building_batteries",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_voltaic_pile",
+            "inputs": {
+              "commonores": 15,
+              "alloys": 5,
+              "copper": 10,
+              "sulfur": 10
+            },
+            "outputs": {
+              "batteries": 50
+            }
+          },
+          {
+            "name": "pm_lead_acid_battery",
+            "inputs": {
+              "lead": 25,
+              "commonores": 10,
+              "alloys": 5,
+              "electricity": 5,
+              "sulfur": 15
+            },
+            "outputs": {
+              "batteries": 75
+            }
+          },
+          {
+            "name": "pm_alkaline_battery",
+            "inputs": {
+              "commonores": 10,
+              "plastics": 15,
+              "alloys": 15,
+              "electricity": 10,
+              "sulfur": 20
+            },
+            "outputs": {
+              "batteries": 95
+            }
+          },
+          {
+            "name": "pm_lithium_battery",
+            "inputs": {
+              "advancedores": 10,
+              "rare_earths": 20,
+              "plastics": 15,
+              "alloys": 15,
+              "electricity": 10
+            },
+            "outputs": {
+              "batteries": 110
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_base_building_fuel_cell",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_fuel_cell",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_alkaline_fuel_cell",
+            "inputs": {
+              "advancedores": 5,
+              "commonores": 5,
+              "gas": 15,
+              "water": 10
+            },
+            "outputs": {
+              "batteries": 35
+            }
+          },
+          {
+            "name": "pm_pem_fuel_cell",
+            "inputs": {
+              "advancedores": 5,
+              "gas": 15,
+              "water": 15,
+              "plastics": 5
+            },
+            "outputs": {
+              "batteries": 50
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_battery_plant",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_electronics_plant",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_electronics_plant",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_electronics_plant",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 3,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_battery_plant",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_battery_plant",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_bauxite_mine": {
+    "groups": [
+      {
+        "name": "pmg_mining_equipment_building_bauxite_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_picks_and_shovels_building_bauxite_mine",
+            "inputs": {
+              "tools": 5
+            },
+            "outputs": {
+              "bauxite": 20
+            }
+          },
+          {
+            "name": "pm_atmospheric_engine_pump_building_bauxite_mine",
+            "inputs": {
+              "tools": 10,
+              "coal": 10
+            },
+            "outputs": {
+              "bauxite": 40
+            }
+          },
+          {
+            "name": "pm_condensing_engine_pump_building_bauxite_mine",
+            "inputs": {
+              "tools": 15,
+              "coal": 15
+            },
+            "outputs": {
+              "bauxite": 60
+            }
+          },
+          {
+            "name": "pm_diesel_pump_building_bauxite_mine",
+            "inputs": {
+              "tools": 20,
+              "light_fuel": 3
+            },
+            "outputs": {
+              "bauxite": 85
+            }
+          },
+          {
+            "name": "pm_electric_fueled_pump_building_bauxite_mine",
+            "inputs": {
+              "electricity": 5,
+              "electroniccomponents": 2,
+              "tools": 20,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "bauxite": 105
+            }
+          },
+          {
+            "name": "pm_heavy_machineries_building_bauxite_mine",
+            "inputs": {
+              "electricity": 10,
+              "electroniccomponents": 3,
+              "robotics": 7,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "bauxite": 130
+            }
+          },
+          {
+            "name": "pm_autonomous_and_remote_ops_building_bauxite_mine",
+            "inputs": {
+              "electricity": 10,
+              "processors": 2,
+              "robotics": 12,
+              "telecommunications": 10,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "bauxite": 165
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_explosives_building_bauxite_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_explosives",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_nitroglycerin_building_bauxite_mine",
+            "inputs": {
+              "explosives": 5
+            },
+            "outputs": {
+              "bauxite": 12
+            }
+          },
+          {
+            "name": "pm_dynamite_building_bauxite_mine",
+            "inputs": {
+              "explosives": 10
+            },
+            "outputs": {
+              "bauxite": 20
+            }
+          },
+          {
+            "name": "pm_high_precision_blasting_building_bauxite_mine",
+            "inputs": {
+              "explosives": 15,
+              "copperwires": 2,
+              "telecommunications": 5
+            },
+            "outputs": {
+              "bauxite": 40
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_steam_automation_building_bauxite_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_steam_automation",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_donkey_mine",
+            "inputs": {
+              "engines": 1,
+              "coal": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_purification_mine",
+            "inputs": {
+              "engines": 0.5,
+              "lubricant": 0.5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_bauxite_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_consumer_electronics_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_homeappliances",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_rudimental_homeappliances",
+            "inputs": {
+              "plastics": 10,
+              "copperwires": 15,
+              "batteries": 15,
+              "steel": 25,
+              "electricity": 10
+            },
+            "outputs": {
+              "homeappliances": 40
+            }
+          },
+          {
+            "name": "pm_basic_homeappliances",
+            "inputs": {
+              "aluminium": 20,
+              "steel": 40,
+              "electricity": 15,
+              "electroniccomponents": 25,
+              "engines": 10
+            },
+            "outputs": {
+              "homeappliances": 75
+            }
+          },
+          {
+            "name": "pm_smart_homeappliances",
+            "inputs": {
+              "aluminium": 25,
+              "steel": 50,
+              "electricity": 20,
+              "processors": 20,
+              "engines": 10,
+              "telecommunications": 30
+            },
+            "outputs": {
+              "homeappliances": 110
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_television_category",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_televisions",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_cathode_tube_televisions",
+            "inputs": {
+              "glass": 5,
+              "manzoni_prints": 20,
+              "plastics": 15,
+              "telecommunications": 20
+            },
+            "outputs": {
+              "homeappliances": 15,
+              "televisions": 40
+            }
+          },
+          {
+            "name": "pm_colored_cathode_tube_televisions",
+            "inputs": {
+              "glass": 5,
+              "manzoni_prints": 30,
+              "plastics": 15,
+              "telecommunications": 25
+            },
+            "outputs": {
+              "homeappliances": 20,
+              "televisions": 55
+            }
+          },
+          {
+            "name": "pm_hd_televisions",
+            "inputs": {
+              "glass": 5,
+              "manzoni_prints": 30,
+              "plastics": 10,
+              "telecommunications": 30
+            },
+            "outputs": {
+              "homeappliances": 25,
+              "televisions": 60
+            }
+          },
+          {
+            "name": "pm_smart_televisions",
+            "inputs": {
+              "glass": 5,
+              "manzoni_prints": 40,
+              "plastics": 5,
+              "telecommunications": 35,
+              "processors": 5,
+              "softwares": 5
+            },
+            "outputs": {
+              "homeappliances": 25,
+              "televisions": 75
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_electrics_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_electrics_industry",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 3,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_electrics_industry",
+            "inputs": {
+              "tools": 3,
+              "lubricant": 3,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_electrics_industry",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_electrics_industry",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_copper_mine": {
+    "groups": [
+      {
+        "name": "pmg_mining_equipment_building_copper_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_picks_and_shovels_building_copper_mine",
+            "inputs": {
+              "tools": 5
+            },
+            "outputs": {
+              "copper": 20
+            }
+          },
+          {
+            "name": "pm_atmospheric_engine_pump_building_copper_mine",
+            "inputs": {
+              "tools": 10,
+              "coal": 10
+            },
+            "outputs": {
+              "copper": 40
+            }
+          },
+          {
+            "name": "pm_condensing_engine_pump_building_copper_mine",
+            "inputs": {
+              "tools": 15,
+              "coal": 15
+            },
+            "outputs": {
+              "copper": 60
+            }
+          },
+          {
+            "name": "pm_diesel_pump_building_copper_mine",
+            "inputs": {
+              "tools": 20,
+              "light_fuel": 3
+            },
+            "outputs": {
+              "copper": 85
+            }
+          },
+          {
+            "name": "pm_electric_fueled_pump_building_copper_mine",
+            "inputs": {
+              "electricity": 5,
+              "electroniccomponents": 2,
+              "tools": 20,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "copper": 105
+            }
+          },
+          {
+            "name": "pm_heavy_machineries_building_copper_mine",
+            "inputs": {
+              "electricity": 10,
+              "electroniccomponents": 3,
+              "robotics": 7,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "copper": 130
+            }
+          },
+          {
+            "name": "pm_autonomous_and_remote_ops_building_copper_mine",
+            "inputs": {
+              "electricity": 10,
+              "processors": 2,
+              "robotics": 12,
+              "telecommunications": 10,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "copper": 165
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_explosives_building_copper_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_explosives",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_nitroglycerin_building_copper_mine",
+            "inputs": {
+              "explosives": 5
+            },
+            "outputs": {
+              "copper": 12
+            }
+          },
+          {
+            "name": "pm_dynamite_building_copper_mine",
+            "inputs": {
+              "explosives": 10
+            },
+            "outputs": {
+              "copper": 20
+            }
+          },
+          {
+            "name": "pm_high_precision_blasting_building_copper_mine",
+            "inputs": {
+              "explosives": 15,
+              "copperwires": 2,
+              "telecommunications": 5
+            },
+            "outputs": {
+              "copper": 40
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_steam_automation_building_copper_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_steam_automation",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_donkey_mine",
+            "inputs": {
+              "engines": 1,
+              "coal": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_purification_mine",
+            "inputs": {
+              "engines": 0.5,
+              "lubricant": 0.5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_hpgr_comminution",
+            "inputs": {
+              "electricity": 5,
+              "robotics": 1,
+              "steel": 1,
+              "lubricant": 0.5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_copper_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_datacenter_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_datacenter",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_local_data_storage_building_datacenter",
+            "inputs": {
+              "raw_data": 200,
+              "electricity": 5,
+              "telecommunications": 10,
+              "water": 1
+            },
+            "outputs": {
+              "organized_data": 250
+            }
+          },
+          {
+            "name": "pm_cloud_storage_building_datacenter",
+            "inputs": {
+              "raw_data": 300,
+              "electricity": 5,
+              "telecommunications": 10,
+              "water": 2
+            },
+            "outputs": {
+              "organized_data": 350
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_datacenter",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_early_computer_server_building_datacenter",
+            "inputs": {
+              "computer": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_mid_computer_server_building_datacenter",
+            "inputs": {
+              "raw_data": 50,
+              "computer": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_transportation_building_datacenter",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_local_network_building_datacenter",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_internet_building_datacenter",
+            "inputs": {
+              "raw_data": 50,
+              "processors": 0.5,
+              "telecommunications": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_ai_systems_building_datacenter",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_model_training",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_neural_model_training",
+            "inputs": {
+              "electricity": 5,
+              "water": 5
+            },
+            "outputs": {
+              "organized_data": 60,
+              "ai_systems": 15
+            }
+          },
+          {
+            "name": "pm_generative_ai_models",
+            "inputs": {
+              "electricity": 10,
+              "water": 20
+            },
+            "outputs": {
+              "organized_data": 90,
+              "ai_systems": 35
+            }
+          },
+          {
+            "name": "pm_artificial_general_intelligence",
+            "inputs": {
+              "electricity": 15,
+              "water": 40
+            },
+            "outputs": {
+              "organized_data": 250,
+              "ai_systems": 80
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_electrics_industry": {
+    "groups": [
+      {
+        "name": "pmg_telephones_category",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_telephones",
+            "inputs": {
+              "electricity": 10,
+              "tools": 10,
+              "rubber": 10,
+              "lead": 15,
+              "telecommunications": 15
+            },
+            "outputs": {
+              "telephones": 55
+            }
+          },
+          {
+            "name": "pm_bakelite_telephones",
+            "inputs": {
+              "electricity": 15,
+              "tools": 5,
+              "electroniccomponents": 10,
+              "lead": 15,
+              "telecommunications": 15,
+              "plastics": 15
+            },
+            "outputs": {
+              "telephones": 80
+            }
+          },
+          {
+            "name": "pm_touch_tone_telephones",
+            "inputs": {
+              "electricity": 20,
+              "tools": 5,
+              "electroniccomponents": 20,
+              "lead": 10,
+              "telecommunications": 15,
+              "plastics": 15
+            },
+            "outputs": {
+              "telephones": 100
+            }
+          },
+          {
+            "name": "pm_cell_phones",
+            "inputs": {
+              "electricity": 30,
+              "processors": 10,
+              "batteries": 15,
+              "telecommunications": 25,
+              "softwares": 5,
+              "plastics": 15
+            },
+            "outputs": {
+              "telephones": 125
+            }
+          },
+          {
+            "name": "pm_smartphones",
+            "inputs": {
+              "electricity": 30,
+              "processors": 15,
+              "batteries": 20,
+              "softwares": 10,
+              "telecommunications": 30,
+              "plastics": 10
+            },
+            "outputs": {
+              "telephones": 155
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_radios_category",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_radios",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_radios",
+            "inputs": {
+              "manzoni_prints": 5,
+              "steel": 10,
+              "telecommunications": 10
+            },
+            "outputs": {
+              "telephones": 35,
+              "radios": 55
+            }
+          },
+          {
+            "name": "pm_transistor_radios",
+            "inputs": {
+              "manzoni_prints": 7,
+              "steel": 15,
+              "telecommunications": 25
+            },
+            "outputs": {
+              "telephones": 40,
+              "radios": 75
+            }
+          },
+          {
+            "name": "pm_digital_sound_devices",
+            "inputs": {
+              "manzoni_prints": 10,
+              "steel": 20,
+              "telecommunications": 30,
+              "softwares": 5
+            },
+            "outputs": {
+              "telephones": 45,
+              "radios": 95
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_electrics_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_electrics_industry",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 3,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_electrics_industry",
+            "inputs": {
+              "tools": 3,
+              "lubricant": 3,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_electrics_industry",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_electrics_industry",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_electronics_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_copperwires",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_basic_copperwires",
+            "inputs": {
+              "copper": 40,
+              "tools": 5
+            },
+            "outputs": {
+              "copperwires": 55
+            }
+          },
+          {
+            "name": "pm_cabled_copperwires",
+            "inputs": {
+              "copper": 40,
+              "tools": 5,
+              "rubber": 10
+            },
+            "outputs": {
+              "copperwires": 75
+            }
+          },
+          {
+            "name": "pm_advanced_copperwires",
+            "inputs": {
+              "copper": 40,
+              "tools": 5,
+              "plastics": 10,
+              "rubber": 5
+            },
+            "outputs": {
+              "copperwires": 85
+            }
+          },
+          {
+            "name": "pm_electronic_grade_wires",
+            "inputs": {
+              "copper": 40,
+              "advancedores": 5,
+              "plastics": 10,
+              "rubber": 5,
+              "glass": 10
+            },
+            "outputs": {
+              "copperwires": 110
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_base_building_electroniccomponents",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_electroniccomponents_production",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_vacuum_tube",
+            "inputs": {
+              "glass": 25,
+              "lead": 5,
+              "alloys": 10,
+              "coal": 5,
+              "steel": 5
+            },
+            "outputs": {
+              "copperwires": 25,
+              "electroniccomponents": 50
+            }
+          },
+          {
+            "name": "pm_transistor",
+            "inputs": {
+              "electricity": 20,
+              "advancedores": 10,
+              "alloys": 20
+            },
+            "outputs": {
+              "copperwires": 30,
+              "electroniccomponents": 65
+            }
+          },
+          {
+            "name": "pm_integrated_transistor",
+            "inputs": {
+              "electricity": 25,
+              "advancedores": 15,
+              "alloys": 20
+            },
+            "outputs": {
+              "copperwires": 50,
+              "electroniccomponents": 90
+            }
+          },
+          {
+            "name": "pm_nano_transistor",
+            "inputs": {
+              "electricity": 30,
+              "advancedores": 15,
+              "alloys": 15,
+              "rare_earths": 25
+            },
+            "outputs": {
+              "copperwires": 65,
+              "electroniccomponents": 120
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_electronics_plant",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_electronics_plant",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_electronics_plant",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_electronics_plant",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 3,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_automatic_printed_circuit_board_building_electronics_plant",
+            "inputs": {
+              "electricity": 5,
+              "processors": 3,
+              "robotics": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_elgar_opera": {
+    "groups": [
+      {
+        "name": "pmg_entertainment_type",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "local_plays_pm",
+            "inputs": {
+              "clothes": 5,
+              "fabric": 25,
+              "groceries": 5,
+              "furniture": 5
+            },
+            "outputs": {
+              "elgar_music": 15
+            }
+          },
+          {
+            "name": "classic_plays_pm",
+            "inputs": {
+              "elgar_instruments": 10,
+              "clothes": 5,
+              "luxury_clothes": 5,
+              "groceries": 5,
+              "furniture": 5
+            },
+            "outputs": {
+              "elgar_music": 20
+            }
+          },
+          {
+            "name": "modern_productions_pm",
+            "inputs": {
+              "radios": 5,
+              "clothes": 5,
+              "luxury_clothes": 10,
+              "groceries": 5,
+              "furniture": 5
+            },
+            "outputs": {
+              "elgar_music": 25
+            }
+          },
+          {
+            "name": "silent_films",
+            "inputs": {
+              "elgar_instruments": 5,
+              "electricity": 6,
+              "manzoni_prints": 3,
+              "groceries": 5,
+              "furniture": 5
+            },
+            "outputs": {
+              "elgar_music": 15
+            }
+          },
+          {
+            "name": "celluloide_films",
+            "inputs": {
+              "plastics": 5,
+              "electricity": 10,
+              "radios": 5,
+              "manzoni_prints": 5,
+              "groceries": 5,
+              "furniture": 5
+            },
+            "outputs": {
+              "elgar_music": 25
+            }
+          },
+          {
+            "name": "blockbuster_films",
+            "inputs": {
+              "plastics": 5,
+              "electricity": 10,
+              "televisions": 5,
+              "manzoni_prints": 10,
+              "groceries": 5,
+              "furniture": 5
+            },
+            "outputs": {
+              "elgar_music": 35
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_elgar_orchestra",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_elgar_classical_orchestra",
+            "inputs": {
+              "elgar_instruments": 15
+            },
+            "outputs": {
+              "elgar_music": 7,
+              "fine_art": 1
+            }
+          },
+          {
+            "name": "pm_elgar_early_romantic_orchestra",
+            "inputs": {
+              "elgar_instruments": 25
+            },
+            "outputs": {
+              "elgar_music": 10,
+              "fine_art": 2
+            }
+          },
+          {
+            "name": "pm_elgar_mid_romantic_orchestra",
+            "inputs": {
+              "elgar_instruments": 30
+            },
+            "outputs": {
+              "elgar_music": 13,
+              "fine_art": 2
+            }
+          },
+          {
+            "name": "pm_elgar_late_romantic_orchestra",
+            "inputs": {
+              "elgar_instruments": 35
+            },
+            "outputs": {
+              "elgar_music": 14,
+              "fine_art": 3
+            }
+          },
+          {
+            "name": "pm_elgar_jazz_band",
+            "inputs": {
+              "elgar_instruments": 40
+            },
+            "outputs": {
+              "elgar_music": 18,
+              "fine_art": 3
+            }
+          },
+          {
+            "name": "pm_elgar_rock_band",
+            "inputs": {
+              "elgar_instruments": 45,
+              "electricity": 5
+            },
+            "outputs": {
+              "elgar_music": 25,
+              "fine_art": 3
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_elgar_ballet_school",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_elgar_no_ballet",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_elgar_classic_ballet",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_elgar_expressionistic_ballet",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_elgar_swing_ballet",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_elgar_modern_ballet",
+            "inputs": {},
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_light_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_light_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_light_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_light_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_light_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_light_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_light_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_explosives_factory": {
+    "groups": [
+      {
+        "name": "pmg_explosives_building_chemical_plant",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_leblanc_process",
+            "inputs": {
+              "sulfur": 20,
+              "fertilizer": 20
+            },
+            "outputs": {
+              "explosives": 50
+            }
+          },
+          {
+            "name": "pm_vacuum_evaporation",
+            "inputs": {
+              "sulfur": 40,
+              "fertilizer": 40,
+              "paper": 20
+            },
+            "outputs": {
+              "explosives": 110
+            }
+          },
+          {
+            "name": "pm_brine_electrolysis",
+            "inputs": {
+              "sulfur": 40,
+              "fertilizer": 50,
+              "paper": 20,
+              "water": 6,
+              "electricity": 20
+            },
+            "outputs": {
+              "explosives": 150
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_explosives_factory_automation",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_basic_electric_control_building_explosives_factory",
+            "inputs": {
+              "electroniccomponents": 5,
+              "tools": 3,
+              "electricity": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_electric_control_building_explosives_factory",
+            "inputs": {
+              "robotics": 3,
+              "processors": 2,
+              "electricity": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_fishing_wharf": {
+    "groups": [
+      {
+        "name": "pmg_base_building_fishing_wharf",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_simple_fishing",
+            "inputs": {},
+            "outputs": {
+              "fish": 25
+            }
+          },
+          {
+            "name": "pm_fishing_trawlers",
+            "inputs": {
+              "clippers": 5
+            },
+            "outputs": {
+              "fish": 50
+            }
+          },
+          {
+            "name": "pm_steam_trawlers",
+            "inputs": {
+              "steamers": 5,
+              "coal": 15
+            },
+            "outputs": {
+              "fish": 100
+            }
+          },
+          {
+            "name": "pm_fuel_trawlers",
+            "inputs": {
+              "steamers": 10,
+              "heavy_fuel": 5
+            },
+            "outputs": {
+              "fish": 120
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_refrigeration_building_fishing_wharf",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_unrefrigerated",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_refrigerated_storage_building_fishing_wharf",
+            "inputs": {
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_refrigerated_rail_cars_building_fishing_wharf",
+            "inputs": {
+              "electricity": 5,
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_flash_freezing_building_fishing_wharf",
+            "inputs": {
+              "electricity": 7,
+              "transportation": 7
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_furniture_manufactory": {
+    "groups": [
+      {
+        "name": "pmg_base_building_furniture_manufactory",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_handcrafted_furniture",
+            "inputs": {
+              "wood": 30,
+              "fabric": 10
+            },
+            "outputs": {
+              "furniture": 45
+            }
+          },
+          {
+            "name": "pm_lathe",
+            "inputs": {
+              "wood": 30,
+              "fabric": 10,
+              "commonores": 5,
+              "tools": 5
+            },
+            "outputs": {
+              "furniture": 70
+            }
+          },
+          {
+            "name": "pm_mechanized_workshops",
+            "inputs": {
+              "wood": 30,
+              "alloys": 10,
+              "fabric": 10,
+              "tools": 10
+            },
+            "outputs": {
+              "furniture": 100
+            }
+          },
+          {
+            "name": "pm_synthetic_furniture_molding",
+            "inputs": {
+              "fabric": 10,
+              "wood": 30,
+              "tools": 10,
+              "plastics": 20
+            },
+            "outputs": {
+              "furniture": 125
+            }
+          },
+          {
+            "name": "pm_fast_modular_furniture_systems",
+            "inputs": {
+              "fabric": 10,
+              "wood": 30,
+              "plastics": 25,
+              "alloys": 10
+            },
+            "outputs": {
+              "furniture": 130,
+              "luxury_furniture": 15
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_luxury_building_furniture_manufactory",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_luxuries",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_luxury_furniture",
+            "inputs": {
+              "hardwood": 15,
+              "wood": 15
+            },
+            "outputs": {
+              "furniture": 25,
+              "luxury_furniture": 25
+            }
+          },
+          {
+            "name": "pm_precision_tools",
+            "inputs": {
+              "hardwood": 25,
+              "tools": 5,
+              "commonores": 5,
+              "wood": 25
+            },
+            "outputs": {
+              "furniture": 55,
+              "luxury_furniture": 60
+            }
+          },
+          {
+            "name": "pm_designers_furniture_collections",
+            "inputs": {
+              "wood": 25,
+              "hardwood": 25,
+              "alloys": 5,
+              "tools": 5
+            },
+            "outputs": {
+              "furniture": 60,
+              "luxury_furniture": 65
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_furniture_manufactory",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_furniture_manufactory",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_furniture_manufactory",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_furniture_manufactory",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 3,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_furniture_manufactory",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_gold_mine": {
+    "groups": [
+      {
+        "name": "pmg_mining_equipment_building_gold_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_picks_and_shovels_building_gold_mine",
+            "inputs": {
+              "tools": 5
+            },
+            "outputs": {
+              "gold": 8
+            }
+          },
+          {
+            "name": "pm_atmospheric_engine_pump_building_gold_mine",
+            "inputs": {
+              "tools": 10,
+              "coal": 10
+            },
+            "outputs": {
+              "gold": 15
+            }
+          },
+          {
+            "name": "pm_condensing_engine_pump_building_gold_mine",
+            "inputs": {
+              "tools": 15,
+              "coal": 15
+            },
+            "outputs": {
+              "gold": 25
+            }
+          },
+          {
+            "name": "pm_diesel_pump_building_gold_mine",
+            "inputs": {
+              "tools": 15,
+              "light_fuel": 3
+            },
+            "outputs": {
+              "gold": 30
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_explosives_building_gold_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_explosives",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_nitroglycerin_building_gold_mine",
+            "inputs": {
+              "explosives": 5
+            },
+            "outputs": {
+              "gold": 5
+            }
+          },
+          {
+            "name": "pm_dynamite_building_gold_mine",
+            "inputs": {
+              "explosives": 10
+            },
+            "outputs": {
+              "gold": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_steam_automation_building_gold_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_steam_automation",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_donkey_mine",
+            "inputs": {
+              "engines": 1,
+              "coal": 4
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_gold_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      }
+    ]
+  },
+  "building_instrument_workshops": {
+    "groups": [
+      {
+        "name": "pmg_elgar_instruments",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_elgar_artisan_instruments",
+            "inputs": {
+              "wood": 30
+            },
+            "outputs": {
+              "elgar_instruments": 25
+            }
+          },
+          {
+            "name": "pm_elgar_artisan_brass_instruments",
+            "inputs": {
+              "wood": 30,
+              "copper": 5,
+              "commonores": 5
+            },
+            "outputs": {
+              "elgar_instruments": 35
+            }
+          },
+          {
+            "name": "pm_elgar_industrial_instruments",
+            "inputs": {
+              "wood": 30,
+              "alloys": 10,
+              "tools": 5
+            },
+            "outputs": {
+              "elgar_instruments": 45
+            }
+          },
+          {
+            "name": "pm_elgar_electric_instruments",
+            "inputs": {
+              "alloys": 15,
+              "plastics": 5,
+              "electroniccomponents": 2,
+              "tools": 15
+            },
+            "outputs": {
+              "elgar_instruments": 60
+            }
+          },
+          {
+            "name": "pm_elgar_digital_instruments",
+            "inputs": {
+              "plastics": 8,
+              "alloys": 20,
+              "processors": 2,
+              "tools": 15
+            },
+            "outputs": {
+              "elgar_instruments": 75
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_light_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_light_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_light_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_light_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_light_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_light_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_light_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_interactive_media_industry": {
+    "groups": [
+      {
+        "name": "pmg_interactive_media_building_interactive_media_industry",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_pixel_based_building_interactive_media_industry",
+            "inputs": {
+              "softwares": 15,
+              "electricity": 5,
+              "televisions": 10,
+              "computer": 5
+            },
+            "outputs": {
+              "interactive_entertainment": 65
+            }
+          },
+          {
+            "name": "pm_3d_engine_building_interactive_media_industry",
+            "inputs": {
+              "softwares": 25,
+              "computer": 10,
+              "televisions": 10,
+              "electricity": 7
+            },
+            "outputs": {
+              "interactive_entertainment": 95
+            }
+          },
+          {
+            "name": "pm_cross_platform_building_interactive_media_industry",
+            "inputs": {
+              "softwares": 30,
+              "televisions": 10,
+              "computer": 15,
+              "electricity": 10
+            },
+            "outputs": {
+              "interactive_entertainment": 120
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_transportation_building_office",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_typewriter_documentation_building_office",
+            "inputs": {
+              "electroniccomponents": 1,
+              "telecommunications": 1
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_teleprinter_network_building_office",
+            "inputs": {
+              "electroniccomponents": 1,
+              "telecommunications": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_local_network_building_office",
+            "inputs": {
+              "processors": 0.5,
+              "telecommunications": 3
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_internet_building_office",
+            "inputs": {
+              "processors": 0.5,
+              "telecommunications": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_livestock_ranch": {
+    "groups": [
+      {
+        "name": "pmg_base_building_livestock_ranch",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_open_air_stockyards",
+            "inputs": {},
+            "outputs": {
+              "meat": 10
+            }
+          },
+          {
+            "name": "pm_butchering_tools",
+            "inputs": {
+              "tools": 2
+            },
+            "outputs": {
+              "meat": 15
+            }
+          },
+          {
+            "name": "pm_slaughterhouses",
+            "inputs": {
+              "tools": 5
+            },
+            "outputs": {
+              "meat": 25
+            }
+          },
+          {
+            "name": "pm_mechanized_slaughtering",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {
+              "meat": 35
+            }
+          },
+          {
+            "name": "pm_conveyor_belt_abattoirs",
+            "inputs": {
+              "tools": 15,
+              "robotics": 5,
+              "lubricant": 2,
+              "electricity": 5
+            },
+            "outputs": {
+              "meat": 85
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_sheep_ranch",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_simple_ranch",
+            "inputs": {},
+            "outputs": {
+              "fabric": 5
+            }
+          },
+          {
+            "name": "pm_sheep_farms",
+            "inputs": {
+              "grain": 10
+            },
+            "outputs": {
+              "fabric": 15,
+              "fertilizer": 2.5
+            }
+          },
+          {
+            "name": "pm_intensive_grazing_ranch",
+            "inputs": {
+              "grain": 20
+            },
+            "outputs": {
+              "fabric": 25,
+              "fertilizer": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_fencing",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_standard_fences",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_barbed_wire_fences",
+            "inputs": {
+              "iron": 1
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_electric_fencing",
+            "inputs": {
+              "copperwires": 1,
+              "electricity": 0.5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_refrigeration_building_livestock_ranch",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_unrefrigerated",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_refrigerated_storage_building_livestock_ranch",
+            "inputs": {
+              "electricity": 1
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_refrigerated_rail_cars_building_livestock_ranch",
+            "inputs": {
+              "electricity": 1,
+              "transportation": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_breeding_livestock_ranch",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_selective_breeding",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_hormonal_feedlots",
+            "inputs": {
+              "pharmaceuticals": 1,
+              "groceries": 1,
+              "tools": 1
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_genetic_analysis_breeding",
+            "inputs": {
+              "pharmaceuticals": 2,
+              "electroniccomponents": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_manzoni_publishing_industry": {
+    "groups": [
+      {
+        "name": "manzoni_pmg_communication",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "manzoni_pm_physical",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "manzoni_pm_electric_telegraph",
+            "inputs": {
+              "tools": 3,
+              "alloys": 2,
+              "electricity": 2
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "manzoni_pm_telephone",
+            "inputs": {
+              "telephones": 5,
+              "electricity": 3,
+              "telecommunications": 3
+            },
+            "outputs": {
+              "organized_data": 4
+            }
+          },
+          {
+            "name": "manzoni_pm_radio",
+            "inputs": {
+              "electricity": 5,
+              "radios": 10,
+              "telephones": 5,
+              "telecommunications": 10
+            },
+            "outputs": {
+              "organized_data": 6
+            }
+          },
+          {
+            "name": "manzoni_pm_digital_media",
+            "inputs": {
+              "electricity": 5,
+              "computer": 5,
+              "televisions": 5,
+              "telephones": 10,
+              "telecommunications": 15
+            },
+            "outputs": {
+              "organized_data": 8
+            }
+          }
+        ]
+      },
+      {
+        "name": "manzoni_pmg_building_publishing_industry_automation",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_publishing_industry",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "manzoni_pm_printing_presses",
+            "inputs": {
+              "tools": 5,
+              "paper": 15
+            },
+            "outputs": {
+              "manzoni_prints": 25
+            }
+          },
+          {
+            "name": "manzoni_pm_rotary_presses",
+            "inputs": {
+              "paper": 30,
+              "tools": 15,
+              "coal": 10
+            },
+            "outputs": {
+              "manzoni_prints": 60
+            }
+          },
+          {
+            "name": "manzoni_pm_linotype",
+            "inputs": {
+              "paper": 40,
+              "coal": 15,
+              "tools": 20,
+              "engines": 5
+            },
+            "outputs": {
+              "manzoni_prints": 80
+            }
+          },
+          {
+            "name": "pm_offset_printing",
+            "inputs": {
+              "paper": 50,
+              "coal": 10,
+              "rubber": 10,
+              "dye": 20,
+              "engines": 10
+            },
+            "outputs": {
+              "manzoni_prints": 100
+            }
+          },
+          {
+            "name": "pm_digital_press",
+            "inputs": {
+              "paper": 50,
+              "computer": 10,
+              "dye": 15,
+              "robotics": 5,
+              "softwares": 5
+            },
+            "outputs": {
+              "manzoni_prints": 115
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_broadcast_media_industry",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_broadcast_media_industry",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_electronic_news_gathering",
+            "inputs": {
+              "electroniccomponents": 10,
+              "paper": 25,
+              "copperwires": 20
+            },
+            "outputs": {
+              "manzoni_prints": 75,
+              "elgar_music": 20
+            }
+          },
+          {
+            "name": "pm_early_broadcasting",
+            "inputs": {
+              "electroniccomponents": 10,
+              "paper": 25,
+              "copperwires": 20,
+              "radios": 5,
+              "televisions": 5
+            },
+            "outputs": {
+              "manzoni_prints": 80,
+              "elgar_music": 25
+            }
+          },
+          {
+            "name": "pm_color_broadcasting",
+            "inputs": {
+              "electroniccomponents": 10,
+              "paper": 25,
+              "copperwires": 20,
+              "radios": 10,
+              "televisions": 15
+            },
+            "outputs": {
+              "manzoni_prints": 95,
+              "elgar_music": 35
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_digital_media_industry",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_digital_media_industry",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_digital_audio_workstation",
+            "inputs": {
+              "electroniccomponents": 10,
+              "paper": 10,
+              "softwares": 10
+            },
+            "outputs": {
+              "manzoni_prints": 70,
+              "elgar_music": 35
+            }
+          },
+          {
+            "name": "pm_online_content_creation",
+            "inputs": {
+              "electroniccomponents": 10,
+              "paper": 10,
+              "softwares": 20
+            },
+            "outputs": {
+              "manzoni_prints": 80,
+              "elgar_music": 40
+            }
+          },
+          {
+            "name": "pm_digital_postproduction",
+            "inputs": {
+              "robotics": 5,
+              "softwares": 40,
+              "computer": 10
+            },
+            "outputs": {
+              "manzoni_prints": 100,
+              "elgar_music": 55
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_mendelejew_hydrogenation_plants": {
+    "groups": [
+      {
+        "name": "pmg_fuel_production",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_mendelejew_coal_liquefaction",
+            "inputs": {
+              "coal": 65,
+              "electricity": 10,
+              "electroniccomponents": 5,
+              "engines": 5
+            },
+            "outputs": {
+              "light_fuel": 30,
+              "heavy_fuel": 25
+            }
+          },
+          {
+            "name": "pm_fractional_distillation",
+            "inputs": {
+              "oil": 65,
+              "engines": 5
+            },
+            "outputs": {
+              "light_fuel": 30,
+              "lubricant": 15,
+              "heavy_fuel": 25
+            }
+          },
+          {
+            "name": "pm_vacuum_distillation",
+            "inputs": {
+              "electricity": 15,
+              "electroniccomponents": 5,
+              "engines": 5,
+              "oil": 90
+            },
+            "outputs": {
+              "lubricant": 50,
+              "heavy_fuel": 70
+            }
+          },
+          {
+            "name": "pm_thermal_cracking",
+            "inputs": {
+              "electricity": 15,
+              "electroniccomponents": 10,
+              "engines": 10,
+              "oil": 90
+            },
+            "outputs": {
+              "light_fuel": 65,
+              "lubricant": 25,
+              "heavy_fuel": 10,
+              "coal": 20,
+              "sulfur": 5
+            }
+          },
+          {
+            "name": "pm_catalytic_cracking",
+            "inputs": {
+              "electricity": 25,
+              "electroniccomponents": 10,
+              "engines": 20,
+              "advancedores": 2,
+              "oil": 90
+            },
+            "outputs": {
+              "light_fuel": 105,
+              "lubricant": 30,
+              "sulfur": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_general",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_general",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_general",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_basic_electric_control_building_general",
+            "inputs": {
+              "tools": 5,
+              "electroniccomponents": 3,
+              "electricity": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_electric_control_building_general",
+            "inputs": {
+              "robotics": 3,
+              "processors": 2,
+              "electricity": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_transport_automation_building_general",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_light_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_light_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_light_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_light_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_light_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_light_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_light_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_mendelejew_synthetic_rubber_factory": {
+    "groups": [
+      {
+        "name": "pmg_plastics_production",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_bakelite_molding",
+            "inputs": {
+              "electricity": 10,
+              "coal": 30,
+              "wood": 25,
+              "water": 2
+            },
+            "outputs": {
+              "plastics": 65
+            }
+          },
+          {
+            "name": "pm_celluloid_processing",
+            "inputs": {
+              "electricity": 10,
+              "liquor": 5,
+              "wood": 65,
+              "water": 2
+            },
+            "outputs": {
+              "plastics": 65
+            }
+          },
+          {
+            "name": "pm_polyethylene_synthesis",
+            "inputs": {
+              "fertilizer": 5,
+              "electricity": 10,
+              "electroniccomponents": 5,
+              "light_fuel": 25
+            },
+            "outputs": {
+              "plastics": 100
+            }
+          },
+          {
+            "name": "natta_catalysts",
+            "inputs": {
+              "fertilizer": 10,
+              "electricity": 10,
+              "electroniccomponents": 10,
+              "gas": 20,
+              "light_fuel": 25
+            },
+            "outputs": {
+              "plastics": 140
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_mendelejew_isoprene",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_synthetic_rubber",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_mendelejew_isoprene",
+            "inputs": {
+              "sulfur": 7,
+              "fertilizer": 5,
+              "light_fuel": 15
+            },
+            "outputs": {
+              "rubber": 55,
+              "plastics": 10
+            }
+          },
+          {
+            "name": "pm_mendelejev_butadiene",
+            "inputs": {
+              "sulfur": 15,
+              "fertilizer": 15,
+              "commonores": 10,
+              "light_fuel": 15
+            },
+            "outputs": {
+              "rubber": 80,
+              "plastics": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_general",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_general",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_general",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_basic_electric_control_building_general",
+            "inputs": {
+              "tools": 5,
+              "electroniccomponents": 3,
+              "electricity": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_electric_control_building_general",
+            "inputs": {
+              "robotics": 3,
+              "processors": 2,
+              "electricity": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_transport_automation_building_general",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_light_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_light_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_light_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_light_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 2
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_light_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_light_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_light_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_motor_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_motor_industry",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_steam_engines",
+            "inputs": {
+              "steel": 30
+            },
+            "outputs": {
+              "engines": 40
+            }
+          },
+          {
+            "name": "pm_electric_engines",
+            "inputs": {
+              "steel": 35,
+              "commonores": 5,
+              "electricity": 20,
+              "copperwires": 5,
+              "batteries": 10
+            },
+            "outputs": {
+              "engines": 85
+            }
+          },
+          {
+            "name": "pm_diesel_engines",
+            "inputs": {
+              "steel": 35,
+              "commonores": 5,
+              "light_fuel": 15,
+              "copperwires": 5,
+              "batteries": 10
+            },
+            "outputs": {
+              "engines": 110
+            }
+          },
+          {
+            "name": "pm_turbo_diesel_engines",
+            "inputs": {
+              "steel": 40,
+              "batteries": 15,
+              "light_fuel": 10,
+              "electroniccomponents": 5,
+              "alloys": 5
+            },
+            "outputs": {
+              "engines": 140
+            }
+          },
+          {
+            "name": "pm_ev_motors",
+            "inputs": {
+              "steel": 40,
+              "batteries": 25,
+              "electricity": 20,
+              "processors": 5,
+              "alloys": 5
+            },
+            "outputs": {
+              "engines": 155
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_motor_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_motor_industry",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_motor_industry",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_motor_industry",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 3,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_motor_industry",
+            "inputs": {
+              "tools": 3,
+              "lubricant": 3,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_motor_industry",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_motor_industry",
+            "inputs": {
+              "robotics": 3,
+              "processors": 1,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_natural_gas_rig": {
+    "groups": [
+      {
+        "name": "pmg_base_building_natural_gas_rig",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_gas_steam_derricks",
+            "inputs": {
+              "engines": 5,
+              "coal": 10
+            },
+            "outputs": {
+              "gas": 50,
+              "oil": 5
+            }
+          },
+          {
+            "name": "pm_gas_combustion_derricks",
+            "inputs": {
+              "engines": 15,
+              "electroniccomponents": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "gas": 95,
+              "oil": 10
+            }
+          },
+          {
+            "name": "pm_gas_horizontal_perforation",
+            "inputs": {
+              "engines": 50,
+              "electroniccomponents": 5,
+              "light_fuel": 5,
+              "electricity": 25
+            },
+            "outputs": {
+              "gas": 170,
+              "oil": 30
+            }
+          },
+          {
+            "name": "pm_gas_hydraulic_fracturing",
+            "inputs": {
+              "engines": 90,
+              "robotics": 20,
+              "water": 20,
+              "light_fuel": 5,
+              "electricity": 30
+            },
+            "outputs": {
+              "gas": 290,
+              "oil": 70
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_transportation_building_natural_gas_rig",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_rail_transport_building_natural_gas_rig",
+            "inputs": {
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_liquefied_gas_tankers",
+            "inputs": {
+              "transportation": 10
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_nuclear_weapons_silo": {
+    "groups": [
+      {
+        "name": "pmg_nuclear_type_military",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_atomic_bomb",
+            "inputs": {
+              "good_uranium": 20,
+              "steel": 10,
+              "explosives": 10,
+              "electroniccomponents": 5,
+              "water": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_hydrogen_bomb",
+            "inputs": {
+              "advancedores": 10,
+              "alloys": 10,
+              "robotics": 5,
+              "processors": 5,
+              "water": 20
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_nuclear_stockpile_military",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_nuclear_stockpile_1",
+            "inputs": {
+              "good_uranium": 50
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_nuclear_stockpile_2",
+            "inputs": {
+              "good_uranium": 100
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_nuclear_stockpile_3",
+            "inputs": {
+              "good_uranium": 150
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_nuclear_bomber_military",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_nuclear_bomber",
+            "inputs": {
+              "aeroplanes": 10,
+              "ammunition": 20,
+              "light_fuel": 50
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_icbms",
+            "inputs": {
+              "aeroplanes": 10,
+              "ammunition": 50,
+              "light_fuel": 100
+            },
+            "outputs": {}
+          }
+        ]
+      }
+    ]
+  },
+  "building_oil_rig": {
+    "groups": [
+      {
+        "name": "pmg_base_building_oil_rig",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_steam_derricks",
+            "inputs": {
+              "engines": 5,
+              "coal": 10
+            },
+            "outputs": {
+              "oil": 60
+            }
+          },
+          {
+            "name": "pm_combustion_derricks",
+            "inputs": {
+              "engines": 10,
+              "electroniccomponents": 5,
+              "light_fuel": 10
+            },
+            "outputs": {
+              "oil": 100
+            }
+          },
+          {
+            "name": "pm_oil_horizontal_perforation",
+            "inputs": {
+              "engines": 70,
+              "electroniccomponents": 10,
+              "light_fuel": 5,
+              "electricity": 20
+            },
+            "outputs": {
+              "oil": 210
+            }
+          },
+          {
+            "name": "pm_oil_hydraulic_fracturing",
+            "inputs": {
+              "engines": 120,
+              "robotics": 25,
+              "water": 35,
+              "light_fuel": 5,
+              "electricity": 30
+            },
+            "outputs": {
+              "oil": 350
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_transportation_building_oil_rig",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_building_oil_rig",
+            "inputs": {
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_tanker_cars",
+            "inputs": {
+              "transportation": 10
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_opium_plantation": {
+    "groups": [
+      {
+        "name": "pmg_base_building_opium_plantation",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "default_building_opium_plantation",
+            "inputs": {},
+            "outputs": {
+              "opium": 20
+            }
+          },
+          {
+            "name": "automatic_irrigation_building_opium_plantation",
+            "inputs": {
+              "engines": 5
+            },
+            "outputs": {
+              "opium": 40
+            }
+          },
+          {
+            "name": "advanced_plantation_methods_building_opium_plantation",
+            "inputs": {
+              "engines": 20,
+              "fertilizer": 5,
+              "light_fuel": 2,
+              "steel": 5
+            },
+            "outputs": {
+              "opium": 75
+            }
+          },
+          {
+            "name": "drone_assisted_agriculture_building_opium_plantation",
+            "inputs": {
+              "engines": 20,
+              "fertilizer": 10,
+              "telecommunications": 8,
+              "robotics": 3,
+              "electricity": 2
+            },
+            "outputs": {
+              "opium": 90
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_opium_plantation",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_rail_transport",
+            "inputs": {
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_plantation",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_pharmaceuticals_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_pharmaceuticals",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_handcraft_natural_medicinals",
+            "inputs": {
+              "fruit": 10,
+              "glass": 10,
+              "water": 5,
+              "liquor": 20
+            },
+            "outputs": {
+              "pharmaceuticals": 50
+            }
+          },
+          {
+            "name": "pm_rudimental_chemical_pharmaceuticals",
+            "inputs": {
+              "coal": 10,
+              "glass": 15,
+              "water": 5,
+              "liquor": 20
+            },
+            "outputs": {
+              "pharmaceuticals": 65
+            }
+          },
+          {
+            "name": "pm_antibiotics_pharmaceuticals",
+            "inputs": {
+              "glass": 20,
+              "water": 5,
+              "fertilizer": 25,
+              "oil": 20,
+              "electricity": 5
+            },
+            "outputs": {
+              "pharmaceuticals": 100
+            }
+          },
+          {
+            "name": "pm_synthetic_pharmaceuticals",
+            "inputs": {
+              "glass": 25,
+              "plastics": 20,
+              "water": 10,
+              "fertilizer": 40,
+              "electricity": 10
+            },
+            "outputs": {
+              "pharmaceuticals": 140
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_general",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_general",
+            "inputs": {
+              "tools": 5,
+              "coal": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_general",
+            "inputs": {
+              "tools": 5,
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_basic_electric_control_building_general",
+            "inputs": {
+              "tools": 5,
+              "electroniccomponents": 3,
+              "electricity": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_electric_control_building_general",
+            "inputs": {
+              "robotics": 3,
+              "processors": 2,
+              "electricity": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_transport_automation_building_general",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_rare_earths_mine": {
+    "groups": [
+      {
+        "name": "pmg_mining_equipment_building_rare_earths_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_picks_and_shovels_building_rare_earths_mine",
+            "inputs": {
+              "tools": 15
+            },
+            "outputs": {
+              "rare_earths": 20
+            }
+          },
+          {
+            "name": "pm_diesel_pump_building_rare_earths_mine",
+            "inputs": {
+              "tools": 20,
+              "light_fuel": 3
+            },
+            "outputs": {
+              "rare_earths": 40
+            }
+          },
+          {
+            "name": "pm_electric_fueled_pump_building_rare_earths_mine",
+            "inputs": {
+              "electricity": 5,
+              "electroniccomponents": 2,
+              "tools": 20,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "rare_earths": 55
+            }
+          },
+          {
+            "name": "pm_heavy_machineries_building_rare_earths_mine",
+            "inputs": {
+              "electricity": 10,
+              "electroniccomponents": 3,
+              "robotics": 7,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "rare_earths": 85
+            }
+          },
+          {
+            "name": "pm_autonomous_and_remote_ops_building_rare_earths_mine",
+            "inputs": {
+              "electricity": 10,
+              "processors": 2,
+              "robotics": 12,
+              "telecommunications": 10,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "rare_earths": 115
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_steam_automation_building_rare_earths_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_steam_automation",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_purification_mine",
+            "inputs": {
+              "engines": 2,
+              "fertilizer": 10,
+              "lubricant": 2
+            },
+            "outputs": {
+              "rare_earths": 10
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_rare_earths_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_robotics_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_robotics",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_mechanical_arm",
+            "inputs": {
+              "tools": 35,
+              "electroniccomponents": 10,
+              "engines": 10,
+              "rubber": 5
+            },
+            "outputs": {
+              "robotics": 60
+            }
+          },
+          {
+            "name": "pm_cnc_machines",
+            "inputs": {
+              "tools": 45,
+              "electroniccomponents": 10,
+              "engines": 10,
+              "rubber": 5,
+              "computer": 8,
+              "softwares": 5
+            },
+            "outputs": {
+              "robotics": 90
+            }
+          },
+          {
+            "name": "pm_cobots",
+            "inputs": {
+              "tools": 55,
+              "processors": 10,
+              "engines": 10,
+              "rubber": 10,
+              "computer": 10,
+              "softwares": 10,
+              "telecommunications": 5
+            },
+            "outputs": {
+              "robotics": 120
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_robotics_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_advanced_assembly_lines_building_robotics_industry",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_robotics_industry",
+            "inputs": {
+              "processors": 2,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_robotics_industry",
+            "inputs": {
+              "processors": 2,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_transport_automation_building_robotics_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_rail_transport_building_robotics_industry",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_building_robotics_industry",
+            "inputs": {
+              "automobiles": 2,
+              "transportation": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_silk_plantation": {
+    "groups": [
+      {
+        "name": "pmg_base_building_silk_plantation",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "default_building_silk_plantation",
+            "inputs": {},
+            "outputs": {
+              "silk": 15
+            }
+          },
+          {
+            "name": "automatic_irrigation_building_silk_plantation",
+            "inputs": {
+              "engines": 5
+            },
+            "outputs": {
+              "silk": 40
+            }
+          },
+          {
+            "name": "advanced_plantation_methods_building_silk_plantation",
+            "inputs": {
+              "engines": 20,
+              "fertilizer": 5,
+              "light_fuel": 2,
+              "steel": 5
+            },
+            "outputs": {
+              "silk": 90
+            }
+          },
+          {
+            "name": "drone_assisted_agriculture_building_silk_plantation",
+            "inputs": {
+              "engines": 20,
+              "fertilizer": 10,
+              "telecommunications": 8,
+              "robotics": 3,
+              "electricity": 2
+            },
+            "outputs": {
+              "silk": 105
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_silk_plantation",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_rail_transport",
+            "inputs": {
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_plantation",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_synthetics_plant": {
+    "groups": [
+      {
+        "name": "pmg_cosmetics",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_traditional_perfumes_cosmetics",
+            "inputs": {
+              "dye": 30,
+              "fruit": 10,
+              "glass": 10,
+              "lead": 5,
+              "liquor": 15
+            },
+            "outputs": {
+              "cosmetics": 60
+            }
+          },
+          {
+            "name": "pm_industrial_cosmetics",
+            "inputs": {
+              "dye": 30,
+              "fruit": 20,
+              "glass": 20,
+              "pharmaceuticals": 15
+            },
+            "outputs": {
+              "cosmetics": 80,
+              "fine_art": 0.5
+            }
+          },
+          {
+            "name": "pm_synthetic_compounds_cosmetics",
+            "inputs": {
+              "dye": 30,
+              "lubricant": 10,
+              "fertilizer": 10,
+              "glass": 25,
+              "pharmaceuticals": 25
+            },
+            "outputs": {
+              "cosmetics": 105,
+              "fine_art": 1
+            }
+          },
+          {
+            "name": "pm_modern_cosmetics",
+            "inputs": {
+              "dye": 30,
+              "lubricant": 20,
+              "fertilizer": 20,
+              "glass": 30,
+              "pharmaceuticals": 45
+            },
+            "outputs": {
+              "cosmetics": 140,
+              "fine_art": 2
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_synthetics_plant",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_basic_electric_control_building_synthetics_plant",
+            "inputs": {
+              "electroniccomponents": 5,
+              "tools": 3,
+              "electricity": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_electric_control_building_synthetics_plant",
+            "inputs": {
+              "robotics": 3,
+              "processors": 2,
+              "electricity": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_telecommunications_industry": {
+    "groups": [
+      {
+        "name": "pmg_base_building_telecommunications",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_manual_operators_network_building_telecommunications",
+            "inputs": {
+              "copperwires": 10
+            },
+            "outputs": {
+              "telecommunications": 65
+            }
+          },
+          {
+            "name": "pm_national_radio_network_building_telecommunications",
+            "inputs": {
+              "copperwires": 10,
+              "electroniccomponents": 3
+            },
+            "outputs": {
+              "telecommunications": 85
+            }
+          },
+          {
+            "name": "pm_satellite_communications_network_building_telecommunications",
+            "inputs": {
+              "copperwires": 15,
+              "space_assets": 3,
+              "electroniccomponents": 5
+            },
+            "outputs": {
+              "telecommunications": 130
+            }
+          },
+          {
+            "name": "pm_internet_global_network_building_telecommunications",
+            "inputs": {
+              "copperwires": 20,
+              "electroniccomponents": 5,
+              "space_assets": 4
+            },
+            "outputs": {
+              "telecommunications": 145
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_mobile_network_building_telecommunications",
+        "type": "balance",
+        "pms": [
+          {
+            "name": "pm_no_mobile_network",
+            "inputs": {
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_2g_digital_cellular",
+            "inputs": {
+              "electricity": 5
+            },
+            "outputs": {
+              "telecommunications": 5
+            }
+          },
+          {
+            "name": "pm_4g_lte_network",
+            "inputs": {
+              "electricity": 10,
+              "softwares": 2,
+              "processors": 1
+            },
+            "outputs": {
+              "telecommunications": 30
+            }
+          },
+          {
+            "name": "pm_5g_advanced_network",
+            "inputs": {
+              "electricity": 15,
+              "softwares": 4,
+              "space_assets": 1,
+              "processors": 2
+            },
+            "outputs": {
+              "telecommunications": 65
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry_telecommunications",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry_telecommunications",
+            "inputs": {
+              "softwares": 3,
+              "business_data": 4
+            },
+            "outputs": {
+              "telecommunications": 2,
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_algorithmic_dispatch_heavy_industry_telecommunications",
+            "inputs": {
+              "softwares": 4,
+              "business_data": 6
+            },
+            "outputs": {
+              "telecommunications": 5,
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_tooling_workshop": {
+    "groups": [
+      {
+        "name": "pmg_base_building_tooling_workshop",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_crude_tools",
+            "inputs": {
+              "wood": 30
+            },
+            "outputs": {
+              "tools": 30
+            }
+          },
+          {
+            "name": "pm_pig_iron",
+            "inputs": {
+              "wood": 30,
+              "commonores": 2,
+              "iron": 18
+            },
+            "outputs": {
+              "tools": 60
+            }
+          },
+          {
+            "name": "pm_steel",
+            "inputs": {
+              "wood": 30,
+              "alloys": 2,
+              "steel": 18
+            },
+            "outputs": {
+              "tools": 75
+            }
+          },
+          {
+            "name": "pm_rubber_grips",
+            "inputs": {
+              "rubber": 10,
+              "commonores": 5,
+              "alloys": 5,
+              "steel": 25
+            },
+            "outputs": {
+              "tools": 110
+            }
+          },
+          {
+            "name": "pm_modern_tools",
+            "inputs": {
+              "plastics": 10,
+              "rubber": 10,
+              "copperwires": 3,
+              "alloys": 5,
+              "steel": 15
+            },
+            "outputs": {
+              "tools": 125
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_tooling_workshop",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_automation_disabled",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_watertube_boiler_building_tooling_workshop",
+            "inputs": {
+              "coal": 10
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_tooling_workshop",
+            "inputs": {
+              "coal": 15
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_assembly_lines_building_tooling_workshop",
+            "inputs": {
+              "lubricant": 6,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_advanced_assembly_lines_building_tooling_workshop",
+            "inputs": {
+              "lubricant": 5,
+              "robotics": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_uranium_mine": {
+    "groups": [
+      {
+        "name": "pmg_curie_mining_equipment_building_uranium_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_curie_picks_and_shovels_building_uranium_mine",
+            "inputs": {
+              "tools": 5
+            },
+            "outputs": {
+              "good_uranium": 20
+            }
+          },
+          {
+            "name": "pm_curie_atmospheric_engine_pump_building_uranium_mine",
+            "inputs": {
+              "tools": 10,
+              "coal": 10
+            },
+            "outputs": {
+              "good_uranium": 40
+            }
+          },
+          {
+            "name": "pm_curie_condensing_engine_pump_building_uranium_mine",
+            "inputs": {
+              "tools": 15,
+              "coal": 15
+            },
+            "outputs": {
+              "good_uranium": 60
+            }
+          },
+          {
+            "name": "pm_curie_diesel_pump_building_uranium_mine",
+            "inputs": {
+              "tools": 20,
+              "light_fuel": 3
+            },
+            "outputs": {
+              "good_uranium": 70
+            }
+          },
+          {
+            "name": "pm_electric_fueled_pump_building_uranium_mine",
+            "inputs": {
+              "electricity": 5,
+              "electroniccomponents": 2,
+              "tools": 20,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "good_uranium": 90
+            }
+          },
+          {
+            "name": "pm_heavy_machineries_building_uranium_mine",
+            "inputs": {
+              "electricity": 10,
+              "electroniccomponents": 3,
+              "robotics": 7,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "good_uranium": 110
+            }
+          },
+          {
+            "name": "pm_autonomous_and_remote_ops_building_uranium_mine",
+            "inputs": {
+              "electricity": 10,
+              "processors": 2,
+              "robotics": 12,
+              "telecommunications": 10,
+              "engines": 5,
+              "light_fuel": 5
+            },
+            "outputs": {
+              "good_uranium": 135
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_curie_explosives_building_uranium_mine",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_explosives",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_curie_nitroglycerin_building_uranium_mine",
+            "inputs": {
+              "explosives": 5
+            },
+            "outputs": {
+              "good_uranium": 12
+            }
+          },
+          {
+            "name": "pm_curie_dynamite_building_uranium_mine",
+            "inputs": {
+              "explosives": 10
+            },
+            "outputs": {
+              "good_uranium": 20
+            }
+          },
+          {
+            "name": "pm_high_precision_blasting_building_uranium_mine",
+            "inputs": {
+              "explosives": 15,
+              "copperwires": 2,
+              "telecommunications": 5
+            },
+            "outputs": {
+              "good_uranium": 40
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_curie_steam_automation_building_uranium_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_steam_automation",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_donkey_mine",
+            "inputs": {
+              "engines": 1,
+              "coal": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_purification_mine",
+            "inputs": {
+              "engines": 0.5,
+              "lubricant": 0.5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_hpgr_comminution",
+            "inputs": {
+              "electricity": 5,
+              "robotics": 1,
+              "steel": 1,
+              "lubricant": 0.5
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_curie_train_automation_building_uranium_mine",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_rail_transport_mine",
+            "inputs": {
+              "transportation": 4
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_mine",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_vineyard": {
+    "groups": [
+      {
+        "name": "pmg_base_building_vineyard",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "default_building_vineyard",
+            "inputs": {},
+            "outputs": {
+              "wine": 20
+            }
+          },
+          {
+            "name": "automatic_irrigation_building_vineyard",
+            "inputs": {
+              "engines": 5
+            },
+            "outputs": {
+              "wine": 40
+            }
+          },
+          {
+            "name": "advanced_plantation_methods_building_vineyard",
+            "inputs": {
+              "engines": 20,
+              "fertilizer": 5,
+              "light_fuel": 2,
+              "steel": 5
+            },
+            "outputs": {
+              "wine": 75
+            }
+          },
+          {
+            "name": "drone_assisted_agriculture_building_vineyard",
+            "inputs": {
+              "engines": 20,
+              "fertilizer": 10,
+              "telecommunications": 8,
+              "robotics": 3,
+              "electricity": 2
+            },
+            "outputs": {
+              "wine": 90
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_train_automation_building_vineyard",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_road_carts",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_steam_rail_transport",
+            "inputs": {
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_multiway_transport_plantation",
+            "inputs": {
+              "transportation": 2,
+              "automobiles": 2
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_water_plant": {
+    "groups": [
+      {
+        "name": "pmg_base_building_water",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_hand_pumped_water",
+            "inputs": {
+              "tools": 25
+            },
+            "outputs": {
+              "water": 40
+            }
+          },
+          {
+            "name": "pm_steam_pumped_water",
+            "inputs": {
+              "tools": 30,
+              "coal": 15,
+              "engines": 15
+            },
+            "outputs": {
+              "water": 75
+            }
+          },
+          {
+            "name": "pm_electric_pumped_water",
+            "inputs": {
+              "tools": 40,
+              "electricity": 30,
+              "engines": 30
+            },
+            "outputs": {
+              "water": 135
+            }
+          },
+          {
+            "name": "pm_advanced_water_filtration",
+            "inputs": {
+              "tools": 30,
+              "electricity": 60,
+              "engines": 45,
+              "electroniccomponents": 15
+            },
+            "outputs": {
+              "water": 180
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_water_plant",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_no_steam_automation",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_copper_pipes",
+            "inputs": {
+              "copper": 9,
+              "tools": 6
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_rotary_valve_engine_building_water_plant",
+            "inputs": {
+              "copper": 12,
+              "tools": 6,
+              "coal": 6
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_plastics_pipes_and_pet",
+            "inputs": {
+              "copper": 3,
+              "plastics": 12,
+              "tools": 6
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_whaling_station": {
+    "groups": [
+      {
+        "name": "pmg_base_building_whaling_station",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_simple_whaling",
+            "inputs": {},
+            "outputs": {
+              "meat": 5,
+              "oil": 10
+            }
+          },
+          {
+            "name": "pm_wooden_whaling_ships",
+            "inputs": {
+              "clippers": 5
+            },
+            "outputs": {
+              "meat": 10,
+              "oil": 20
+            }
+          },
+          {
+            "name": "pm_steam_whaling_ships",
+            "inputs": {
+              "steamers": 5,
+              "coal": 20
+            },
+            "outputs": {
+              "meat": 20,
+              "oil": 20,
+              "lubricant": 10
+            }
+          },
+          {
+            "name": "pm_fuel_whaling_ships",
+            "inputs": {
+              "steamers": 10,
+              "heavy_fuel": 10
+            },
+            "outputs": {
+              "meat": 20,
+              "lubricant": 35
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_refrigeration_building_whaling_station",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_unrefrigerated",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_refrigerated_storage_building_whaling_station",
+            "inputs": {
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_refrigerated_rail_cars_building_whaling_station",
+            "inputs": {
+              "electricity": 5,
+              "transportation": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_flash_freezing_building_whaling_station",
+            "inputs": {
+              "electricity": 7,
+              "transportation": 7
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_primary_sector",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_primary_sector",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_primary_sector",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 0.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_primary_sector",
+            "inputs": {
+              "computer": 0.3,
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "organized_data": 1
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_primary_sector",
+            "inputs": {
+              "computer": 0.5,
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "raw_data": 6
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_primary_sector",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 1,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "building_computer_assembly_plant": {
+    "groups": [
+      {
+        "name": "pmg_base_building_computers",
+        "type": "upgrade",
+        "pms": [
+          {
+            "name": "pm_no_computer_production",
+            "inputs": {},
+            "outputs": {}
+          },
+          {
+            "name": "pm_computer_teleprinters",
+            "inputs": {
+              "plastics": 5,
+              "copperwires": 5,
+              "batteries": 5,
+              "alloys": 10,
+              "electroniccomponents": 10
+            },
+            "outputs": {
+              "processors": 15,
+              "computer": 35
+            }
+          },
+          {
+            "name": "pm_personal_computers",
+            "inputs": {
+              "plastics": 10,
+              "copperwires": 5,
+              "batteries": 5,
+              "softwares": 10,
+              "televisions": 10
+            },
+            "outputs": {
+              "processors": 20,
+              "computer": 50
+            }
+          },
+          {
+            "name": "pm_laptops",
+            "inputs": {
+              "plastics": 5,
+              "batteries": 20,
+              "softwares": 20,
+              "televisions": 5
+            },
+            "outputs": {
+              "processors": 25,
+              "computer": 60
+            }
+          },
+          {
+            "name": "pm_advanced_personal_computers",
+            "inputs": {
+              "plastics": 10,
+              "batteries": 5,
+              "softwares": 20,
+              "televisions": 10
+            },
+            "outputs": {
+              "processors": 40,
+              "computer": 75
+            }
+          }
+        ]
+      },
+      {
+        "name": "pmg_automation_building_computer_assembly",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_advanced_assembly_lines_building_computer_assembly",
+            "inputs": {
+              "tools": 5,
+              "lubricant": 2,
+              "electricity": 5
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_robotic_building_computer_assembly",
+            "inputs": {
+              "processors": 2,
+              "electricity": 5,
+              "lubricant": 2
+            },
+            "outputs": {}
+          },
+          {
+            "name": "pm_iot_building_computer_assembly",
+            "inputs": {
+              "processors": 2,
+              "electricity": 5,
+              "telecommunications": 5,
+              "lubricant": 1
+            },
+            "outputs": {}
+          }
+        ]
+      },
+      {
+        "name": "pmg_data_optimization_heavy_industry_computer",
+        "type": "labor_saving",
+        "pms": [
+          {
+            "name": "pm_manual_data_reporting_heavy_industry",
+            "inputs": {},
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_manual_data_optimization_heavy_industry",
+            "inputs": {
+              "paper": 1,
+              "business_data": 1
+            },
+            "outputs": {
+              "organized_data": 1.5
+            }
+          },
+          {
+            "name": "pm_digital_data_optimization_heavy_industry_computer",
+            "inputs": {
+              "softwares": 0.5,
+              "business_data": 3
+            },
+            "outputs": {
+              "computer": 0.3,
+              "organized_data": 3
+            }
+          },
+          {
+            "name": "pm_digital_data_on_premises_heavy_industry_computer",
+            "inputs": {
+              "softwares": 1,
+              "business_data": 3
+            },
+            "outputs": {
+              "computer": 0.5,
+              "raw_data": 10
+            }
+          },
+          {
+            "name": "pm_internet_data_reporting_heavy_industry",
+            "inputs": {
+              "softwares": 3,
+              "telecommunications": 2,
+              "business_data": 4
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          },
+          {
+            "name": "pm_internet_data_optimization_heavy_industry",
+            "inputs": {
+              "softwares": 4,
+              "telecommunications": 5,
+              "business_data": 6
+            },
+            "outputs": {
+              "raw_data": 16
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

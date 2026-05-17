@@ -1,0 +1,1181 @@
+﻿OGAS_find_best_profit_building = {
+    while = {
+        count = root.var:OGAS_building_unit_config
+        if = {
+            limit = { 
+                is_building_type = building_advancedores_mine
+            }
+            state = {
+                start_building_construction = building_advancedores_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_aircraft_industry
+            }
+            state = {
+                start_building_construction = building_aircraft_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_airport
+            }
+            state = {
+                start_building_construction = building_airport
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_alloys_plant
+            }
+            state = {
+                start_building_construction = building_alloys_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_angkor_wat
+            }
+            state = {
+                start_building_construction = building_angkor_wat
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_argebam
+            }
+            state = {
+                start_building_construction = building_argebam
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_arms_industry
+            }
+            state = {
+                start_building_construction = building_arms_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_art_academy
+            }
+            state = {
+                start_building_construction = building_art_academy
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_artillery_foundry
+            }
+            state = {
+                start_building_construction = building_artillery_foundry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_automotive_industry
+            }
+            state = {
+                start_building_construction = building_automotive_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_banana_plantation
+            }
+            state = {
+                start_building_construction = building_banana_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_barrack
+            }
+            state = {
+                start_building_construction = building_barrack
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_battery_plant
+            }
+            state = {
+                start_building_construction = building_battery_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_bauxite_mine
+            }
+            state = {
+                start_building_construction = building_bauxite_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_big_ben
+            }
+            state = {
+                start_building_construction = building_big_ben
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_capitol_hill
+            }
+            state = {
+                start_building_construction = building_capitol_hill
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_central_park
+            }
+            state = {
+                start_building_construction = building_central_park
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_chemical_plant
+            }
+            state = {
+                start_building_construction = building_chemical_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_chichen_itza
+            }
+            state = {
+                start_building_construction = building_chichen_itza
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_coal_mine
+            }
+            state = {
+                start_building_construction = building_coal_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_coffee_plantation
+            }
+            state = {
+                start_building_construction = building_coffee_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_commonores_mine
+            }
+            state = {
+                start_building_construction = building_commonores_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_company_headquarter
+            }
+            state = {
+                start_building_construction = building_company_headquarter
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_company_regional_headquarter
+            }
+            state = {
+                start_building_construction = building_company_regional_headquarter
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_conscription_center
+            }
+            state = {
+                start_building_construction = building_conscription_center
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_construction_sector
+            }
+            state = {
+                start_building_construction = building_construction_sector
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_consumer_electronics_industry
+            }
+            state = {
+                start_building_construction = building_consumer_electronics_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_copper_mine
+            }
+            state = {
+                start_building_construction = building_copper_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_cotton_plantation
+            }
+            state = {
+                start_building_construction = building_cotton_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_cristo_redentor
+            }
+            state = {
+                start_building_construction = building_cristo_redentor
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_datacenter_industry
+            }
+            state = {
+                start_building_construction = building_datacenter_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_dye_plantation
+            }
+            state = {
+                start_building_construction = building_dye_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_easter_island_heads
+            }
+            state = {
+                start_building_construction = building_easter_island_heads
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_ecommerce_logistics
+            }
+            state = {
+                start_building_construction = building_ecommerce_logistics
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_eiffel_tower
+            }
+            state = {
+                start_building_construction = building_eiffel_tower
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_electrics_industry
+            }
+            state = {
+                start_building_construction = building_electrics_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_electronics_industry
+            }
+            state = {
+                start_building_construction = building_electronics_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_elgar_opera
+            }
+            state = {
+                start_building_construction = building_elgar_opera
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_estacion_de_madrid_atocha
+            }
+            state = {
+                start_building_construction = building_estacion_de_madrid_atocha
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_explosives_factory
+            }
+            state = {
+                start_building_construction = building_explosives_factory
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_eye_of_sahara
+            }
+            state = {
+                start_building_construction = building_eye_of_sahara
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_financial_district
+            }
+            state = {
+                start_building_construction = building_financial_district
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_fishing_wharf
+            }
+            state = {
+                start_building_construction = building_fishing_wharf
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_food_industry
+            }
+            state = {
+                start_building_construction = building_food_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_forbidden_city
+            }
+            state = {
+                start_building_construction = building_forbidden_city
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_furniture_manufactory
+            }
+            state = {
+                start_building_construction = building_furniture_manufactory
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_geothermal_power_plant
+            }
+            state = {
+                start_building_construction = building_geothermal_power_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_giza_necropolis
+            }
+            state = {
+                start_building_construction = building_giza_necropolis
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_glassworks
+            }
+            state = {
+                start_building_construction = building_glassworks
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_gold_field
+            }
+            state = {
+                start_building_construction = building_gold_field
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_gold_mine
+            }
+            state = {
+                start_building_construction = building_gold_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_government_administration
+            }
+            state = {
+                start_building_construction = building_government_administration
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_gran_teatro_de_la_habana
+            }
+            state = {
+                start_building_construction = building_gran_teatro_de_la_habana
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_hagia_sophia
+            }
+            state = {
+                start_building_construction = building_hagia_sophia
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_halloween_castledracula
+            }
+            state = {
+                start_building_construction = building_halloween_castledracula
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_hydroelectric_power_plant
+            }
+            state = {
+                start_building_construction = building_hydroelectric_power_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_hydroponic
+            }
+            state = {
+                start_building_construction = building_hydroponic
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_instrument_workshops
+            }
+            state = {
+                start_building_construction = building_instrument_workshops
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_interactive_media_industry
+            }
+            state = {
+                start_building_construction = building_interactive_media_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_iron_mine
+            }
+            state = {
+                start_building_construction = building_iron_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_kaiserforum_2
+            }
+            state = {
+                start_building_construction = building_kaiserforum_2
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_kaiserforum_3
+            }
+            state = {
+                start_building_construction = building_kaiserforum_3
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_kaiserforum_4
+            }
+            state = {
+                start_building_construction = building_kaiserforum_4
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_khaju_bridge
+            }
+            state = {
+                start_building_construction = building_khaju_bridge
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_lead_mine
+            }
+            state = {
+                start_building_construction = building_lead_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_logging_camp
+            }
+            state = {
+                start_building_construction = building_logging_camp
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_machu_picchu
+            }
+            state = {
+                start_building_construction = building_machu_picchu
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_maize_farm
+            }
+            state = {
+                start_building_construction = building_maize_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_manila_cathedral_monument
+            }
+            state = {
+                start_building_construction = building_manila_cathedral_monument
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_manila_cathedral_original
+            }
+            state = {
+                start_building_construction = building_manila_cathedral_original
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_manila_cathedral_ruins
+            }
+            state = {
+                start_building_construction = building_manila_cathedral_ruins
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_manor_house
+            }
+            state = {
+                start_building_construction = building_manor_house
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_manzoni_publishing_industry
+            }
+            state = {
+                start_building_construction = building_manzoni_publishing_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_martandsuntemple
+            }
+            state = {
+                start_building_construction = building_martandsuntemple
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_mendelejew_hydrogenation_plants
+            }
+            state = {
+                start_building_construction = building_mendelejew_hydrogenation_plants
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_mendelejew_synthetic_rubber_factory
+            }
+            state = {
+                start_building_construction = building_mendelejew_synthetic_rubber_factory
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_millet_farm
+            }
+            state = {
+                start_building_construction = building_millet_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_modern_state_baseline
+            }
+            state = {
+                start_building_construction = building_modern_state_baseline
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_mosque_of_djenne
+            }
+            state = {
+                start_building_construction = building_mosque_of_djenne
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_motor_industry
+            }
+            state = {
+                start_building_construction = building_motor_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_munition_plant
+            }
+            state = {
+                start_building_construction = building_munition_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_natural_gas_rig
+            }
+            state = {
+                start_building_construction = building_natural_gas_rig
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_nuclear_weapons_silo
+            }
+            state = {
+                start_building_construction = building_nuclear_weapons_silo
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_observatorygreenwich
+            }
+            state = {
+                start_building_construction = building_observatorygreenwich
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_office
+            }
+            state = {
+                start_building_construction = building_office
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_oil_rig
+            }
+            state = {
+                start_building_construction = building_oil_rig
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_opium_plantation
+            }
+            state = {
+                start_building_construction = building_opium_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_panama_canal
+            }
+            state = {
+                start_building_construction = building_panama_canal
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_paper_mill
+            }
+            state = {
+                start_building_construction = building_paper_mill
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_pena_convent
+            }
+            state = {
+                start_building_construction = building_pena_convent
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_pena_palace
+            }
+            state = {
+                start_building_construction = building_pena_palace
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_petra
+            }
+            state = {
+                start_building_construction = building_petra
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_pharmaceuticals_industry
+            }
+            state = {
+                start_building_construction = building_pharmaceuticals_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_port
+            }
+            state = {
+                start_building_construction = building_port
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_power_bloc_statue
+            }
+            state = {
+                start_building_construction = building_power_bloc_statue
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_power_plant
+            }
+            state = {
+                start_building_construction = building_power_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_processors_foundry
+            }
+            state = {
+                start_building_construction = building_processors_foundry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_railway
+            }
+            state = {
+                start_building_construction = building_railway
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_rare_earths_mine
+            }
+            state = {
+                start_building_construction = building_rare_earths_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_renewable_energy_power_plant
+            }
+            state = {
+                start_building_construction = building_renewable_energy_power_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_research_center
+            }
+            state = {
+                start_building_construction = building_research_center
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_rice_farm
+            }
+            state = {
+                start_building_construction = building_rice_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_robotics_industry
+            }
+            state = {
+                start_building_construction = building_robotics_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_rubber_plantation
+            }
+            state = {
+                start_building_construction = building_rubber_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_rye_farm
+            }
+            state = {
+                start_building_construction = building_rye_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_sagrada_familia_cathedral_1
+            }
+            state = {
+                start_building_construction = building_sagrada_familia_cathedral_1
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_sagrada_familia_cathedral_2
+            }
+            state = {
+                start_building_construction = building_sagrada_familia_cathedral_2
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_sagrada_familia_cathedral_3
+            }
+            state = {
+                start_building_construction = building_sagrada_familia_cathedral_3
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_saint_basils_cathedral
+            }
+            state = {
+                start_building_construction = building_saint_basils_cathedral
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_shipyard
+            }
+            state = {
+                start_building_construction = building_shipyard
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_silk_plantation
+            }
+            state = {
+                start_building_construction = building_silk_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_skyscraper
+            }
+            state = {
+                start_building_construction = building_skyscraper
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_software_industry
+            }
+            state = {
+                start_building_construction = building_software_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_statue_of_liberty
+            }
+            state = {
+                start_building_construction = building_statue_of_liberty
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_steel_mill
+            }
+            state = {
+                start_building_construction = building_steel_mill
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_subsistence_farm
+            }
+            state = {
+                start_building_construction = building_subsistence_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_subsistence_fishing_village
+            }
+            state = {
+                start_building_construction = building_subsistence_fishing_village
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_subsistence_orchard
+            }
+            state = {
+                start_building_construction = building_subsistence_orchard
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_subsistence_pasture
+            }
+            state = {
+                start_building_construction = building_subsistence_pasture
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_subsistence_rice_farm
+            }
+            state = {
+                start_building_construction = building_subsistence_rice_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_suez_canal
+            }
+            state = {
+                start_building_construction = building_suez_canal
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_sugar_plantation
+            }
+            state = {
+                start_building_construction = building_sugar_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_sulfur_mine
+            }
+            state = {
+                start_building_construction = building_sulfur_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_taj_mahal
+            }
+            state = {
+                start_building_construction = building_taj_mahal
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_tea_plantation
+            }
+            state = {
+                start_building_construction = building_tea_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_telecommunications_industry
+            }
+            state = {
+                start_building_construction = building_telecommunications_industry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_temple_of_poseidon
+            }
+            state = {
+                start_building_construction = building_temple_of_poseidon
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_textile_mill
+            }
+            state = {
+                start_building_construction = building_textile_mill
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_tobacco_plantation
+            }
+            state = {
+                start_building_construction = building_tobacco_plantation
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_tooling_workshop
+            }
+            state = {
+                start_building_construction = building_tooling_workshop
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_trade_center
+            }
+            state = {
+                start_building_construction = building_trade_center
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_university
+            }
+            state = {
+                start_building_construction = building_university
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_uranium_mine
+            }
+            state = {
+                start_building_construction = building_uranium_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_urban_center
+            }
+            state = {
+                start_building_construction = building_urban_center
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_vatican_city
+            }
+            state = {
+                start_building_construction = building_vatican_city
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_victoria_terminus
+            }
+            state = {
+                start_building_construction = building_victoria_terminus
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_vineyard
+            }
+            state = {
+                start_building_construction = building_vineyard
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_wat_arun
+            }
+            state = {
+                start_building_construction = building_wat_arun
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_water_plant
+            }
+            state = {
+                start_building_construction = building_water_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_whaling_station
+            }
+            state = {
+                start_building_construction = building_whaling_station
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_wheat_farm
+            }
+            state = {
+                start_building_construction = building_wheat_farm
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_white_house
+            }
+            state = {
+                start_building_construction = building_white_house
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_fusion_power_plant
+            }
+            state = {
+                start_building_construction = building_fusion_power_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_power_grid_station
+            }
+            state = {
+                start_building_construction = building_power_grid_station
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_computer_assembly_plant
+            }
+            state = {
+                start_building_construction = building_computer_assembly_plant
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_livestock_ranch
+            }
+            state = {
+                start_building_construction = building_livestock_ranch
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_synthetics_plant
+            }
+            state = {
+                start_building_construction = building_synthetics_plant
+            }
+        }
+    }
+}

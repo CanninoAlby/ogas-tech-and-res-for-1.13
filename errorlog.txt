@@ -1,0 +1,220 @@
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'remove_building' returned false at common/scripted_effects/ztr_atomic_scripts.txt:751
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_reporting_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:1227
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:1227
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_optimization_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:1319
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:1319
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_reporting_light_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:1779
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:1779
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_optimization_light_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:1871
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:4731
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_algorithmic_dispatch_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:4808
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:4808
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid building type 'building_military_shipyard' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:9273
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:9581
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_no_computer_production' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:10663
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:10663
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_computer_teleprinters' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:10740
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:10740
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_personal_computers' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:10817
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:10817
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_laptops' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:10894
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:10894
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_advanced_personal_computers' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:10971
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:10971
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_optimization_heavy_industry_processors' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:11247
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:11247
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_on_premises_heavy_industry_processors' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:11339
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:11523
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_manual_data_reporting_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:12346
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:12346
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_manual_data_optimization_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:12438
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:12438
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_optimization_heavy_industry_software' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:12530
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:12530
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_on_premises_heavy_industry_software' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:12622
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:12622
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_reporting_heavy_industry_software' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:12714
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:12714
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_optimization_heavy_industry_software' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:12806
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:12806
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_algorithmic_dispatch_heavy_industry_telecommunications' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:14726
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:19937
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_internet_data_reporting_primary_sector' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:20463
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:30203
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_manual_data_reporting_light_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:34321
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:34321
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_manual_data_optimization_light_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:34413
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:34413
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_optimization_light_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:34505
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:34505
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_on_premises_light_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:34597
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:36287
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_optimization_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:36379
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:36379
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_digital_data_on_premises_heavy_industry' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:36471
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_balance.txt:40402
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'natta_catalysts' ]
+  Script location: common/scripted_effects/AUTO_PM_balance.txt:40650
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_upgrade.txt:459
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_integrated_transistor' ]
+  Script location: common/scripted_effects/AUTO_PM_upgrade.txt:3165
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_upgrade.txt:3165
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_nano_transistor' ]
+  Script location: common/scripted_effects/AUTO_PM_upgrade.txt:3187
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_upgrade.txt:3187
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid building type 'building_naval_base' ]
+  Script location: common/scripted_effects/AUTO_PM_upgrade.txt:5915
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_upgrade.txt:6003
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_gas' ]
+  Script location: common/scripted_effects/AUTO_PM_upgrade.txt:6883
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_upgrade.txt:11701
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'refining_process' ]
+  Script location: common/scripted_effects/AUTO_PM_upgrade.txt:11855
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/AUTO_PM_upgrade.txt:19467
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_hpgr_comminution' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:66
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:66
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_purification_mine' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:95
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:95
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_iot_building_electrics_industry' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1487
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1487
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_robotic_building_electrics_industry' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1516
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1516
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_advanced_assembly_lines_building_electrics_industry' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1545
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1545
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_assembly_lines_building_electrics_industry' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1574
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1574
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_mid_computer_server_building_datacenter' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1806
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:1806
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_automatic_printed_circuit_board_building_electronics_plant' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:2212
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:2212
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_multiway_transport_plantation' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:2995
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:2995
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_multiway_transport_mine' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:4996
+
+[16:14:56][jomini_effect.cpp:141]: PostValidate of effect 'activate_production_method' returned false at common/scripted_effects/cnm_pm_manager_scripted_effects.txt:4996
+[16:14:56][jomini_script_system.cpp:247]: Script system error!
+  Error: activate_production_method effect [ Invalid production method 'pm_rail_transport_mine' ]
+  Script location: common/scripted_effects/cnm_pm_manager_scripted_effects.txt:5025
+

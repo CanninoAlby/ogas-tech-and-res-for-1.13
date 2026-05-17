@@ -1,0 +1,590 @@
+﻿OGAS_default_building_weight_manager = {
+    set_variable = {
+        name = cnm_auto_construct_building_advancedores_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_aircraft_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_airport
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_alloys_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_angkor_wat
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_argebam
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_arms_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_art_academy
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_artillery_foundry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_automotive_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_banana_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_barrack
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_battery_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_bauxite_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_big_ben
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_capitol_hill
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_central_park
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_chemical_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_chichen_itza
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_coal_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_coffee_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_commonores_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_company_headquarter
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_company_regional_headquarter
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_conscription_center
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_construction_sector
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_consumer_electronics_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_copper_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_cotton_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_cristo_redentor
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_datacenter_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_dye_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_easter_island_heads
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_ecommerce_logistics
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_eiffel_tower
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_electrics_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_electronics_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_elgar_opera
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_estacion_de_madrid_atocha
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_explosives_factory
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_eye_of_sahara
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_financial_district
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_fishing_wharf
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_food_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_forbidden_city
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_furniture_manufactory
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_geothermal_power_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_giza_necropolis
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_glassworks
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_gold_field
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_gold_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_government_administration
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_gran_teatro_de_la_habana
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_hagia_sophia
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_halloween_castledracula
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_hydroelectric_power_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_hydroponic
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_instrument_workshops
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_interactive_media_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_iron_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_kaiserforum_2
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_kaiserforum_3
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_kaiserforum_4
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_khaju_bridge
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_lead_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_logging_camp
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_machu_picchu
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_maize_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_manila_cathedral_monument
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_manila_cathedral_original
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_manila_cathedral_ruins
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_manor_house
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_manzoni_publishing_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_martandsuntemple
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_mendelejew_hydrogenation_plants
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_mendelejew_synthetic_rubber_factory
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_millet_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_modern_state_baseline
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_mosque_of_djenne
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_motor_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_munition_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_natural_gas_rig
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_nuclear_weapons_silo
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_observatorygreenwich
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_office
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_oil_rig
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_opium_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_panama_canal
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_paper_mill
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_pena_convent
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_pena_palace
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_petra
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_pharmaceuticals_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_port
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_power_bloc_statue
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_power_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_processors_foundry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_railway
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_rare_earths_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_renewable_energy_power_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_research_center
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_rice_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_robotics_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_rubber_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_rye_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_sagrada_familia_cathedral_1
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_sagrada_familia_cathedral_2
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_sagrada_familia_cathedral_3
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_saint_basils_cathedral
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_shipyard
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_silk_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_skyscraper
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_software_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_statue_of_liberty
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_steel_mill
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_subsistence_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_subsistence_fishing_village
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_subsistence_orchard
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_subsistence_pasture
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_subsistence_rice_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_suez_canal
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_sugar_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_sulfur_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_taj_mahal
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_tea_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_telecommunications_industry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_temple_of_poseidon
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_textile_mill
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_tobacco_plantation
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_tooling_workshop
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_trade_center
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_university
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_uranium_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_urban_center
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_vatican_city
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_victoria_terminus
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_vineyard
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_wat_arun
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_water_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_whaling_station
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_wheat_farm
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_white_house
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_fusion_power_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_power_grid_station
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_computer_assembly_plant
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_livestock_ranch
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_synthetics_plant
+        value = 1
+    }
+}

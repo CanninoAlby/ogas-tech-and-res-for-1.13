@@ -1,0 +1,56 @@
+{
+    "manzoni_pm_printing_presses": {
+        "inputs": {
+            "tools": 5,
+            "paper": 15
+        },
+        "outputs": {
+            "manzoni_prints": 25
+        }
+    },
+    "manzoni_pm_rotary_presses": {
+        "inputs": {
+            "paper": 30,
+            "tools": 15,
+            "coal": 10
+        },
+        "outputs": {
+            "manzoni_prints": 60
+        }
+    },
+    "manzoni_pm_linotype": {
+        "inputs": {
+            "paper": 40,
+            "coal": 15,
+            "tools": 20,
+            "engines": 5
+        },
+        "outputs": {
+            "manzoni_prints": 80
+        }
+    },
+    "pm_offset_printing": {
+        "inputs": {
+            "paper": 50,
+            "coal": 10,
+            "rubber": 10,
+            "dye": 20,
+            "engines": 10
+        },
+        "outputs": {
+            "manzoni_prints": 100
+        }
+    },
+    "pm_digital_press": {
+        "inputs": {
+            "paper": 50,
+            "computer": 10,
+            "dye": 15,
+            "robotics": 5,
+            "softwares": 5
+        },
+        "outputs": {
+            "manzoni_prints": 115
+        }
+    }
+}

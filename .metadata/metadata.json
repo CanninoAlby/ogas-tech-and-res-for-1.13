@@ -1,0 +1,14 @@
+{
+  "name" : "OGAS for tech&res",
+	"id" : "",
+  "version" : "",
+  "supported_game_version" : "",
+  "short_description" : "",
+  "tags" : [],
+  "relationships" : [],
+  "picture":"thumbnail.png",
+  "thumbnail":"thumbnail.png",
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}
