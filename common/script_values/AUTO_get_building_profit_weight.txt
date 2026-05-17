@@ -253,12 +253,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_military_shipyard
-        }
-        value = owner.var:cnm_auto_construct_building_military_shipyard
-    }
-    if = {
-        limit = {
             is_building_type = building_millet_farm
         }
         value = owner.var:cnm_auto_construct_building_millet_farm

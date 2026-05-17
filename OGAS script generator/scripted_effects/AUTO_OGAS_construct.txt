@@ -339,14 +339,6 @@
         }
         if = {
             limit = { 
-                is_building_type = building_military_shipyard
-            }
-            state = {
-                start_building_construction = building_military_shipyard
-            }
-        }
-        if = {
-            limit = { 
                 is_building_type = building_millet_farm
             }
             state = {

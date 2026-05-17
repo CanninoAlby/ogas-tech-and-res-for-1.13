@@ -253,12 +253,6 @@
     }
     if = {
         limit = {
-            is_building_type = building_military_shipyard
-        }
-        value = construction_cost_very_high
-    }
-    if = {
-        limit = {
             is_building_type = building_millet_farm
         }
         value = construction_cost_low

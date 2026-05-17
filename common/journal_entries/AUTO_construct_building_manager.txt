@@ -86,8 +86,6 @@
     scripted_button = decrease_building_mendelejew_hydrogenation_plants
     scripted_button = increase_building_mendelejew_synthetic_rubber_factory
     scripted_button = decrease_building_mendelejew_synthetic_rubber_factory
-    scripted_button = increase_building_military_shipyard
-    scripted_button = decrease_building_military_shipyard
     scripted_button = increase_building_millet_farm
     scripted_button = decrease_building_millet_farm
     scripted_button = increase_building_modern_state_baseline

@@ -838,26 +838,6 @@ decrease_building_mendelejew_synthetic_rubber_factory = {
         }
     }
 }
-increase_building_military_shipyard = {
-    name = "increase_building_military_shipyard"
-    desc = "increase_building_military_shipyard_desc"
-    effect = {
-        change_variable = {
-            name = cnm_auto_construct_building_military_shipyard
-            add = 0.1
-        }
-    }
-}
-decrease_building_military_shipyard = {
-    name = "decrease_building_military_shipyard"
-    desc = "decrease_building_military_shipyard_desc"
-    effect = {
-        change_variable = {
-            name = cnm_auto_construct_building_military_shipyard
-            add = -0.1
-        }
-    }
-}
 increase_building_millet_farm = {
     name = "increase_building_millet_farm"
     desc = "increase_building_millet_farm_desc"

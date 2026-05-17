@@ -2047,50 +2047,6 @@
     }
     ordered_scope_state = {
         limit = {
-            has_active_building = building_electronics_industry
-            b:building_electronics_industry.occupancy > 0.01
-            is_production_method_active = {
-                building_type = building_electronics_industry
-                production_method = pm_transistor
-            }
-            can_activate_production_method = {
-                building_type = building_electronics_industry
-                production_method = pm_integrated_transistor
-            }
-            b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_integrated_transistor_profit_prediction_weighted > b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_transistor_profit_prediction
-        }
-        order_by = b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_integrated_transistor_profit_prediction_weighted
-        max = owner.var:cnm_pm_manage_amount
-        check_range_bounds = no
-        activate_production_method = {
-            building_type = building_electronics_industry
-            production_method = pm_integrated_transistor
-        }
-    }
-    ordered_scope_state = {
-        limit = {
-            has_active_building = building_electronics_industry
-            b:building_electronics_industry.occupancy > 0.01
-            is_production_method_active = {
-                building_type = building_electronics_industry
-                production_method = pm_integrated_transistor
-            }
-            can_activate_production_method = {
-                building_type = building_electronics_industry
-                production_method = pm_nano_transistor
-            }
-            b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_nano_transistor_profit_prediction_weighted > b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_integrated_transistor_profit_prediction
-        }
-        order_by = b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_nano_transistor_profit_prediction_weighted
-        max = owner.var:cnm_pm_manage_amount
-        check_range_bounds = no
-        activate_production_method = {
-            building_type = building_electronics_industry
-            production_method = pm_nano_transistor
-        }
-    }
-    ordered_scope_state = {
-        limit = {
             has_active_building = building_elgar_opera
             b:building_elgar_opera.occupancy > 0.01
             is_production_method_active = {

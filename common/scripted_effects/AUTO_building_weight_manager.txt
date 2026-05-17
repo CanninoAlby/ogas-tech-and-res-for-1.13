@@ -168,10 +168,6 @@
         value = 1
     }
     set_variable = {
-        name = cnm_auto_construct_building_military_shipyard
-        value = 1
-    }
-    set_variable = {
         name = cnm_auto_construct_building_millet_farm
         value = 1
     }

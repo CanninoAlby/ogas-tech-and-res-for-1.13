@@ -337,14 +337,6 @@
     }
     trigger_if = {
         limit = { 
-            root.var:cnm_auto_construct_building_military_shipyard <= 0
-        }
-        not = {
-            is_building_type = building_military_shipyard
-        }
-    }
-    trigger_if = {
-        limit = { 
             root.var:cnm_auto_construct_building_millet_farm <= 0
         }
         not = {
@@ -685,7 +677,6 @@ OGAS_possible_building = {
         is_building_type = building_manzoni_publishing_industry
         is_building_type = building_mendelejew_hydrogenation_plants
         is_building_type = building_mendelejew_synthetic_rubber_factory
-        is_building_type = building_military_shipyard
         is_building_type = building_millet_farm
         is_building_type = building_modern_state_baseline
         is_building_type = building_motor_industry
