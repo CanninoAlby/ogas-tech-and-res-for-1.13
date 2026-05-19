@@ -1,4 +1,4 @@
-cnm_start_pm_manage = {
+﻿cnm_start_pm_manage = {
 	if = {
 		limit = {
 			root.var:cnm_upgrade_pm_manager = 1
@@ -38,7 +38,7 @@ cnm_start_pm_manage = {
 cnm_release_work_force = {
 	if = {
 		limit = {
-			day = 1
+			is_day_of_month = 1
 		}
 
 	# Auto-generated labor-saving PM activation script
@@ -7298,7 +7298,6 @@ cnm_release_work_force = {
 		}
 
 
-}
 	}
 }
 

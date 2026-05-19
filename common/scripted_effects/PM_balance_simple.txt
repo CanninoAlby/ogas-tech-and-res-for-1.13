@@ -1,4 +1,4 @@
-PM_balance_simple = {
+﻿PM_balance_simple = {
     every_scope_state = {
         limit = {
             has_active_building = building_urban_center

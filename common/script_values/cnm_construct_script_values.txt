@@ -1,4 +1,4 @@
-cnm_building_profit_per_level = {
+﻿cnm_building_profit_per_level = {
 	value = weekly_profit
 	divide = { value = { value = level min = 1 } }
 }
