@@ -153,10 +153,11 @@ def is_output_shift(out1: dict[str, float], out2: dict[str, float]) -> bool:
     keys1 = sorted(out1.keys())
     keys2 = sorted(out2.keys())
     
-    if not keys1 or not keys2:
-        return False
     if keys1 != keys2:
         return True
+        
+    if not keys1 or not keys2:
+        return False
         
     first_key = keys1[0]
     ratio = out2[first_key] / out1[first_key]
