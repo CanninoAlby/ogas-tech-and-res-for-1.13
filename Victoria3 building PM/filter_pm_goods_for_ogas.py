@@ -221,7 +221,9 @@ def main() -> None:
         target_type = "upgrade"
         if group_is_labor_saving.get(group_name, False):
             target_type = "labor_saving"
-        elif b in ("building_power_plant", "building_railway", "building_fusion_power_plant", "building_geothermal_power_plant", "building_hydroelectric_power_plant", "building_renewable_energy_power_plant", "building_modern_state_baseline"):
+        elif b in ("building_power_plant", "building_railway"):
+            target_type = "none"
+        elif b in ("building_fusion_power_plant", "building_geothermal_power_plant", "building_hydroelectric_power_plant", "building_renewable_energy_power_plant", "building_modern_state_baseline"):
             target_type = "upgrade"
         elif "base" in group_name:
             target_type = "upgrade"
