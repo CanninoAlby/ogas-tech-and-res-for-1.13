@@ -7173,6 +7173,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_sugar_plantation
+            b:building_sugar_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_sugar_plantation
+                production_method = slave_exploitation_sugar
+            }
+            can_activate_production_method = {
+                building_type = building_sugar_plantation
+                production_method = worker_exploitation_sugar
+            }
+            b:building_sugar_plantation.pmg_exploitation_sugar_worker_exploitation_sugar_profit_prediction_weighted > b:building_sugar_plantation.pmg_exploitation_sugar_slave_exploitation_sugar_profit_prediction
+        }
+        order_by = b:building_sugar_plantation.pmg_exploitation_sugar_worker_exploitation_sugar_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_sugar_plantation
+            production_method = worker_exploitation_sugar
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_sugar_plantation
+            b:building_sugar_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_sugar_plantation
+                production_method = worker_exploitation_sugar
+            }
+            can_activate_production_method = {
+                building_type = building_sugar_plantation
+                production_method = default_labour
+            }
+            b:building_sugar_plantation.pmg_exploitation_sugar_default_labour_profit_prediction_weighted > b:building_sugar_plantation.pmg_exploitation_sugar_worker_exploitation_sugar_profit_prediction
+        }
+        order_by = b:building_sugar_plantation.pmg_exploitation_sugar_default_labour_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_sugar_plantation
+            production_method = default_labour
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_sulfur_mine
             b:building_sulfur_mine.occupancy > 0.01
             is_production_method_active = {
@@ -7785,6 +7829,72 @@
         activate_production_method = {
             building_type = building_tobacco_plantation
             production_method = drone_assisted_agriculture_building_tobacco_plantation
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_tobacco_plantation
+            b:building_tobacco_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_tobacco_plantation
+                production_method = worker_exploitation_tobacco
+            }
+            can_activate_production_method = {
+                building_type = building_tobacco_plantation
+                production_method = default_labour_tobacco
+            }
+            b:building_tobacco_plantation.pmg_working_conditions_tobacco_default_labour_tobacco_profit_prediction_weighted > b:building_tobacco_plantation.pmg_working_conditions_tobacco_worker_exploitation_tobacco_profit_prediction
+        }
+        order_by = b:building_tobacco_plantation.pmg_working_conditions_tobacco_default_labour_tobacco_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_tobacco_plantation
+            production_method = default_labour_tobacco
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_tobacco_plantation
+            b:building_tobacco_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_tobacco_plantation
+                production_method = default_labour_tobacco
+            }
+            can_activate_production_method = {
+                building_type = building_tobacco_plantation
+                production_method = lectors_tobacco
+            }
+            b:building_tobacco_plantation.pmg_working_conditions_tobacco_lectors_tobacco_profit_prediction_weighted > b:building_tobacco_plantation.pmg_working_conditions_tobacco_default_labour_tobacco_profit_prediction
+        }
+        order_by = b:building_tobacco_plantation.pmg_working_conditions_tobacco_lectors_tobacco_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_tobacco_plantation
+            production_method = lectors_tobacco
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_tobacco_plantation
+            b:building_tobacco_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_tobacco_plantation
+                production_method = lectors_tobacco
+            }
+            can_activate_production_method = {
+                building_type = building_tobacco_plantation
+                production_method = radio_stations_tobacco
+            }
+            b:building_tobacco_plantation.pmg_working_conditions_tobacco_radio_stations_tobacco_profit_prediction_weighted > b:building_tobacco_plantation.pmg_working_conditions_tobacco_lectors_tobacco_profit_prediction
+        }
+        order_by = b:building_tobacco_plantation.pmg_working_conditions_tobacco_radio_stations_tobacco_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_tobacco_plantation
+            production_method = radio_stations_tobacco
         }
     }
     ordered_scope_state = {

@@ -238,10 +238,10 @@ def main() -> None:
                         
             if has_output_shift:
                 is_toggle = False
-                if len(group_rows) > 1:
-                    first_out = get_outputs(group_rows[0][1], header)
-                    if not first_out:
+                for r in group_rows:
+                    if not get_outputs(r[1], header):
                         is_toggle = True
+                        break
                 
                 if is_toggle:
                     primary_goods = set()
