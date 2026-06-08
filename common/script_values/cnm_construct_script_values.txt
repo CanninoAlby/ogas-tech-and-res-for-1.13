@@ -1,11 +1,11 @@
 ﻿cnm_building_profit_per_level = {
 	value = weekly_profit
-	divide = { value = { value = level min = 1 } }
+	divide = level
 }
 
 cnm_building_profit_per_level_per_construct_power = {
 	value = cnm_building_profit_per_level
-	divide = { value = { value = building_construction_cost min = 1 } }
+	divide = building_construction_cost
 }
 
 cnm_building_profit_weight = {
@@ -69,23 +69,28 @@ cnm_current_construct_power_cost = {
 	}
 }
 cnm_current_construct_power_queue_price = {
-        value = cnm_current_construct_power_cost
-        divide = {
-                value = {
-                        value = {
-                                value = modifier:country_construction_add
-                                divide = {
-                                        value = {
-                                                value = { value = modifier:country_max_weekly_construction_progress_add min = 1 }
-                                        }
-                                }
-                        }
-                        max = 1
-                }
-        }
-}cnm_current_construct_power_unit_price = {
 	value = cnm_current_construct_power_cost
-	divide = { value = { value = modifier:country_construction_add min = 1 } }
+	divide = {
+		value = modifier:country_construction_add
+		divide = modifier:country_max_weekly_construction_progress_add
+	}
+	#num_queued_constructions gives all queue, not active queue
+	#if = {
+	#	limit = {
+	#		num_queued_constructions = 0
+	#	}
+	#	value = 0
+	#}
+	#else = {
+	#	divide = {
+	#		value = num_queued_constructions
+	#		multiply = modifier:country_max_weekly_construction_progress_add
+	#	}
+	#}
+}
+cnm_current_construct_power_unit_price = {
+	value = cnm_current_construct_power_cost
+	divide = modifier:country_construction_add
 }
 cnm_current_construct_sector_unit_price = {
 	value = cnm_current_construct_power_unit_price

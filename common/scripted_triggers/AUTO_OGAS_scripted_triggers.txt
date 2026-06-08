@@ -113,6 +113,14 @@
     }
     trigger_if = {
         limit = { 
+            root.var:cnm_auto_construct_building_computer_assembly_plant <= 0
+        }
+        not = {
+            is_building_type = building_computer_assembly_plant
+        }
+    }
+    trigger_if = {
+        limit = { 
             root.var:cnm_auto_construct_building_consumer_electronics_industry <= 0
         }
         not = {
@@ -217,6 +225,14 @@
     }
     trigger_if = {
         limit = { 
+            root.var:cnm_auto_construct_building_fusion_power_plant <= 0
+        }
+        not = {
+            is_building_type = building_fusion_power_plant
+        }
+    }
+    trigger_if = {
+        limit = { 
             root.var:cnm_auto_construct_building_geothermal_power_plant <= 0
         }
         not = {
@@ -289,10 +305,34 @@
     }
     trigger_if = {
         limit = { 
+            root.var:cnm_auto_construct_building_kaiserforum_1 <= 0
+        }
+        not = {
+            is_building_type = building_kaiserforum_1
+        }
+    }
+    trigger_if = {
+        limit = { 
+            root.var:cnm_auto_construct_building_land_logistics_center <= 0
+        }
+        not = {
+            is_building_type = building_land_logistics_center
+        }
+    }
+    trigger_if = {
+        limit = { 
             root.var:cnm_auto_construct_building_lead_mine <= 0
         }
         not = {
             is_building_type = building_lead_mine
+        }
+    }
+    trigger_if = {
+        limit = { 
+            root.var:cnm_auto_construct_building_livestock_ranch <= 0
+        }
+        not = {
+            is_building_type = building_livestock_ranch
         }
     }
     trigger_if = {
@@ -377,6 +417,30 @@
     }
     trigger_if = {
         limit = { 
+            root.var:cnm_auto_construct_building_naval_administration <= 0
+        }
+        not = {
+            is_building_type = building_naval_administration
+        }
+    }
+    trigger_if = {
+        limit = { 
+            root.var:cnm_auto_construct_building_naval_fortification <= 0
+        }
+        not = {
+            is_building_type = building_naval_fortification
+        }
+    }
+    trigger_if = {
+        limit = { 
+            root.var:cnm_auto_construct_building_naval_logistics_center <= 0
+        }
+        not = {
+            is_building_type = building_naval_logistics_center
+        }
+    }
+    trigger_if = {
+        limit = { 
             root.var:cnm_auto_construct_building_office <= 0
         }
         not = {
@@ -425,6 +489,14 @@
     }
     trigger_if = {
         limit = { 
+            root.var:cnm_auto_construct_building_power_grid_station <= 0
+        }
+        not = {
+            is_building_type = building_power_grid_station
+        }
+    }
+    trigger_if = {
+        limit = { 
             root.var:cnm_auto_construct_building_power_plant <= 0
         }
         not = {
@@ -437,6 +509,14 @@
         }
         not = {
             is_building_type = building_processors_foundry
+        }
+    }
+    trigger_if = {
+        limit = { 
+            root.var:cnm_auto_construct_building_railway <= 0
+        }
+        not = {
+            is_building_type = building_railway
         }
     }
     trigger_if = {
@@ -545,6 +625,14 @@
     }
     trigger_if = {
         limit = { 
+            root.var:cnm_auto_construct_building_synthetics_plant <= 0
+        }
+        not = {
+            is_building_type = building_synthetics_plant
+        }
+    }
+    trigger_if = {
+        limit = { 
             root.var:cnm_auto_construct_building_tea_plantation <= 0
         }
         not = {
@@ -623,14 +711,6 @@
             is_building_type = building_wheat_farm
         }
     }
-    trigger_if = {
-        limit = { 
-            root.var:cnm_auto_construct_building_livestock_ranch <= 0
-        }
-        not = {
-            is_building_type = building_livestock_ranch
-        }
-    }
 }
 
 OGAS_possible_building = {
@@ -649,6 +729,7 @@ OGAS_possible_building = {
         is_building_type = building_coal_mine
         is_building_type = building_coffee_plantation
         is_building_type = building_commonores_mine
+        is_building_type = building_computer_assembly_plant
         is_building_type = building_consumer_electronics_industry
         is_building_type = building_copper_mine
         is_building_type = building_cotton_plantation
@@ -662,6 +743,7 @@ OGAS_possible_building = {
         is_building_type = building_fishing_wharf
         is_building_type = building_food_industry
         is_building_type = building_furniture_manufactory
+        is_building_type = building_fusion_power_plant
         is_building_type = building_geothermal_power_plant
         is_building_type = building_glassworks
         is_building_type = building_gold_field
@@ -671,7 +753,10 @@ OGAS_possible_building = {
         is_building_type = building_instrument_workshops
         is_building_type = building_interactive_media_industry
         is_building_type = building_iron_mine
+        is_building_type = building_kaiserforum_1
+        is_building_type = building_land_logistics_center
         is_building_type = building_lead_mine
+        is_building_type = building_livestock_ranch
         is_building_type = building_logging_camp
         is_building_type = building_maize_farm
         is_building_type = building_manzoni_publishing_industry
@@ -682,14 +767,19 @@ OGAS_possible_building = {
         is_building_type = building_motor_industry
         is_building_type = building_munition_plant
         is_building_type = building_natural_gas_rig
+        is_building_type = building_naval_administration
+        is_building_type = building_naval_fortification
+        is_building_type = building_naval_logistics_center
         is_building_type = building_office
         is_building_type = building_oil_rig
         is_building_type = building_opium_plantation
         is_building_type = building_panama_canal
         is_building_type = building_paper_mill
         is_building_type = building_pharmaceuticals_industry
+        is_building_type = building_power_grid_station
         is_building_type = building_power_plant
         is_building_type = building_processors_foundry
+        is_building_type = building_railway
         is_building_type = building_rare_earths_mine
         is_building_type = building_renewable_energy_power_plant
         is_building_type = building_rice_farm
@@ -703,6 +793,7 @@ OGAS_possible_building = {
         is_building_type = building_suez_canal
         is_building_type = building_sugar_plantation
         is_building_type = building_sulfur_mine
+        is_building_type = building_synthetics_plant
         is_building_type = building_tea_plantation
         is_building_type = building_telecommunications_industry
         is_building_type = building_textile_mill
@@ -713,6 +804,5 @@ OGAS_possible_building = {
         is_building_type = building_water_plant
         is_building_type = building_whaling_station
         is_building_type = building_wheat_farm
-        is_building_type = building_livestock_ranch
     }
 }

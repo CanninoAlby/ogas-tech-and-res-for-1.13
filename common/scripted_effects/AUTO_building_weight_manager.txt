@@ -56,6 +56,10 @@
         value = 1
     }
     set_variable = {
+        name = cnm_auto_construct_building_computer_assembly_plant
+        value = 1
+    }
+    set_variable = {
         name = cnm_auto_construct_building_consumer_electronics_industry
         value = 1
     }
@@ -108,6 +112,10 @@
         value = 1
     }
     set_variable = {
+        name = cnm_auto_construct_building_fusion_power_plant
+        value = 1
+    }
+    set_variable = {
         name = cnm_auto_construct_building_geothermal_power_plant
         value = 1
     }
@@ -144,7 +152,19 @@
         value = 1
     }
     set_variable = {
+        name = cnm_auto_construct_building_kaiserforum_1
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_land_logistics_center
+        value = 1
+    }
+    set_variable = {
         name = cnm_auto_construct_building_lead_mine
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_livestock_ranch
         value = 1
     }
     set_variable = {
@@ -188,6 +208,18 @@
         value = 1
     }
     set_variable = {
+        name = cnm_auto_construct_building_naval_administration
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_naval_fortification
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_naval_logistics_center
+        value = 1
+    }
+    set_variable = {
         name = cnm_auto_construct_building_office
         value = 1
     }
@@ -212,11 +244,19 @@
         value = 1
     }
     set_variable = {
+        name = cnm_auto_construct_building_power_grid_station
+        value = 1
+    }
+    set_variable = {
         name = cnm_auto_construct_building_power_plant
         value = 1
     }
     set_variable = {
         name = cnm_auto_construct_building_processors_foundry
+        value = 1
+    }
+    set_variable = {
+        name = cnm_auto_construct_building_railway
         value = 1
     }
     set_variable = {
@@ -272,6 +312,10 @@
         value = 1
     }
     set_variable = {
+        name = cnm_auto_construct_building_synthetics_plant
+        value = 1
+    }
+    set_variable = {
         name = cnm_auto_construct_building_tea_plantation
         value = 1
     }
@@ -309,10 +353,6 @@
     }
     set_variable = {
         name = cnm_auto_construct_building_wheat_farm
-        value = 1
-    }
-    set_variable = {
-        name = cnm_auto_construct_building_livestock_ranch
         value = 1
     }
 }

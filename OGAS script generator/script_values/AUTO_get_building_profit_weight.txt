@@ -85,6 +85,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_computer_assembly_plant
+        }
+        value = owner.var:cnm_auto_construct_building_computer_assembly_plant
+    }
+    if = {
+        limit = {
             is_building_type = building_consumer_electronics_industry
         }
         value = owner.var:cnm_auto_construct_building_consumer_electronics_industry
@@ -163,6 +169,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_fusion_power_plant
+        }
+        value = owner.var:cnm_auto_construct_building_fusion_power_plant
+    }
+    if = {
+        limit = {
             is_building_type = building_geothermal_power_plant
         }
         value = owner.var:cnm_auto_construct_building_geothermal_power_plant
@@ -217,9 +229,27 @@
     }
     if = {
         limit = {
+            is_building_type = building_kaiserforum_1
+        }
+        value = owner.var:cnm_auto_construct_building_kaiserforum_1
+    }
+    if = {
+        limit = {
+            is_building_type = building_land_logistics_center
+        }
+        value = owner.var:cnm_auto_construct_building_land_logistics_center
+    }
+    if = {
+        limit = {
             is_building_type = building_lead_mine
         }
         value = owner.var:cnm_auto_construct_building_lead_mine
+    }
+    if = {
+        limit = {
+            is_building_type = building_livestock_ranch
+        }
+        value = owner.var:cnm_auto_construct_building_livestock_ranch
     }
     if = {
         limit = {
@@ -283,6 +313,24 @@
     }
     if = {
         limit = {
+            is_building_type = building_naval_administration
+        }
+        value = owner.var:cnm_auto_construct_building_naval_administration
+    }
+    if = {
+        limit = {
+            is_building_type = building_naval_fortification
+        }
+        value = owner.var:cnm_auto_construct_building_naval_fortification
+    }
+    if = {
+        limit = {
+            is_building_type = building_naval_logistics_center
+        }
+        value = owner.var:cnm_auto_construct_building_naval_logistics_center
+    }
+    if = {
+        limit = {
             is_building_type = building_office
         }
         value = owner.var:cnm_auto_construct_building_office
@@ -319,6 +367,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_power_grid_station
+        }
+        value = owner.var:cnm_auto_construct_building_power_grid_station
+    }
+    if = {
+        limit = {
             is_building_type = building_power_plant
         }
         value = owner.var:cnm_auto_construct_building_power_plant
@@ -328,6 +382,12 @@
             is_building_type = building_processors_foundry
         }
         value = owner.var:cnm_auto_construct_building_processors_foundry
+    }
+    if = {
+        limit = {
+            is_building_type = building_railway
+        }
+        value = owner.var:cnm_auto_construct_building_railway
     }
     if = {
         limit = {
@@ -409,6 +469,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_synthetics_plant
+        }
+        value = owner.var:cnm_auto_construct_building_synthetics_plant
+    }
+    if = {
+        limit = {
             is_building_type = building_tea_plantation
         }
         value = owner.var:cnm_auto_construct_building_tea_plantation
@@ -466,11 +532,5 @@
             is_building_type = building_wheat_farm
         }
         value = owner.var:cnm_auto_construct_building_wheat_farm
-    }
-    if = {
-        limit = {
-            is_building_type = building_livestock_ranch
-        }
-        value = owner.var:cnm_auto_construct_building_livestock_ranch
     }
 }

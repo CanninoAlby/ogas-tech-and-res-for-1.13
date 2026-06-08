@@ -85,6 +85,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_computer_assembly_plant
+        }
+        value = construction_cost_modern
+    }
+    if = {
+        limit = {
             is_building_type = building_consumer_electronics_industry
         }
         value = construction_cost_modern
@@ -105,7 +111,7 @@
         limit = {
             is_building_type = building_datacenter_industry
         }
-        value = construction_cost_monument
+        value = construction_cost_canal
     }
     if = {
         limit = {
@@ -163,6 +169,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_fusion_power_plant
+        }
+        value = construction_cost_monument_modern
+    }
+    if = {
+        limit = {
             is_building_type = building_geothermal_power_plant
         }
         value = construction_cost_monument
@@ -208,6 +220,12 @@
             is_building_type = building_iron_mine
         }
         value = construction_cost_medium
+    }
+    if = {
+        limit = {
+            is_building_type = building_kaiserforum_1
+        }
+        value = construction_cost_monument
     }
     if = {
         limit = {
@@ -277,6 +295,18 @@
     }
     if = {
         limit = {
+            is_building_type = building_naval_administration
+        }
+        value = construction_cost_very_low
+    }
+    if = {
+        limit = {
+            is_building_type = building_naval_fortification
+        }
+        value = construction_cost_very_low
+    }
+    if = {
+        limit = {
             is_building_type = building_office
         }
         value = construction_cost_modern
@@ -313,6 +343,12 @@
     }
     if = {
         limit = {
+            is_building_type = building_power_grid_station
+        }
+        value = construction_cost_very_high
+    }
+    if = {
+        limit = {
             is_building_type = building_power_plant
         }
         value = construction_cost_medium
@@ -322,6 +358,12 @@
             is_building_type = building_processors_foundry
         }
         value = construction_cost_modern
+    }
+    if = {
+        limit = {
+            is_building_type = building_railway
+        }
+        value = construction_cost_very_high
     }
     if = {
         limit = {
@@ -400,6 +442,12 @@
             is_building_type = building_sulfur_mine
         }
         value = construction_cost_medium
+    }
+    if = {
+        limit = {
+            is_building_type = building_synthetics_plant
+        }
+        value = construction_cost_very_high
     }
     if = {
         limit = {

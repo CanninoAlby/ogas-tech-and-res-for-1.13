@@ -278,6 +278,26 @@ decrease_building_commonores_mine = {
         }
     }
 }
+increase_building_computer_assembly_plant = {
+    name = "increase_building_computer_assembly_plant"
+    desc = "increase_building_computer_assembly_plant_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_computer_assembly_plant
+            add = 0.1
+        }
+    }
+}
+decrease_building_computer_assembly_plant = {
+    name = "decrease_building_computer_assembly_plant"
+    desc = "decrease_building_computer_assembly_plant_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_computer_assembly_plant
+            add = -0.1
+        }
+    }
+}
 increase_building_consumer_electronics_industry = {
     name = "increase_building_consumer_electronics_industry"
     desc = "increase_building_consumer_electronics_industry_desc"
@@ -538,6 +558,26 @@ decrease_building_furniture_manufactory = {
         }
     }
 }
+increase_building_fusion_power_plant = {
+    name = "increase_building_fusion_power_plant"
+    desc = "increase_building_fusion_power_plant_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_fusion_power_plant
+            add = 0.1
+        }
+    }
+}
+decrease_building_fusion_power_plant = {
+    name = "decrease_building_fusion_power_plant"
+    desc = "decrease_building_fusion_power_plant_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_fusion_power_plant
+            add = -0.1
+        }
+    }
+}
 increase_building_geothermal_power_plant = {
     name = "increase_building_geothermal_power_plant"
     desc = "increase_building_geothermal_power_plant_desc"
@@ -718,6 +758,46 @@ decrease_building_iron_mine = {
         }
     }
 }
+increase_building_kaiserforum_1 = {
+    name = "increase_building_kaiserforum_1"
+    desc = "increase_building_kaiserforum_1_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_kaiserforum_1
+            add = 0.1
+        }
+    }
+}
+decrease_building_kaiserforum_1 = {
+    name = "decrease_building_kaiserforum_1"
+    desc = "decrease_building_kaiserforum_1_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_kaiserforum_1
+            add = -0.1
+        }
+    }
+}
+increase_building_land_logistics_center = {
+    name = "increase_building_land_logistics_center"
+    desc = "increase_building_land_logistics_center_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_land_logistics_center
+            add = 0.1
+        }
+    }
+}
+decrease_building_land_logistics_center = {
+    name = "decrease_building_land_logistics_center"
+    desc = "decrease_building_land_logistics_center_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_land_logistics_center
+            add = -0.1
+        }
+    }
+}
 increase_building_lead_mine = {
     name = "increase_building_lead_mine"
     desc = "increase_building_lead_mine_desc"
@@ -734,6 +814,26 @@ decrease_building_lead_mine = {
     effect = {
         change_variable = {
             name = cnm_auto_construct_building_lead_mine
+            add = -0.1
+        }
+    }
+}
+increase_building_livestock_ranch = {
+    name = "increase_building_livestock_ranch"
+    desc = "increase_building_livestock_ranch_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_livestock_ranch
+            add = 0.1
+        }
+    }
+}
+decrease_building_livestock_ranch = {
+    name = "decrease_building_livestock_ranch"
+    desc = "decrease_building_livestock_ranch_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_livestock_ranch
             add = -0.1
         }
     }
@@ -938,6 +1038,66 @@ decrease_building_natural_gas_rig = {
         }
     }
 }
+increase_building_naval_administration = {
+    name = "increase_building_naval_administration"
+    desc = "increase_building_naval_administration_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_naval_administration
+            add = 0.1
+        }
+    }
+}
+decrease_building_naval_administration = {
+    name = "decrease_building_naval_administration"
+    desc = "decrease_building_naval_administration_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_naval_administration
+            add = -0.1
+        }
+    }
+}
+increase_building_naval_fortification = {
+    name = "increase_building_naval_fortification"
+    desc = "increase_building_naval_fortification_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_naval_fortification
+            add = 0.1
+        }
+    }
+}
+decrease_building_naval_fortification = {
+    name = "decrease_building_naval_fortification"
+    desc = "decrease_building_naval_fortification_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_naval_fortification
+            add = -0.1
+        }
+    }
+}
+increase_building_naval_logistics_center = {
+    name = "increase_building_naval_logistics_center"
+    desc = "increase_building_naval_logistics_center_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_naval_logistics_center
+            add = 0.1
+        }
+    }
+}
+decrease_building_naval_logistics_center = {
+    name = "decrease_building_naval_logistics_center"
+    desc = "decrease_building_naval_logistics_center_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_naval_logistics_center
+            add = -0.1
+        }
+    }
+}
 increase_building_office = {
     name = "increase_building_office"
     desc = "increase_building_office_desc"
@@ -1058,6 +1218,26 @@ decrease_building_pharmaceuticals_industry = {
         }
     }
 }
+increase_building_power_grid_station = {
+    name = "increase_building_power_grid_station"
+    desc = "increase_building_power_grid_station_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_power_grid_station
+            add = 0.1
+        }
+    }
+}
+decrease_building_power_grid_station = {
+    name = "decrease_building_power_grid_station"
+    desc = "decrease_building_power_grid_station_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_power_grid_station
+            add = -0.1
+        }
+    }
+}
 increase_building_power_plant = {
     name = "increase_building_power_plant"
     desc = "increase_building_power_plant_desc"
@@ -1094,6 +1274,26 @@ decrease_building_processors_foundry = {
     effect = {
         change_variable = {
             name = cnm_auto_construct_building_processors_foundry
+            add = -0.1
+        }
+    }
+}
+increase_building_railway = {
+    name = "increase_building_railway"
+    desc = "increase_building_railway_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_railway
+            add = 0.1
+        }
+    }
+}
+decrease_building_railway = {
+    name = "decrease_building_railway"
+    desc = "decrease_building_railway_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_railway
             add = -0.1
         }
     }
@@ -1358,6 +1558,26 @@ decrease_building_sulfur_mine = {
         }
     }
 }
+increase_building_synthetics_plant = {
+    name = "increase_building_synthetics_plant"
+    desc = "increase_building_synthetics_plant_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_synthetics_plant
+            add = 0.1
+        }
+    }
+}
+decrease_building_synthetics_plant = {
+    name = "decrease_building_synthetics_plant"
+    desc = "decrease_building_synthetics_plant_desc"
+    effect = {
+        change_variable = {
+            name = cnm_auto_construct_building_synthetics_plant
+            add = -0.1
+        }
+    }
+}
 increase_building_tea_plantation = {
     name = "increase_building_tea_plantation"
     desc = "increase_building_tea_plantation_desc"
@@ -1554,26 +1774,6 @@ decrease_building_wheat_farm = {
     effect = {
         change_variable = {
             name = cnm_auto_construct_building_wheat_farm
-            add = -0.1
-        }
-    }
-}
-increase_building_livestock_ranch = {
-    name = "increase_building_livestock_ranch"
-    desc = "increase_building_livestock_ranch_desc"
-    effect = {
-        change_variable = {
-            name = cnm_auto_construct_building_livestock_ranch
-            add = 0.1
-        }
-    }
-}
-decrease_building_livestock_ranch = {
-    name = "decrease_building_livestock_ranch"
-    desc = "decrease_building_livestock_ranch_desc"
-    effect = {
-        change_variable = {
-            name = cnm_auto_construct_building_livestock_ranch
             add = -0.1
         }
     }

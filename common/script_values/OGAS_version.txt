@@ -1,4 +1,4 @@
-﻿cnm_mod_version = 20260110
+cnm_mod_version = 20260510
 
 pm_upgrade_tolerance_low = 1.20
 pm_upgrade_tolerance_medium = 1.35

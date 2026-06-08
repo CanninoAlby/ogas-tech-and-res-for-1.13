@@ -115,6 +115,14 @@
         }
         if = {
             limit = { 
+                is_building_type = building_computer_assembly_plant
+            }
+            state = {
+                start_building_construction = building_computer_assembly_plant
+            }
+        }
+        if = {
+            limit = { 
                 is_building_type = building_consumer_electronics_industry
             }
             state = {
@@ -219,6 +227,14 @@
         }
         if = {
             limit = { 
+                is_building_type = building_fusion_power_plant
+            }
+            state = {
+                start_building_construction = building_fusion_power_plant
+            }
+        }
+        if = {
+            limit = { 
                 is_building_type = building_geothermal_power_plant
             }
             state = {
@@ -291,10 +307,34 @@
         }
         if = {
             limit = { 
+                is_building_type = building_kaiserforum_1
+            }
+            state = {
+                start_building_construction = building_kaiserforum_1
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_land_logistics_center
+            }
+            state = {
+                start_building_construction = building_land_logistics_center
+            }
+        }
+        if = {
+            limit = { 
                 is_building_type = building_lead_mine
             }
             state = {
                 start_building_construction = building_lead_mine
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_livestock_ranch
+            }
+            state = {
+                start_building_construction = building_livestock_ranch
             }
         }
         if = {
@@ -379,6 +419,30 @@
         }
         if = {
             limit = { 
+                is_building_type = building_naval_administration
+            }
+            state = {
+                start_building_construction = building_naval_administration
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_naval_fortification
+            }
+            state = {
+                start_building_construction = building_naval_fortification
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_naval_logistics_center
+            }
+            state = {
+                start_building_construction = building_naval_logistics_center
+            }
+        }
+        if = {
+            limit = { 
                 is_building_type = building_office
             }
             state = {
@@ -427,6 +491,14 @@
         }
         if = {
             limit = { 
+                is_building_type = building_power_grid_station
+            }
+            state = {
+                start_building_construction = building_power_grid_station
+            }
+        }
+        if = {
+            limit = { 
                 is_building_type = building_power_plant
             }
             state = {
@@ -439,6 +511,14 @@
             }
             state = {
                 start_building_construction = building_processors_foundry
+            }
+        }
+        if = {
+            limit = { 
+                is_building_type = building_railway
+            }
+            state = {
+                start_building_construction = building_railway
             }
         }
         if = {
@@ -547,6 +627,14 @@
         }
         if = {
             limit = { 
+                is_building_type = building_synthetics_plant
+            }
+            state = {
+                start_building_construction = building_synthetics_plant
+            }
+        }
+        if = {
+            limit = { 
                 is_building_type = building_tea_plantation
             }
             state = {
@@ -623,14 +711,6 @@
             }
             state = {
                 start_building_construction = building_wheat_farm
-            }
-        }
-        if = {
-            limit = { 
-                is_building_type = building_livestock_ranch
-            }
-            state = {
-                start_building_construction = building_livestock_ranch
             }
         }
     }
