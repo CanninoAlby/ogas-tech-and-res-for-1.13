@@ -89,6 +89,72 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_advancedores_mine
+            b:building_advancedores_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_advancedores_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_advancedores_mine
+                production_method = pm_nitroglycerin_building_advancedores_mine
+            }
+            b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_nitroglycerin_building_advancedores_mine_profit_prediction_weighted > b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_nitroglycerin_building_advancedores_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_advancedores_mine
+            production_method = pm_nitroglycerin_building_advancedores_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_advancedores_mine
+            b:building_advancedores_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_advancedores_mine
+                production_method = pm_nitroglycerin_building_advancedores_mine
+            }
+            can_activate_production_method = {
+                building_type = building_advancedores_mine
+                production_method = pm_dynamite_building_advancedores_mine
+            }
+            b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_dynamite_building_advancedores_mine_profit_prediction_weighted > b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_nitroglycerin_building_advancedores_mine_profit_prediction
+        }
+        order_by = b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_dynamite_building_advancedores_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_advancedores_mine
+            production_method = pm_dynamite_building_advancedores_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_advancedores_mine
+            b:building_advancedores_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_advancedores_mine
+                production_method = pm_dynamite_building_advancedores_mine
+            }
+            can_activate_production_method = {
+                building_type = building_advancedores_mine
+                production_method = pm_high_precision_blasting_building_advancedores_mine
+            }
+            b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_high_precision_blasting_building_advancedores_mine_profit_prediction_weighted > b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_dynamite_building_advancedores_mine_profit_prediction
+        }
+        order_by = b:building_advancedores_mine.pmg_explosives_building_advancedores_mine_pm_high_precision_blasting_building_advancedores_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_advancedores_mine
+            production_method = pm_high_precision_blasting_building_advancedores_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_alloys_plant
             b:building_alloys_plant.occupancy > 0.01
             is_production_method_active = {
@@ -793,6 +859,72 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_bauxite_mine
+            b:building_bauxite_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_bauxite_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_bauxite_mine
+                production_method = pm_nitroglycerin_building_bauxite_mine
+            }
+            b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_nitroglycerin_building_bauxite_mine_profit_prediction_weighted > b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_nitroglycerin_building_bauxite_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_bauxite_mine
+            production_method = pm_nitroglycerin_building_bauxite_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_bauxite_mine
+            b:building_bauxite_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_bauxite_mine
+                production_method = pm_nitroglycerin_building_bauxite_mine
+            }
+            can_activate_production_method = {
+                building_type = building_bauxite_mine
+                production_method = pm_dynamite_building_bauxite_mine
+            }
+            b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_dynamite_building_bauxite_mine_profit_prediction_weighted > b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_nitroglycerin_building_bauxite_mine_profit_prediction
+        }
+        order_by = b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_dynamite_building_bauxite_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_bauxite_mine
+            production_method = pm_dynamite_building_bauxite_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_bauxite_mine
+            b:building_bauxite_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_bauxite_mine
+                production_method = pm_dynamite_building_bauxite_mine
+            }
+            can_activate_production_method = {
+                building_type = building_bauxite_mine
+                production_method = pm_high_precision_blasting_building_bauxite_mine
+            }
+            b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_high_precision_blasting_building_bauxite_mine_profit_prediction_weighted > b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_dynamite_building_bauxite_mine_profit_prediction
+        }
+        order_by = b:building_bauxite_mine.pmg_explosives_building_bauxite_mine_pm_high_precision_blasting_building_bauxite_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_bauxite_mine
+            production_method = pm_high_precision_blasting_building_bauxite_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_chemical_plant
             b:building_chemical_plant.occupancy > 0.01
             is_production_method_active = {
@@ -1009,6 +1141,72 @@
         activate_production_method = {
             building_type = building_coal_mine
             production_method = pm_autonomous_and_remote_ops_building_coal_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_coal_mine
+            b:building_coal_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_coal_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_coal_mine
+                production_method = pm_nitroglycerin_building_coal_mine
+            }
+            b:building_coal_mine.pmg_explosives_building_coal_mine_pm_nitroglycerin_building_coal_mine_profit_prediction_weighted > b:building_coal_mine.pmg_explosives_building_coal_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_coal_mine.pmg_explosives_building_coal_mine_pm_nitroglycerin_building_coal_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_coal_mine
+            production_method = pm_nitroglycerin_building_coal_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_coal_mine
+            b:building_coal_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_coal_mine
+                production_method = pm_nitroglycerin_building_coal_mine
+            }
+            can_activate_production_method = {
+                building_type = building_coal_mine
+                production_method = pm_dynamite_building_coal_mine
+            }
+            b:building_coal_mine.pmg_explosives_building_coal_mine_pm_dynamite_building_coal_mine_profit_prediction_weighted > b:building_coal_mine.pmg_explosives_building_coal_mine_pm_nitroglycerin_building_coal_mine_profit_prediction
+        }
+        order_by = b:building_coal_mine.pmg_explosives_building_coal_mine_pm_dynamite_building_coal_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_coal_mine
+            production_method = pm_dynamite_building_coal_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_coal_mine
+            b:building_coal_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_coal_mine
+                production_method = pm_dynamite_building_coal_mine
+            }
+            can_activate_production_method = {
+                building_type = building_coal_mine
+                production_method = pm_high_precision_blasting_building_coal_mine
+            }
+            b:building_coal_mine.pmg_explosives_building_coal_mine_pm_high_precision_blasting_building_coal_mine_profit_prediction_weighted > b:building_coal_mine.pmg_explosives_building_coal_mine_pm_dynamite_building_coal_mine_profit_prediction
+        }
+        order_by = b:building_coal_mine.pmg_explosives_building_coal_mine_pm_high_precision_blasting_building_coal_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_coal_mine
+            production_method = pm_high_precision_blasting_building_coal_mine
         }
     }
     ordered_scope_state = {
@@ -1277,6 +1475,72 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_commonores_mine
+            b:building_commonores_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_commonores_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_commonores_mine
+                production_method = pm_nitroglycerin_building_commonores_mine
+            }
+            b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_nitroglycerin_building_commonores_mine_profit_prediction_weighted > b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_nitroglycerin_building_commonores_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_commonores_mine
+            production_method = pm_nitroglycerin_building_commonores_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_commonores_mine
+            b:building_commonores_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_commonores_mine
+                production_method = pm_nitroglycerin_building_commonores_mine
+            }
+            can_activate_production_method = {
+                building_type = building_commonores_mine
+                production_method = pm_dynamite_building_commonores_mine
+            }
+            b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_dynamite_building_commonores_mine_profit_prediction_weighted > b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_nitroglycerin_building_commonores_mine_profit_prediction
+        }
+        order_by = b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_dynamite_building_commonores_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_commonores_mine
+            production_method = pm_dynamite_building_commonores_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_commonores_mine
+            b:building_commonores_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_commonores_mine
+                production_method = pm_dynamite_building_commonores_mine
+            }
+            can_activate_production_method = {
+                building_type = building_commonores_mine
+                production_method = pm_high_precision_blasting_building_commonores_mine
+            }
+            b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_high_precision_blasting_building_commonores_mine_profit_prediction_weighted > b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_dynamite_building_commonores_mine_profit_prediction
+        }
+        order_by = b:building_commonores_mine.pmg_explosives_building_commonores_mine_pm_high_precision_blasting_building_commonores_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_commonores_mine
+            production_method = pm_high_precision_blasting_building_commonores_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_computer_assembly_plant
             b:building_computer_assembly_plant.occupancy > 0.01
             is_production_method_active = {
@@ -1515,6 +1779,72 @@
         activate_production_method = {
             building_type = building_copper_mine
             production_method = pm_autonomous_and_remote_ops_building_copper_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_copper_mine
+            b:building_copper_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_copper_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_copper_mine
+                production_method = pm_nitroglycerin_building_copper_mine
+            }
+            b:building_copper_mine.pmg_explosives_building_copper_mine_pm_nitroglycerin_building_copper_mine_profit_prediction_weighted > b:building_copper_mine.pmg_explosives_building_copper_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_copper_mine.pmg_explosives_building_copper_mine_pm_nitroglycerin_building_copper_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_copper_mine
+            production_method = pm_nitroglycerin_building_copper_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_copper_mine
+            b:building_copper_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_copper_mine
+                production_method = pm_nitroglycerin_building_copper_mine
+            }
+            can_activate_production_method = {
+                building_type = building_copper_mine
+                production_method = pm_dynamite_building_copper_mine
+            }
+            b:building_copper_mine.pmg_explosives_building_copper_mine_pm_dynamite_building_copper_mine_profit_prediction_weighted > b:building_copper_mine.pmg_explosives_building_copper_mine_pm_nitroglycerin_building_copper_mine_profit_prediction
+        }
+        order_by = b:building_copper_mine.pmg_explosives_building_copper_mine_pm_dynamite_building_copper_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_copper_mine
+            production_method = pm_dynamite_building_copper_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_copper_mine
+            b:building_copper_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_copper_mine
+                production_method = pm_dynamite_building_copper_mine
+            }
+            can_activate_production_method = {
+                building_type = building_copper_mine
+                production_method = pm_high_precision_blasting_building_copper_mine
+            }
+            b:building_copper_mine.pmg_explosives_building_copper_mine_pm_high_precision_blasting_building_copper_mine_profit_prediction_weighted > b:building_copper_mine.pmg_explosives_building_copper_mine_pm_dynamite_building_copper_mine_profit_prediction
+        }
+        order_by = b:building_copper_mine.pmg_explosives_building_copper_mine_pm_high_precision_blasting_building_copper_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_copper_mine
+            production_method = pm_high_precision_blasting_building_copper_mine
         }
     }
     ordered_scope_state = {
@@ -2597,6 +2927,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_gold_mine
+            b:building_gold_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_gold_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_gold_mine
+                production_method = pm_nitroglycerin_building_gold_mine
+            }
+            b:building_gold_mine.pmg_explosives_building_gold_mine_pm_nitroglycerin_building_gold_mine_profit_prediction_weighted > b:building_gold_mine.pmg_explosives_building_gold_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_gold_mine.pmg_explosives_building_gold_mine_pm_nitroglycerin_building_gold_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_gold_mine
+            production_method = pm_nitroglycerin_building_gold_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_gold_mine
+            b:building_gold_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_gold_mine
+                production_method = pm_nitroglycerin_building_gold_mine
+            }
+            can_activate_production_method = {
+                building_type = building_gold_mine
+                production_method = pm_dynamite_building_gold_mine
+            }
+            b:building_gold_mine.pmg_explosives_building_gold_mine_pm_dynamite_building_gold_mine_profit_prediction_weighted > b:building_gold_mine.pmg_explosives_building_gold_mine_pm_nitroglycerin_building_gold_mine_profit_prediction
+        }
+        order_by = b:building_gold_mine.pmg_explosives_building_gold_mine_pm_dynamite_building_gold_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_gold_mine
+            production_method = pm_dynamite_building_gold_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_hydroelectric_power_plant
             b:building_hydroelectric_power_plant.occupancy > 0.01
             is_production_method_active = {
@@ -3081,6 +3455,72 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_iron_mine
+            b:building_iron_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_iron_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_iron_mine
+                production_method = pm_nitroglycerin_building_iron_mine
+            }
+            b:building_iron_mine.pmg_explosives_building_iron_mine_pm_nitroglycerin_building_iron_mine_profit_prediction_weighted > b:building_iron_mine.pmg_explosives_building_iron_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_iron_mine.pmg_explosives_building_iron_mine_pm_nitroglycerin_building_iron_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_iron_mine
+            production_method = pm_nitroglycerin_building_iron_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_iron_mine
+            b:building_iron_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_iron_mine
+                production_method = pm_nitroglycerin_building_iron_mine
+            }
+            can_activate_production_method = {
+                building_type = building_iron_mine
+                production_method = pm_dynamite_building_iron_mine
+            }
+            b:building_iron_mine.pmg_explosives_building_iron_mine_pm_dynamite_building_iron_mine_profit_prediction_weighted > b:building_iron_mine.pmg_explosives_building_iron_mine_pm_nitroglycerin_building_iron_mine_profit_prediction
+        }
+        order_by = b:building_iron_mine.pmg_explosives_building_iron_mine_pm_dynamite_building_iron_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_iron_mine
+            production_method = pm_dynamite_building_iron_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_iron_mine
+            b:building_iron_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_iron_mine
+                production_method = pm_dynamite_building_iron_mine
+            }
+            can_activate_production_method = {
+                building_type = building_iron_mine
+                production_method = pm_high_precision_blasting_building_iron_mine
+            }
+            b:building_iron_mine.pmg_explosives_building_iron_mine_pm_high_precision_blasting_building_iron_mine_profit_prediction_weighted > b:building_iron_mine.pmg_explosives_building_iron_mine_pm_dynamite_building_iron_mine_profit_prediction
+        }
+        order_by = b:building_iron_mine.pmg_explosives_building_iron_mine_pm_high_precision_blasting_building_iron_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_iron_mine
+            production_method = pm_high_precision_blasting_building_iron_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_kaiserforum_1
             b:building_kaiserforum_1.occupancy > 0.01
             is_production_method_active = {
@@ -3253,6 +3693,72 @@
         activate_production_method = {
             building_type = building_lead_mine
             production_method = pm_autonomous_and_remote_ops_building_lead_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_lead_mine
+            b:building_lead_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_lead_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_lead_mine
+                production_method = pm_nitroglycerin_building_lead_mine
+            }
+            b:building_lead_mine.pmg_explosives_building_lead_mine_pm_nitroglycerin_building_lead_mine_profit_prediction_weighted > b:building_lead_mine.pmg_explosives_building_lead_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_lead_mine.pmg_explosives_building_lead_mine_pm_nitroglycerin_building_lead_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_lead_mine
+            production_method = pm_nitroglycerin_building_lead_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_lead_mine
+            b:building_lead_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_lead_mine
+                production_method = pm_nitroglycerin_building_lead_mine
+            }
+            can_activate_production_method = {
+                building_type = building_lead_mine
+                production_method = pm_dynamite_building_lead_mine
+            }
+            b:building_lead_mine.pmg_explosives_building_lead_mine_pm_dynamite_building_lead_mine_profit_prediction_weighted > b:building_lead_mine.pmg_explosives_building_lead_mine_pm_nitroglycerin_building_lead_mine_profit_prediction
+        }
+        order_by = b:building_lead_mine.pmg_explosives_building_lead_mine_pm_dynamite_building_lead_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_lead_mine
+            production_method = pm_dynamite_building_lead_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_lead_mine
+            b:building_lead_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_lead_mine
+                production_method = pm_dynamite_building_lead_mine
+            }
+            can_activate_production_method = {
+                building_type = building_lead_mine
+                production_method = pm_high_precision_blasting_building_lead_mine
+            }
+            b:building_lead_mine.pmg_explosives_building_lead_mine_pm_high_precision_blasting_building_lead_mine_profit_prediction_weighted > b:building_lead_mine.pmg_explosives_building_lead_mine_pm_dynamite_building_lead_mine_profit_prediction
+        }
+        order_by = b:building_lead_mine.pmg_explosives_building_lead_mine_pm_high_precision_blasting_building_lead_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_lead_mine
+            production_method = pm_high_precision_blasting_building_lead_mine
         }
     }
     ordered_scope_state = {
@@ -6161,6 +6667,72 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_sulfur_mine
+            b:building_sulfur_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_sulfur_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_sulfur_mine
+                production_method = pm_nitroglycerin_building_sulfur_mine
+            }
+            b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_nitroglycerin_building_sulfur_mine_profit_prediction_weighted > b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_nitroglycerin_building_sulfur_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_sulfur_mine
+            production_method = pm_nitroglycerin_building_sulfur_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_sulfur_mine
+            b:building_sulfur_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_sulfur_mine
+                production_method = pm_nitroglycerin_building_sulfur_mine
+            }
+            can_activate_production_method = {
+                building_type = building_sulfur_mine
+                production_method = pm_dynamite_building_sulfur_mine
+            }
+            b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_dynamite_building_sulfur_mine_profit_prediction_weighted > b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_nitroglycerin_building_sulfur_mine_profit_prediction
+        }
+        order_by = b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_dynamite_building_sulfur_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_sulfur_mine
+            production_method = pm_dynamite_building_sulfur_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_sulfur_mine
+            b:building_sulfur_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_sulfur_mine
+                production_method = pm_dynamite_building_sulfur_mine
+            }
+            can_activate_production_method = {
+                building_type = building_sulfur_mine
+                production_method = pm_high_precision_blasting_building_sulfur_mine
+            }
+            b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_high_precision_blasting_building_sulfur_mine_profit_prediction_weighted > b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_dynamite_building_sulfur_mine_profit_prediction
+        }
+        order_by = b:building_sulfur_mine.pmg_explosives_building_sulfur_mine_pm_high_precision_blasting_building_sulfur_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_sulfur_mine
+            production_method = pm_high_precision_blasting_building_sulfur_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_tea_plantation
             b:building_tea_plantation.occupancy > 0.01
             is_production_method_active = {
@@ -6707,6 +7279,72 @@
         activate_production_method = {
             building_type = building_uranium_mine
             production_method = pm_autonomous_and_remote_ops_building_uranium_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_uranium_mine
+            b:building_uranium_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_uranium_mine
+                production_method = pm_no_explosives
+            }
+            can_activate_production_method = {
+                building_type = building_uranium_mine
+                production_method = pm_curie_nitroglycerin_building_uranium_mine
+            }
+            b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_curie_nitroglycerin_building_uranium_mine_profit_prediction_weighted > b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_no_explosives_profit_prediction
+        }
+        order_by = b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_curie_nitroglycerin_building_uranium_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_uranium_mine
+            production_method = pm_curie_nitroglycerin_building_uranium_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_uranium_mine
+            b:building_uranium_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_uranium_mine
+                production_method = pm_curie_nitroglycerin_building_uranium_mine
+            }
+            can_activate_production_method = {
+                building_type = building_uranium_mine
+                production_method = pm_curie_dynamite_building_uranium_mine
+            }
+            b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_curie_dynamite_building_uranium_mine_profit_prediction_weighted > b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_curie_nitroglycerin_building_uranium_mine_profit_prediction
+        }
+        order_by = b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_curie_dynamite_building_uranium_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_uranium_mine
+            production_method = pm_curie_dynamite_building_uranium_mine
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_uranium_mine
+            b:building_uranium_mine.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_uranium_mine
+                production_method = pm_curie_dynamite_building_uranium_mine
+            }
+            can_activate_production_method = {
+                building_type = building_uranium_mine
+                production_method = pm_high_precision_blasting_building_uranium_mine
+            }
+            b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_high_precision_blasting_building_uranium_mine_profit_prediction_weighted > b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_curie_dynamite_building_uranium_mine_profit_prediction
+        }
+        order_by = b:building_uranium_mine.pmg_curie_explosives_building_uranium_mine_pm_high_precision_blasting_building_uranium_mine_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_uranium_mine
+            production_method = pm_high_precision_blasting_building_uranium_mine
         }
     }
     ordered_scope_state = {
