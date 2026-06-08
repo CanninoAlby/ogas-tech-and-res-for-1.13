@@ -661,6 +661,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_banana_plantation
+            b:building_banana_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_banana_plantation
+                production_method = default_labour
+            }
+            can_activate_production_method = {
+                building_type = building_banana_plantation
+                production_method = slave_exploitation_banana
+            }
+            b:building_banana_plantation.pmg_banana_exploitation_slave_exploitation_banana_profit_prediction_weighted > b:building_banana_plantation.pmg_banana_exploitation_default_labour_profit_prediction
+        }
+        order_by = b:building_banana_plantation.pmg_banana_exploitation_slave_exploitation_banana_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_banana_plantation
+            production_method = slave_exploitation_banana
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_banana_plantation
+            b:building_banana_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_banana_plantation
+                production_method = slave_exploitation_banana
+            }
+            can_activate_production_method = {
+                building_type = building_banana_plantation
+                production_method = worker_exploitation_banana
+            }
+            b:building_banana_plantation.pmg_banana_exploitation_worker_exploitation_banana_profit_prediction_weighted > b:building_banana_plantation.pmg_banana_exploitation_slave_exploitation_banana_profit_prediction
+        }
+        order_by = b:building_banana_plantation.pmg_banana_exploitation_worker_exploitation_banana_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_banana_plantation
+            production_method = worker_exploitation_banana
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_battery_plant
             b:building_battery_plant.occupancy > 0.01
             is_production_method_active = {
@@ -723,6 +767,50 @@
         activate_production_method = {
             building_type = building_battery_plant
             production_method = pm_lithium_battery
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_battery_plant
+            b:building_battery_plant.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_battery_plant
+                production_method = pm_no_fuel_cell
+            }
+            can_activate_production_method = {
+                building_type = building_battery_plant
+                production_method = pm_alkaline_fuel_cell
+            }
+            b:building_battery_plant.pmg_base_building_fuel_cell_pm_alkaline_fuel_cell_profit_prediction_weighted > b:building_battery_plant.pmg_base_building_fuel_cell_pm_no_fuel_cell_profit_prediction
+        }
+        order_by = b:building_battery_plant.pmg_base_building_fuel_cell_pm_alkaline_fuel_cell_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_battery_plant
+            production_method = pm_alkaline_fuel_cell
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_battery_plant
+            b:building_battery_plant.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_battery_plant
+                production_method = pm_alkaline_fuel_cell
+            }
+            can_activate_production_method = {
+                building_type = building_battery_plant
+                production_method = pm_pem_fuel_cell
+            }
+            b:building_battery_plant.pmg_base_building_fuel_cell_pm_pem_fuel_cell_profit_prediction_weighted > b:building_battery_plant.pmg_base_building_fuel_cell_pm_alkaline_fuel_cell_profit_prediction
+        }
+        order_by = b:building_battery_plant.pmg_base_building_fuel_cell_pm_pem_fuel_cell_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_battery_plant
+            production_method = pm_pem_fuel_cell
         }
     }
     ordered_scope_state = {
@@ -1343,6 +1431,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_coffee_plantation
+            b:building_coffee_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_coffee_plantation
+                production_method = default_labour
+            }
+            can_activate_production_method = {
+                building_type = building_coffee_plantation
+                production_method = slave_exploitation_coffee
+            }
+            b:building_coffee_plantation.pmg_coffee_exploitation_slave_exploitation_coffee_profit_prediction_weighted > b:building_coffee_plantation.pmg_coffee_exploitation_default_labour_profit_prediction
+        }
+        order_by = b:building_coffee_plantation.pmg_coffee_exploitation_slave_exploitation_coffee_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_coffee_plantation
+            production_method = slave_exploitation_coffee
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_coffee_plantation
+            b:building_coffee_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_coffee_plantation
+                production_method = slave_exploitation_coffee
+            }
+            can_activate_production_method = {
+                building_type = building_coffee_plantation
+                production_method = worker_exploitation_coffee
+            }
+            b:building_coffee_plantation.pmg_coffee_exploitation_worker_exploitation_coffee_profit_prediction_weighted > b:building_coffee_plantation.pmg_coffee_exploitation_slave_exploitation_coffee_profit_prediction
+        }
+        order_by = b:building_coffee_plantation.pmg_coffee_exploitation_worker_exploitation_coffee_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_coffee_plantation
+            production_method = worker_exploitation_coffee
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_commonores_mine
             b:building_commonores_mine.occupancy > 0.01
             is_production_method_active = {
@@ -1915,6 +2047,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_cotton_plantation
+            b:building_cotton_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_cotton_plantation
+                production_method = default_labour
+            }
+            can_activate_production_method = {
+                building_type = building_cotton_plantation
+                production_method = slave_exploitation_cotton
+            }
+            b:building_cotton_plantation.pmg_cotton_exploitation_slave_exploitation_cotton_profit_prediction_weighted > b:building_cotton_plantation.pmg_cotton_exploitation_default_labour_profit_prediction
+        }
+        order_by = b:building_cotton_plantation.pmg_cotton_exploitation_slave_exploitation_cotton_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_cotton_plantation
+            production_method = slave_exploitation_cotton
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_cotton_plantation
+            b:building_cotton_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_cotton_plantation
+                production_method = slave_exploitation_cotton
+            }
+            can_activate_production_method = {
+                building_type = building_cotton_plantation
+                production_method = worker_exploitation_cotton
+            }
+            b:building_cotton_plantation.pmg_cotton_exploitation_worker_exploitation_cotton_profit_prediction_weighted > b:building_cotton_plantation.pmg_cotton_exploitation_slave_exploitation_cotton_profit_prediction
+        }
+        order_by = b:building_cotton_plantation.pmg_cotton_exploitation_worker_exploitation_cotton_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_cotton_plantation
+            production_method = worker_exploitation_cotton
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_datacenter_industry
             b:building_datacenter_industry.occupancy > 0.01
             is_production_method_active = {
@@ -1999,6 +2175,50 @@
         activate_production_method = {
             building_type = building_dye_plantation
             production_method = drone_assisted_agriculture_building_dye_plantation
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_dye_plantation
+            b:building_dye_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_dye_plantation
+                production_method = default_labour
+            }
+            can_activate_production_method = {
+                building_type = building_dye_plantation
+                production_method = slave_exploitation_dye
+            }
+            b:building_dye_plantation.pmg_dye_exploitation_slave_exploitation_dye_profit_prediction_weighted > b:building_dye_plantation.pmg_dye_exploitation_default_labour_profit_prediction
+        }
+        order_by = b:building_dye_plantation.pmg_dye_exploitation_slave_exploitation_dye_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_dye_plantation
+            production_method = slave_exploitation_dye
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_dye_plantation
+            b:building_dye_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_dye_plantation
+                production_method = slave_exploitation_dye
+            }
+            can_activate_production_method = {
+                building_type = building_dye_plantation
+                production_method = worker_exploitation_dye
+            }
+            b:building_dye_plantation.pmg_dye_exploitation_worker_exploitation_dye_profit_prediction_weighted > b:building_dye_plantation.pmg_dye_exploitation_slave_exploitation_dye_profit_prediction
+        }
+        order_by = b:building_dye_plantation.pmg_dye_exploitation_worker_exploitation_dye_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_dye_plantation
+            production_method = worker_exploitation_dye
         }
     }
     ordered_scope_state = {
@@ -2241,6 +2461,94 @@
         activate_production_method = {
             building_type = building_electronics_industry
             production_method = pm_electronic_grade_wires
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_electronics_industry
+            b:building_electronics_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_electronics_industry
+                production_method = pm_no_electroniccomponents_production
+            }
+            can_activate_production_method = {
+                building_type = building_electronics_industry
+                production_method = pm_vacuum_tube
+            }
+            b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_vacuum_tube_profit_prediction_weighted > b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_no_electroniccomponents_production_profit_prediction
+        }
+        order_by = b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_vacuum_tube_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_electronics_industry
+            production_method = pm_vacuum_tube
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_electronics_industry
+            b:building_electronics_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_electronics_industry
+                production_method = pm_vacuum_tube
+            }
+            can_activate_production_method = {
+                building_type = building_electronics_industry
+                production_method = pm_transistor
+            }
+            b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_transistor_profit_prediction_weighted > b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_vacuum_tube_profit_prediction
+        }
+        order_by = b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_transistor_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_electronics_industry
+            production_method = pm_transistor
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_electronics_industry
+            b:building_electronics_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_electronics_industry
+                production_method = pm_transistor
+            }
+            can_activate_production_method = {
+                building_type = building_electronics_industry
+                production_method = pm_printed_circuit_board
+            }
+            b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_printed_circuit_board_profit_prediction_weighted > b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_transistor_profit_prediction
+        }
+        order_by = b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_printed_circuit_board_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_electronics_industry
+            production_method = pm_printed_circuit_board
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_electronics_industry
+            b:building_electronics_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_electronics_industry
+                production_method = pm_printed_circuit_board
+            }
+            can_activate_production_method = {
+                building_type = building_electronics_industry
+                production_method = pm_embedded_control_circuit
+            }
+            b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_embedded_control_circuit_profit_prediction_weighted > b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_printed_circuit_board_profit_prediction
+        }
+        order_by = b:building_electronics_industry.pmg_base_building_electroniccomponents_pm_embedded_control_circuit_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_electronics_industry
+            production_method = pm_embedded_control_circuit
         }
     }
     ordered_scope_state = {
@@ -4995,6 +5303,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_pharmaceuticals_industry
+            b:building_pharmaceuticals_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_pharmaceuticals_industry
+                production_method = pm_no_opioid_refinement
+            }
+            can_activate_production_method = {
+                building_type = building_pharmaceuticals_industry
+                production_method = pm_morphine_extraction
+            }
+            b:building_pharmaceuticals_industry.pmg_opioid_refinement_pm_morphine_extraction_profit_prediction_weighted > b:building_pharmaceuticals_industry.pmg_opioid_refinement_pm_no_opioid_refinement_profit_prediction
+        }
+        order_by = b:building_pharmaceuticals_industry.pmg_opioid_refinement_pm_morphine_extraction_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_pharmaceuticals_industry
+            production_method = pm_morphine_extraction
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_pharmaceuticals_industry
+            b:building_pharmaceuticals_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_pharmaceuticals_industry
+                production_method = pm_morphine_extraction
+            }
+            can_activate_production_method = {
+                building_type = building_pharmaceuticals_industry
+                production_method = pm_synthetic_opioids
+            }
+            b:building_pharmaceuticals_industry.pmg_opioid_refinement_pm_synthetic_opioids_profit_prediction_weighted > b:building_pharmaceuticals_industry.pmg_opioid_refinement_pm_morphine_extraction_profit_prediction
+        }
+        order_by = b:building_pharmaceuticals_industry.pmg_opioid_refinement_pm_synthetic_opioids_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_pharmaceuticals_industry
+            production_method = pm_synthetic_opioids
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_power_grid_station
             b:building_power_grid_station.occupancy > 0.01
             is_production_method_active = {
@@ -6117,6 +6469,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_rubber_plantation
+            b:building_rubber_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_rubber_plantation
+                production_method = default_labour
+            }
+            can_activate_production_method = {
+                building_type = building_rubber_plantation
+                production_method = slave_exploitation_rubber
+            }
+            b:building_rubber_plantation.pmg_rubber_exploitation_slave_exploitation_rubber_profit_prediction_weighted > b:building_rubber_plantation.pmg_rubber_exploitation_default_labour_profit_prediction
+        }
+        order_by = b:building_rubber_plantation.pmg_rubber_exploitation_slave_exploitation_rubber_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_rubber_plantation
+            production_method = slave_exploitation_rubber
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_rubber_plantation
+            b:building_rubber_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_rubber_plantation
+                production_method = slave_exploitation_rubber
+            }
+            can_activate_production_method = {
+                building_type = building_rubber_plantation
+                production_method = worker_exploitation_rubber
+            }
+            b:building_rubber_plantation.pmg_rubber_exploitation_worker_exploitation_rubber_profit_prediction_weighted > b:building_rubber_plantation.pmg_rubber_exploitation_slave_exploitation_rubber_profit_prediction
+        }
+        order_by = b:building_rubber_plantation.pmg_rubber_exploitation_worker_exploitation_rubber_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_rubber_plantation
+            production_method = worker_exploitation_rubber
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_rye_farm
             b:building_rye_farm.occupancy > 0.01
             is_production_method_active = {
@@ -6799,6 +7195,50 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_tea_plantation
+            b:building_tea_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_tea_plantation
+                production_method = default_labour
+            }
+            can_activate_production_method = {
+                building_type = building_tea_plantation
+                production_method = slave_exploitation_tea
+            }
+            b:building_tea_plantation.pmg_tea_exploitation_slave_exploitation_tea_profit_prediction_weighted > b:building_tea_plantation.pmg_tea_exploitation_default_labour_profit_prediction
+        }
+        order_by = b:building_tea_plantation.pmg_tea_exploitation_slave_exploitation_tea_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_tea_plantation
+            production_method = slave_exploitation_tea
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_tea_plantation
+            b:building_tea_plantation.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_tea_plantation
+                production_method = slave_exploitation_tea
+            }
+            can_activate_production_method = {
+                building_type = building_tea_plantation
+                production_method = worker_exploitation_tea
+            }
+            b:building_tea_plantation.pmg_tea_exploitation_worker_exploitation_tea_profit_prediction_weighted > b:building_tea_plantation.pmg_tea_exploitation_slave_exploitation_tea_profit_prediction
+        }
+        order_by = b:building_tea_plantation.pmg_tea_exploitation_worker_exploitation_tea_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_tea_plantation
+            production_method = worker_exploitation_tea
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_telecommunications_industry
             b:building_telecommunications_industry.occupancy > 0.01
             is_production_method_active = {
@@ -6861,6 +7301,72 @@
         activate_production_method = {
             building_type = building_telecommunications_industry
             production_method = pm_internet_global_network_building_telecommunications
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_telecommunications_industry
+            b:building_telecommunications_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_telecommunications_industry
+                production_method = pm_no_mobile_network
+            }
+            can_activate_production_method = {
+                building_type = building_telecommunications_industry
+                production_method = pm_2g_digital_cellular
+            }
+            b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_2g_digital_cellular_profit_prediction_weighted > b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_no_mobile_network_profit_prediction
+        }
+        order_by = b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_2g_digital_cellular_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_telecommunications_industry
+            production_method = pm_2g_digital_cellular
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_telecommunications_industry
+            b:building_telecommunications_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_telecommunications_industry
+                production_method = pm_2g_digital_cellular
+            }
+            can_activate_production_method = {
+                building_type = building_telecommunications_industry
+                production_method = pm_4g_lte_network
+            }
+            b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_4g_lte_network_profit_prediction_weighted > b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_2g_digital_cellular_profit_prediction
+        }
+        order_by = b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_4g_lte_network_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_telecommunications_industry
+            production_method = pm_4g_lte_network
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_telecommunications_industry
+            b:building_telecommunications_industry.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_telecommunications_industry
+                production_method = pm_4g_lte_network
+            }
+            can_activate_production_method = {
+                building_type = building_telecommunications_industry
+                production_method = pm_5g_advanced_network
+            }
+            b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_5g_advanced_network_profit_prediction_weighted > b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_4g_lte_network_profit_prediction
+        }
+        order_by = b:building_telecommunications_industry.pmg_mobile_network_building_telecommunications_pm_5g_advanced_network_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_telecommunications_industry
+            production_method = pm_5g_advanced_network
         }
     }
     ordered_scope_state = {

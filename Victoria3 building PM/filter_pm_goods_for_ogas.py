@@ -223,8 +223,6 @@ def main() -> None:
             target_type = "labor_saving"
         elif b in ("building_power_plant", "building_railway", "building_fusion_power_plant", "building_geothermal_power_plant", "building_hydroelectric_power_plant", "building_renewable_energy_power_plant", "building_modern_state_baseline"):
             target_type = "upgrade"
-        elif "explosives" in group_name:
-            target_type = "upgrade"
         else:
             group_rows = groups.get(group_name, [])
             has_output_shift = False
@@ -236,6 +234,43 @@ def main() -> None:
                         has_output_shift = True
                         break
                         
+            if has_output_shift:
+                is_toggle = False
+                if len(group_rows) > 1:
+                    first_out = get_outputs(group_rows[0][1], header)
+                    if not first_out:
+                        is_toggle = True
+                
+                if is_toggle:
+                    primary_goods = set()
+                    base_found = False
+                    
+                    b_groups = []
+                    for g_name, g_rows_iter in groups.items():
+                        if g_rows_iter and g_rows_iter[0][1][0].strip() == b:
+                            b_groups.append((g_name, g_rows_iter))
+                            
+                    for g_name, g_rows_iter in b_groups:
+                        if "base" in g_name:
+                            base_found = True
+                            for r in g_rows_iter:
+                                primary_goods.update(get_outputs(r[1], header).keys())
+                                
+                    if not base_found and b_groups:
+                        for r in b_groups[0][1]:
+                            primary_goods.update(get_outputs(r[1], header).keys())
+                            
+                    only_primary = True
+                    for j in range(1, len(group_rows)):
+                        outs = get_outputs(group_rows[j][1], header)
+                        for k in outs.keys():
+                            if k not in primary_goods:
+                                only_primary = False
+                                break
+                                
+                    if only_primary:
+                        has_output_shift = False
+
             if has_output_shift:
                 target_type = "balance"
             else:
