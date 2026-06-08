@@ -223,6 +223,8 @@ def main() -> None:
             target_type = "labor_saving"
         elif b in ("building_power_plant", "building_railway", "building_fusion_power_plant", "building_geothermal_power_plant", "building_hydroelectric_power_plant", "building_renewable_energy_power_plant", "building_modern_state_baseline"):
             target_type = "upgrade"
+        elif "base" in group_name:
+            target_type = "upgrade"
         else:
             group_rows = groups.get(group_name, [])
             has_output_shift = False

@@ -2971,6 +2971,94 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_furniture_manufactory
+            b:building_furniture_manufactory.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_furniture_manufactory
+                production_method = pm_handcrafted_furniture
+            }
+            can_activate_production_method = {
+                building_type = building_furniture_manufactory
+                production_method = pm_lathe
+            }
+            b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_lathe_profit_prediction_weighted > b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_handcrafted_furniture_profit_prediction
+        }
+        order_by = b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_lathe_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_furniture_manufactory
+            production_method = pm_lathe
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_furniture_manufactory
+            b:building_furniture_manufactory.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_furniture_manufactory
+                production_method = pm_lathe
+            }
+            can_activate_production_method = {
+                building_type = building_furniture_manufactory
+                production_method = pm_mechanized_workshops
+            }
+            b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_mechanized_workshops_profit_prediction_weighted > b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_lathe_profit_prediction
+        }
+        order_by = b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_mechanized_workshops_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_furniture_manufactory
+            production_method = pm_mechanized_workshops
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_furniture_manufactory
+            b:building_furniture_manufactory.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_furniture_manufactory
+                production_method = pm_mechanized_workshops
+            }
+            can_activate_production_method = {
+                building_type = building_furniture_manufactory
+                production_method = pm_synthetic_furniture_molding
+            }
+            b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_synthetic_furniture_molding_profit_prediction_weighted > b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_mechanized_workshops_profit_prediction
+        }
+        order_by = b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_synthetic_furniture_molding_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_furniture_manufactory
+            production_method = pm_synthetic_furniture_molding
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_furniture_manufactory
+            b:building_furniture_manufactory.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_furniture_manufactory
+                production_method = pm_synthetic_furniture_molding
+            }
+            can_activate_production_method = {
+                building_type = building_furniture_manufactory
+                production_method = pm_fast_modular_furniture_systems
+            }
+            b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_fast_modular_furniture_systems_profit_prediction_weighted > b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_synthetic_furniture_molding_profit_prediction
+        }
+        order_by = b:building_furniture_manufactory.pmg_base_building_furniture_manufactory_pm_fast_modular_furniture_systems_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_furniture_manufactory
+            production_method = pm_fast_modular_furniture_systems
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_geothermal_power_plant
             b:building_geothermal_power_plant.occupancy > 0.01
             is_production_method_active = {
@@ -4863,6 +4951,72 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_natural_gas_rig
+            b:building_natural_gas_rig.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_natural_gas_rig
+                production_method = pm_gas_steam_derricks
+            }
+            can_activate_production_method = {
+                building_type = building_natural_gas_rig
+                production_method = pm_gas_combustion_derricks
+            }
+            b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_combustion_derricks_profit_prediction_weighted > b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_steam_derricks_profit_prediction
+        }
+        order_by = b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_combustion_derricks_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_natural_gas_rig
+            production_method = pm_gas_combustion_derricks
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_natural_gas_rig
+            b:building_natural_gas_rig.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_natural_gas_rig
+                production_method = pm_gas_combustion_derricks
+            }
+            can_activate_production_method = {
+                building_type = building_natural_gas_rig
+                production_method = pm_gas_horizontal_perforation
+            }
+            b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_horizontal_perforation_profit_prediction_weighted > b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_combustion_derricks_profit_prediction
+        }
+        order_by = b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_horizontal_perforation_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_natural_gas_rig
+            production_method = pm_gas_horizontal_perforation
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_natural_gas_rig
+            b:building_natural_gas_rig.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_natural_gas_rig
+                production_method = pm_gas_horizontal_perforation
+            }
+            can_activate_production_method = {
+                building_type = building_natural_gas_rig
+                production_method = pm_gas_hydraulic_fracturing
+            }
+            b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_hydraulic_fracturing_profit_prediction_weighted > b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_horizontal_perforation_profit_prediction
+        }
+        order_by = b:building_natural_gas_rig.pmg_base_building_natural_gas_rig_pm_gas_hydraulic_fracturing_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_natural_gas_rig
+            production_method = pm_gas_hydraulic_fracturing
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_naval_fortification
             b:building_naval_fortification.occupancy > 0.01
             is_production_method_active = {
@@ -6623,6 +6777,94 @@
     }
     ordered_scope_state = {
         limit = {
+            has_active_building = building_shipyard
+            b:building_shipyard.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_shipyard
+                production_method = pm_basic_shipbuilding
+            }
+            can_activate_production_method = {
+                building_type = building_shipyard
+                production_method = pm_complex_shipbuilding
+            }
+            b:building_shipyard.pmg_base_building_shipyard_pm_complex_shipbuilding_profit_prediction_weighted > b:building_shipyard.pmg_base_building_shipyard_pm_basic_shipbuilding_profit_prediction
+        }
+        order_by = b:building_shipyard.pmg_base_building_shipyard_pm_complex_shipbuilding_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_shipyard
+            production_method = pm_complex_shipbuilding
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_shipyard
+            b:building_shipyard.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_shipyard
+                production_method = pm_complex_shipbuilding
+            }
+            can_activate_production_method = {
+                building_type = building_shipyard
+                production_method = pm_metal_shipbuilding
+            }
+            b:building_shipyard.pmg_base_building_shipyard_pm_metal_shipbuilding_profit_prediction_weighted > b:building_shipyard.pmg_base_building_shipyard_pm_complex_shipbuilding_profit_prediction
+        }
+        order_by = b:building_shipyard.pmg_base_building_shipyard_pm_metal_shipbuilding_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_shipyard
+            production_method = pm_metal_shipbuilding
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_shipyard
+            b:building_shipyard.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_shipyard
+                production_method = pm_metal_shipbuilding
+            }
+            can_activate_production_method = {
+                building_type = building_shipyard
+                production_method = pm_arc_welding_shipbuilding
+            }
+            b:building_shipyard.pmg_base_building_shipyard_pm_arc_welding_shipbuilding_profit_prediction_weighted > b:building_shipyard.pmg_base_building_shipyard_pm_metal_shipbuilding_profit_prediction
+        }
+        order_by = b:building_shipyard.pmg_base_building_shipyard_pm_arc_welding_shipbuilding_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_shipyard
+            production_method = pm_arc_welding_shipbuilding
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_shipyard
+            b:building_shipyard.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_shipyard
+                production_method = pm_arc_welding_shipbuilding
+            }
+            can_activate_production_method = {
+                building_type = building_shipyard
+                production_method = pm_modular_shipbuilding
+            }
+            b:building_shipyard.pmg_base_building_shipyard_pm_modular_shipbuilding_profit_prediction_weighted > b:building_shipyard.pmg_base_building_shipyard_pm_arc_welding_shipbuilding_profit_prediction
+        }
+        order_by = b:building_shipyard.pmg_base_building_shipyard_pm_modular_shipbuilding_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_shipyard
+            production_method = pm_modular_shipbuilding
+        }
+    }
+    ordered_scope_state = {
+        limit = {
             has_active_building = building_silk_plantation
             b:building_silk_plantation.occupancy > 0.01
             is_production_method_active = {
@@ -7983,6 +8225,72 @@
         activate_production_method = {
             building_type = building_water_plant
             production_method = pm_advanced_water_filtration
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_whaling_station
+            b:building_whaling_station.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_whaling_station
+                production_method = pm_simple_whaling
+            }
+            can_activate_production_method = {
+                building_type = building_whaling_station
+                production_method = pm_wooden_whaling_ships
+            }
+            b:building_whaling_station.pmg_base_building_whaling_station_pm_wooden_whaling_ships_profit_prediction_weighted > b:building_whaling_station.pmg_base_building_whaling_station_pm_simple_whaling_profit_prediction
+        }
+        order_by = b:building_whaling_station.pmg_base_building_whaling_station_pm_wooden_whaling_ships_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_whaling_station
+            production_method = pm_wooden_whaling_ships
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_whaling_station
+            b:building_whaling_station.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_whaling_station
+                production_method = pm_wooden_whaling_ships
+            }
+            can_activate_production_method = {
+                building_type = building_whaling_station
+                production_method = pm_steam_whaling_ships
+            }
+            b:building_whaling_station.pmg_base_building_whaling_station_pm_steam_whaling_ships_profit_prediction_weighted > b:building_whaling_station.pmg_base_building_whaling_station_pm_wooden_whaling_ships_profit_prediction
+        }
+        order_by = b:building_whaling_station.pmg_base_building_whaling_station_pm_steam_whaling_ships_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_whaling_station
+            production_method = pm_steam_whaling_ships
+        }
+    }
+    ordered_scope_state = {
+        limit = {
+            has_active_building = building_whaling_station
+            b:building_whaling_station.occupancy > 0.01
+            is_production_method_active = {
+                building_type = building_whaling_station
+                production_method = pm_steam_whaling_ships
+            }
+            can_activate_production_method = {
+                building_type = building_whaling_station
+                production_method = pm_fuel_whaling_ships
+            }
+            b:building_whaling_station.pmg_base_building_whaling_station_pm_fuel_whaling_ships_profit_prediction_weighted > b:building_whaling_station.pmg_base_building_whaling_station_pm_steam_whaling_ships_profit_prediction
+        }
+        order_by = b:building_whaling_station.pmg_base_building_whaling_station_pm_fuel_whaling_ships_profit_prediction_weighted
+        max = owner.var:cnm_pm_manage_amount
+        check_range_bounds = no
+        activate_production_method = {
+            building_type = building_whaling_station
+            production_method = pm_fuel_whaling_ships
         }
     }
     ordered_scope_state = {
